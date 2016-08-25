@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/themes/dainst/locale/en_US/locale.xml
+  *
+  * Copyright (c) 2013-2016 Simon Fraser University Library
+  * Copyright (c) 2003-2016 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings.
+  -->
+ 
+<locale name="en_US" full_name="U.S. English">
+	<message key="plugins.themes.dainst.displayName">User Block</message>
+		<message key="plugins.themes.dainst.description">Das DAI Theme, entwickelt 2016 von Philipp Franck</message>
+	<message key="plugins.themes.dainst.loggedInAs">You are logged in as...</message>
+		<message key="plugins.themes.dainst.myJournals">User Home</message>
+		<message key="plugins.themes.dainst.myProfile">Profil</message>
+		<message key="plugins.themes.dainst.logout">Abmelden</message>
+		<message key="plugins.themes.dainst.signIn">Anmelden</message>
+		<message key="plugins.themes.dainst.signUp">Registrieren</message>
+		<message key="plugins.themes.dainst.signOutAsUser">Abmelden als...</message>
+	<message key="plugins.themes.dainst.implicitAuthLogin">Journals Login</message>
+		<message key="plugins.themes.dainst.colorsheme">DAInst Theme - Farbe für dieses Journal wählen</message>
+		<message key="plugins.themes.dainst.otherStuff">Mehr</message>
+		<message key="plugins.themes.dainst.omp">Monographien, Reihen- und Sammelwerke</message>
+		<message key="plugins.themes.dainst.aboutLink">Informationen</message>
+		<message key="plugins.themes.dainst.archive">Verfügbare digitale Ausgaben</message>
+</locale>

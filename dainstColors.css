@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+/* the colors from Redaktion Farbverteilung Neue Reihen, Stand 06.07.2016 */
+/* DO NOT CHANGE the coding style layout of this files and DO NOT add any rules wich are not connected to daiColorShemes */
+
+.dainstColor.components		{background-color: rgba(85, 114, 161, 0.9)}
+.dainstColor.p301			{background-color: rgb(0, 75, 135);        alias: central}
+.dainstColor.p296			{background-color: rgb(4, 28, 44);          alias: rome}
+.dainstColor.p222			{background-color: rgb(108, 29, 69);      alias: instanbul}
+.dainstColor.p5625			{background-color: rgb(112, 133, 115);  alias: orient}
+.dainstColor.p323			{background-color: rgb(0, 95, 97);          alias: athen}
+
+/* not assigned yet (11.8.16) */
+.dainstColor.p215	 		{background-color: rgb(172, 20, 90)}
+.dainstColor.p418	 		{background-color: rgb(81, 83, 74)}
+.dainstColor.p139	 		{background-color: rgb(175, 109, 4)}
+.dainstColor.p166	 		{background-color: rgb(227, 82, 5)}
+.dainstColor.p140	 		{background-color: rgb(116, 83, 28)}
+.dainstColor.p2925	 		{background-color: rgb(0, 156, 222)}
+.dainstColor.p364	 		{background-color: rgb(74, 119, 41)}
+.dainstColor.p384	 		{background-color: rgb(148, 147, 0)}
+.dainstColor.p1545	 		{background-color: rgb(101, 56, 25)}

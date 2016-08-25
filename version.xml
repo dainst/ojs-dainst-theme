@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE version SYSTEM "../../../lib/pkp/dtd/pluginVersion.dtd">
+
+<!--
+  * plugins/themes/dainst/version.xml
+  *
+  * Copyright (c) 2016 DAINST
+  -->
+<version>
+	<application>dainst</application>
+	<type>plugins.themes</type>
+	<release>0.0.0.0</release>
+	<date>2016-20-06</date>
+</version>

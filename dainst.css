@@ -1,0 +1,626 @@
+
+
+body {
+	background-color: #fff;
+	font-family: "sans";
+	/*font-size: 120%*/
+}
+
+
+/*
+We take parts from the original stylesheets and collect them here. 
+To load them all, while most of them are not used is a little bit slow
+(and this thing is - thanks to smarty - slow anyway).
+
+- lib/pkp/styles/common.css 
+- styles/common.css
+- styles.compiled.css
+
+*/
+
+
+
+
+ul.menu {
+	margin: 0;
+	padding: 0;
+}
+
+ul.menu li {
+	margin: 0;
+	padding: 0;
+	padding-right: 1.5em;
+	display: inline;
+}
+
+ul.menu li.current {
+	font-weight: bold;
+}
+
+ul.menu a {
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+ul.steplist {
+	margin: 0;
+	padding: 0;
+	list-style-type: decimal;
+}
+
+ul.steplist li {
+	margin: 0;
+	padding: 0;
+	font-size: 0.85em;
+	padding-right: 0.5em;
+	display: inline;
+	text-transform: uppercase;
+}
+
+ul.steplist li.current {
+	font-weight: bold;
+}
+
+ul.steplist a {
+	text-decoration: none;
+}
+
+ul.plain {
+	list-style-type: none;
+	padding-left: 1.5em;
+}
+
+ul.filter {
+	margin: 0;
+	padding: 1.5em 0 1.5em 0;
+	list-style-type: none;
+}
+
+ul.filter li {
+	padding-right: 1.5em;
+	display: inline;
+}
+
+
+ #navbar {
+	margin-right: 0;
+	padding-bottom: 0.5em;
+}
+
+/* simulate bootstrapish look, because we only rewrote the most importans tpls */
+
+/**
+ * Table of contents
+ */
+
+.tocArticle {
+	width: 100%;
+}
+
+.tocArticle td {
+	padding: 0.5em
+}
+
+.tocArticle:nth-of-type(odd) {
+	background-color: #F5F5F5;
+}
+
+.tocArticleCoverImage {
+	display:none;
+}
+.tocArticleCoverImage.showCoverImage {
+	display: table-cell;
+	width: 15%;
+}
+.tocCoverImage {
+	width: 100%;
+}
+.tocCoverImage img {
+	border: 0;
+	width: 100%;
+	width: 100%;
+}
+
+.tocTitle {
+	font-weight: bold
+}
+
+.tocArticleTitleAuthors {
+	width: 80%;
+}
+.tocArticleTitleAuthors.showCoverImage {
+	width: 65%;
+	padding-left: 10px;
+}
+.tocAuthors {
+
+}
+
+.tocArticleGalleysPages {
+	width: 20%;
+}
+.tocGalleys, .tocPages {
+	text-align: right;
+}
+
+.tocPages:before {
+	content: "p. "
+}
+
+/* pdf button */
+#results a.file,
+.tocGalleys a {
+	color: #333;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	text-decoration: none;
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+	display: inline-block;
+	margin-bottom: 0px;
+	font-weight: 400;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	white-space: nowrap;
+	box-sizing: border-box;
+	display: inline-block
+}
+/*
+#results a.file:first-child,
+.tocGalleys a:first-child {
+	display: inline-block
+}*/
+
+#results table.listing td:last-child {
+	width: 30% !important
+}
+
+#results a.file:hover,
+.tocGalleys a:hover {
+    color: #333;
+    background-color: #E6E6E6;
+    border-color: #ADADAD;
+    text-decoration: none;
+}
+#results a.file:after,
+.tocGalleys  a.file:after {
+  content: "\E105";
+  padding-left: 2px;
+  font-family: "Glyphicons Halflings";
+  padding-top: 2px
+}
+
+#results {
+
+}
+
+#results tr td {
+	width: auto !important;
+	font-style: normal !important
+}
+
+#results tr td:nth-of-type(1) {
+	width: 10% !important
+}
+
+#results tr td:nth-of-type(2) {
+	font-weight: bold
+}
+
+#results tr:nth-of-type(6n+4),
+#results tr:nth-of-type(6n+5) {
+	background-color: #F5F5F5;
+
+}
+#results tr:nth-of-type(3n+2) td {
+	padding: 0em 0.2em 0.5em 0.5em;
+}
+#results tr:nth-of-type(3n+1) td {
+	padding: 0.5em 0.2em 0em 0em;
+}
+#results tr:nth-of-type(3n+2) td {
+	padding-left: 10% !important;
+}
+
+.tocSectionTitle,
+#results tr.heading td {
+	border-bottom: 2px solid silver;
+	padding: 0em 0.2em 0em 0.2em !important;
+	font-size: 18px;
+	font-weight: normal;
+	margin-bottom: 10px;
+	margin-top: 0px;
+}
+
+
+#results tr td.headseparator,
+#results tr td.separator {
+	display: none
+}
+
+/* archive */
+
+#issues > div > div {
+	padding: 0.5em;
+}
+
+#issues > div > div:nth-of-type(2n+1) {
+	background-color: #F5F5F5
+}
+
+#authors > div > h3,
+#issues > div > h3 {
+	border-bottom: 2px solid #C0C0C0;
+	font-size: 18px;
+	font-weight: normal;
+	margin-bottom: 10px;
+	margin-top: 2em;
+	padding-left: 0.5em;
+}
+
+#authors > div > h3 {
+	margin-bottom: 5px;
+}
+
+#authors > div:first-child > h3,
+#issues > div:first-child > h3 {
+	margin-top: 3px
+}
+
+#issues > div > div > h4 {
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0px;
+	line-height: 1.42857;
+}
+
+#issues .issueCoverImage > a > img {
+	max-width: 150px;
+	float: left;
+	margin-right: 1em;
+}
+
+.homepageImage > a.action > img {
+	max-width: 150px;
+}
+
+
+.homepageImage {
+	margin-bottom: 0.3em;
+	float: left;
+	margin-right: 1em;
+	margin-top: 20px;
+}
+
+#homepageImage > img {
+	max-width: 25%;
+	height: auto;
+	margin-left: 1em;
+	float:right
+}
+
+/*#issues .issueDescription {
+	margin-bottom: 2em
+}
+*/
+
+#content p {
+	margin-top: 0.4em;
+}
+
+
+#search table,
+#lostPasswordTable,
+#signinTable {
+	background-color: #EEE;
+	display: table-cell;
+    border-radius: 6px;
+    padding: 1em;
+}
+
+#myAccount,
+#myJournals > div {
+	margin-bottom: 20px;
+	background-color: #fff;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+	box-shadow: 0 1px 1px rgba(0,0,0,.05);
+	border-color: #ddd;
+}
+
+#myAccount > h3,
+#myJournals > div > h3,
+#myJournals > div > h4 {
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    margin: 0px;
+    font-size: 14px;
+}
+
+#myJournals > div > table.info {
+	border-collapse: collapse;
+}
+
+#myJournals > div > table.info > tbody > tr:first-child > td {
+	padding-top: 15px
+}
+
+#myJournals > div > table.info > tbody > tr > td:first-child {
+	padding-left: 15px
+}
+
+#myJournals > div > table.info > tbody > tr:last-child > td {
+	padding-bottom: 15px
+}
+
+#myJournals > div > table.info > tbody > tr > td:last-child {
+	padding-right: 15px
+}
+
+#myJournals > div > table.info > tbody > tr > td {
+	border-bottom: 1px solid #ddd;
+	padding: 8px 2px 2px 2px
+}
+
+#myJournals > div > table.info > tbody > tr:nth-last-child(2) > td,
+#myJournals > div > table.info > tbody > tr:last-child > td {
+	border: none
+}
+
+#myAccount > ul {
+	margin: 15px;
+	list-style-position: outside;
+	list-style-type: none;
+	padding: 0px;
+}
+
+td.label,
+label {
+	font-size: 14px;;
+	padding: 0.2em 0.6em 0.3em;
+	line-height: 1;
+	color: black;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	padding: 6px 12px;
+	font-weight:  initial
+}
+td.label {
+	display: table-cell;
+}
+
+
+
+input[type="checkbox"]+label {
+	padding-left: 0px
+}
+
+input {
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857;
+	color: #555;
+	background-color: #FFF;
+	background-image: none;
+	border: 1px solid #CCC;
+	border-radius: 4px;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+	transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+	margin-bottom: 0.3em
+}
+
+input.button {
+    color: #FFF;
+    background-color: #286090;
+    border-color: #204D74;
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 3px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	-moz-user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+
+
+
+
+/* modified styles/rightSidebar.css */
+#header {
+	text-align: left;
+	width: 100%;
+/*	margin-left: 10%;
+	width: 63%;*/
+	padding: 0px; /* 1.2em 0px 1.2em;*/
+	color: white;
+	font-weight: bold;
+	margin-left: 0px
+}
+
+#headerTitle h1 {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	margin: 0px;
+	font-size: 40px
+}
+
+#headerTitle img { /* we don't need no */
+	display:none
+}
+
+#headerTitle {
+	padding-left: 1.2em;
+}
+
+#body {
+	width: 100%;
+	margin-left: 0px
+}
+
+#sidebar {
+	background: white;
+	min-height: 200px
+}
+
+#rightSidebar {
+/*	float: right;*/
+/*	width: 27%;*/
+	min-height: 100px;
+	margin-right: 0%;
+	background: white;
+	padding: 11px 10% 1.2em 0em;
+}
+/*
+* html #rightSidebar { margin-right: 5%; }
+*/
+#main {
+	padding: 11px 1.2em 1.2em 1.2em;
+/*	float: left;
+/*	width: 63%;
+	margin-left: 10%;*/
+/*	display: inline;
+	overflow: hidden;
+/*	margin-bottom: 190px;*/
+}
+
+
+/* other */
+#rightSidebar li {
+	list-style-type: none;
+	list-style-position: inside;
+}
+
+#dainstPdfViewer {
+	width: 100%;
+	height: 100%;
+	border: none;
+	margin-bottom: 20px;
+}
+
+#dainstColorbar {
+	width: 100%;
+	height: 168px;
+	border: none;
+	position: absolute;
+	z-index: -10;
+}
+
+.hasDainstColorbar .navbar {
+	margin-bottom: 3px
+} 
+
+.hasDainstColorbar #main {
+	margin-top: 0px;
+	background: white;
+}
+
+.hasDainstColorbar .breadcrumb {
+    padding: 8px 0px;
+    background: white;
+}
+
+
+
+.panel-body h3 {
+	font-size: medium;
+	font-weight: bold
+	
+}
+
+#dainstLogo {
+	background-image: url('img/dailogo232.png');
+	background-repeat: no-repeat;
+	width: 232px;
+	height: 93px;
+	background-size: 232px 93px;
+	display: none
+}
+.hasDainstColorbar #dainstLogo {
+	display: block
+}
+
+
+
+
+
+/* from styles/compiled.css */
+.pkp_controllers_extrasOnDemand .ui-icon { float:left; }
+.pkp_controllers_extrasOnDemand .toggleExtras {
+  margin-top:15px;
+  margin-bottom:15px;
+  cursor:pointer;
+  float:left;
+  display:none;
+}
+.pkp_controllers_extrasOnDemand .extrasOnDemand-label {
+  font-size:80%;
+  color:#999999;
+  margin-left:10px;
+}
+
+
+
+
+
+
+/* temp fixes for the components stylesheet */
+.breadcrumb > li + li::before {
+    content: "/ " !important;
+}
+
+#dai_navbar .btn {
+    padding: 9px 12px;
+}
+
+#dai_navbar {
+	background-color: rgba(85, 114, 161, 1) 
+}
+
+body {
+	margin-top: 52px;
+}
+
+
+/* daian viewer */
+.daian-block-entry {
+	margin: 6px 0px
+}
+
+.daian-reference {
+	margin-left: 0.7em
+}
+
+#daian-map .leaflet-popup-content-wrapper .badge {
+	margin-left: 4px
+}
+
+.daian-block .panel-body {
+	max-height: 400px;
+	overflow-y: auto;
+}
+
+
+#dainstPdfViewer {
+	border: 1px solid transparent;
+	border-radius: 4px;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+
