@@ -116,7 +116,6 @@ class DainstThemePlugin extends ThemePlugin {
 	 */
 	function __construct() {		
 		$this->theUrl = Request::getBaseUrl();
-
 	}
 	
 	/**
@@ -219,8 +218,7 @@ class DainstThemePlugin extends ThemePlugin {
 	 * @return string
 	 */
 	function getViewer($params, &$smarty) {
-		$viewerSrc = 'http://195.37.232.186/ojs/plugins/themes/dainst/inc/pdf.js/web/viewer.html';
-		//$viewerSrc = 'http://195.37.232.186/test/DeBook/dEbook-Viewer/dBookViewer/DAI.php'; // @TODO path problem
+		$viewerSrc = $this->theUrl . '/plugins/themes/dainst/inc/pdf.js/web/viewer.html';
 		return "<iframe id='dainstPdfViewer' onload='setViewerHeight()' src='$viewerSrc?file={$params['file']}'></iframe>";
 	} 
 	
