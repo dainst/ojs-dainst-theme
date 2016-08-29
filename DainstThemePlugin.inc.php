@@ -62,6 +62,10 @@ class DainstThemePlugin extends ThemePlugin {
 		$basePath = dirname(dirname(dirname(dirname(__FILE__))));
 		return "$basePath/" . $this->getPluginPath() . '/templates/';
 	}
+	
+	function getFilePath() {
+		return dirname(__FILE__);
+	}
 
 	/**
 	 * 
@@ -112,6 +116,7 @@ class DainstThemePlugin extends ThemePlugin {
 	 */
 	function __construct() {		
 		$this->theUrl = Request::getBaseUrl();
+
 	}
 	
 	/**
@@ -258,7 +263,8 @@ class DainstThemePlugin extends ThemePlugin {
 		$thePath = $this->theUrl . '/' . $this->pluginPath;
 		
 		// create the idai compontents php object
-		require_once('idai-components-php/idai-components.php');
+		
+		require_once($this->getFilePath() . '/idai-components-php/idai-components.php');
 		$this->_idaic = new \idai\components(array('return'	=>	true));
 		
 		// the idai-stylesheets and stuff
