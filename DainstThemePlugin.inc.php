@@ -243,16 +243,18 @@ class DainstThemePlugin extends ThemePlugin {
 		$tpl 	= $params[1];
 		$smarty = $params[0];
 		$journal =& Request::getJournal();
+		$templateMgr =& TemplateManager::getManager();
 				
 		// cache cleansing
-		$templateMgr =& TemplateManager::getManager();
-		$templateMgr->caching = 0;
+		/*$templateMgr->caching = 0;
 		$templateMgr->cache_lifetime = 0;
 		$templateMgr->clear_all_cache();
-		$templateMgr->clear_compiled_tpl();
-
+		$templateMgr->clear_compiled_tpl(); //*/
+		
+		//debug
 		$templateMgr->debugging = false;
 		
+		//url
 		$thePath = $this->theUrl . '/' . $this->pluginPath;
 		
 		// create the idai compontents php object
@@ -271,7 +273,7 @@ class DainstThemePlugin extends ThemePlugin {
 			$this->addHeadData($smarty, "<script src='$thePath/js/hardcoded.js'></script>"); 
 			$this->addHeadData($smarty, "<script src='$thePath/js/daian.js'></script>");
 		}
-		$this->addHeadData($smarty, "<script src='$thePath/js/jquery-fixDataFn.js.js'></script>");
+		$this->addHeadData($smarty, "<script src='$thePath/js/jquery-fixDataFn.js'></script>");
 		
 		// the colorsheme color
 		$dainstcicolor = ($journal) ? $this->getSetting($journal->getId(), 'dainstcicolor') : 'components'; 

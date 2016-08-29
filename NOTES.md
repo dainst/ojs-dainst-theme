@@ -57,11 +57,26 @@ search
 
 
 more
-* annotationsdaten auch php seitig verfügbar halten (cache) 
-* und in meta-daten von Seite einfließen lassen (wegen google)
-* und der suche bekannt machen irgendwie
-* nlp server ist nicht von außen zugreifbar!!
+* annotatiosn-daten handling
+	* annotationsdaten auch php seitig verfügbar halten (cache) 
+	* und in meta-daten von Seite einfließen lassen (wegen google)
+	* und der suche bekannt machen irgendwie
+	* nlp server ist nicht von außen zugreifbar!!
 
+	a) Servereitig -> holt adaten -> baut boxen -> die greifen auf den reader zu
+		(+) weniger API-Calls, Cache evtl. nutzbar?
+		(-) kommunikation zwischen in und außerhalb iframe
+		(-) DBV nicht extern nutzbar
+		
+	b) Sidebar Teil des Iframes
+		(-)	Größe bestimmen?
+		(-)	wie adaten Google etc. bekannt machen?
+			a) den API Call beim Page aufruf machen und die Adaten auch im Quelltext verankern, und im DBR von dort lesen
+			b) die wichtigsten Adaten einmalig von dort ins OJS überführen und für den Reader unabhängig davon per API-Call holen (über eine digeste funktion)
+				(+)	nicht alle Daten müssen in der Seite gespeichert werden, es sind ja sehr viele, und später kann man vllt. Sietenwase API Calls machen oder so
+				(+) man könnte die Boxen erst befüllen und dann per APi ersetzen lassen!
+			
+	bb ist möglicher Weise das Beste
 
 * disable cache and stuff
 
