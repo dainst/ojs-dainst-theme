@@ -52,13 +52,13 @@ issue ansicht
 search
 # findet keine Ergebnisse
 # search von der startseite geht gar nicht
-# search filter nicht clackbar, weil handler.js l. 37 abbricht mir einem error
+# search filter nicht clickbar, weil handler.js l. 37 abbricht mit einem error
 
 
 
 more
 * annotationsdaten auch php seitig verfügbar halten (cache) 
-* und in meta-daten von Seite einfließen lasswen (wegen google)
+* und in meta-daten von Seite einfließen lassen (wegen google)
 * und der suche bekannt machen irgendwie
 * nlp server ist nicht von außen zugreifbar!!
 

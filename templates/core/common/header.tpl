@@ -62,7 +62,6 @@
 		<!--
 		// initialise plugins
 		{literal}
-		console.log("!");
 		$(function(){
 			jqueryValidatorI18n("{/literal}{$baseUrl}{literal}", "{/literal}{$currentLocale}{literal}"); // include the appropriate validation localization
 			{/literal}{if $validateId}{literal}

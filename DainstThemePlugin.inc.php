@@ -21,7 +21,7 @@ class DainstThemePlugin extends ThemePlugin {
 	/**
 	 * Get the name of this plugin. The name must be unique within
 	 * its category.
-	 * @return String name of plugin
+	 * @return String name of pluginf
 	 */
 	function getName() {
 		return 'DainstThemePlugin';
@@ -271,7 +271,7 @@ class DainstThemePlugin extends ThemePlugin {
 			$this->addHeadData($smarty, "<script src='$thePath/js/hardcoded.js'></script>"); 
 			$this->addHeadData($smarty, "<script src='$thePath/js/daian.js'></script>");
 		}
-		$this->addHeadData($smarty, "<script src='$thePath/js/Handler-fixed.js'></script>");
+		$this->addHeadData($smarty, "<script src='$thePath/js/jquery-fixDataFn.js.js'></script>");
 		
 		// the colorsheme color
 		$dainstcicolor = ($journal) ? $this->getSetting($journal->getId(), 'dainstcicolor') : 'components'; 
