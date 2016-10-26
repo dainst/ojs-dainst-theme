@@ -301,6 +301,10 @@ ul.filter li {
 	float:right
 }
 
+#intro {
+	margin-bottom: 3em
+}
+
 .journalDescription {
     text-align: justify;
 }
