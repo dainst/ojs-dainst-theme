@@ -92,7 +92,7 @@
 *}
 
 <div id="body" class='row'>
-
+{*	
 <div class='col-md-1'>
 	{if $leftSidebarCode}
 		<div class="panel panel-default">
@@ -102,16 +102,18 @@
 		</div>
 	{/if}&nbsp;
 </div>
-{*		
+	
 
 *}
 
-<div id="main" class='col-md-8'>
+<div id="main" class='col-md-12'>
 <ol class="breadcrumb">
 	<li><a href="{url page="index"}" target="_parent">{translate key="navigation.home"}</a></li>
 	{if $issue}<li><a href="{url page="issue" op="view" path=$issue->getBestIssueId($currentJournal)}" target="_parent">{$issue->getIssueIdentification(false,true)|escape}</a></li>{/if}
 	<li><a href="{url page="article" op="view" path=$articleId|to_array:$galleyId}" class="current" target="_parent">{$article->getFirstAuthor(true)|escape}</a></li>
 </ol>
+
+{getHtaccessDebug}
 
 <div id="content">
 

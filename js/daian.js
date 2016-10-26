@@ -12,8 +12,10 @@ daian.init = function(objectId) {
 }
 
 daian.get = function(id) {
+	console.log('get annotations from ' + id);
+	
 	$.ajax({
-	  url:		"http://nlp.dainst.org:3000/annotations/" + id,
+	  url:		"https://nlp.dainst.org:3000/annotations/" + id,
 	  type: 	"get",
 	  success:	function(data) {
 		console.log(data);

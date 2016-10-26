@@ -11,7 +11,6 @@ var hardcodedId = {
 	},
 	get: function() {
 		var url = window.location.href.split('#')[0].split('/'); 
-		//console.log(url[url.length-2] + '/' + url[url.length-1], this.list[url[url.length-2] + '/' + url[url.length-1]]);
 		return this.list[(url[url.length - 2] == 'view') ? url[url.length - 1] : url[url.length - 2]];
 
 	}

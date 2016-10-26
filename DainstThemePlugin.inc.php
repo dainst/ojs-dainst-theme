@@ -16,8 +16,6 @@ import('classes.plugins.ThemePlugin');
 class DainstThemePlugin extends ThemePlugin {
 
 	
-	
-	
 	/**
 	 * Get the name of this plugin. The name must be unique within
 	 * its category.
@@ -183,7 +181,7 @@ class DainstThemePlugin extends ThemePlugin {
 				"href"	=>	$smarty->smartyUrl(array('page' => "login", 'op' => "signOutAsUser"))
 			);
 		}
-
+		
 		unset($this->_idaic->settings['buttons']['zzzzcontact']);
 		
 		$this->_idaic->navbar($content);
@@ -219,6 +217,9 @@ class DainstThemePlugin extends ThemePlugin {
 	 */
 	function getViewer($params, &$smarty) {
 		$viewerSrc = $this->theUrl . '/plugins/themes/dainst/inc/pdf.js/web/viewer.html';
+		$viewerSrc = 'http://195.37.232.186/DAIbookViewer/dbv/dbv-web/viewer.html';
+		$viewerSrc = 'http://195.37.232.186/DAIbookViewer/dbv/build/generic/dbv-web/viewer.html';
+		
 		return "<iframe id='dainstPdfViewer' onload='setViewerHeight()' src='$viewerSrc?file={$params['file']}'></iframe>";
 	} 
 	
@@ -235,6 +236,14 @@ class DainstThemePlugin extends ThemePlugin {
 		return '<div id="idai_annotations"></div>';
 	}
 	
+	
+	function getHtaccessDebug() {
+		return;
+		echo "<pre style='max-height:150px'>";
+		var_dump($_SERVER);
+		echo "</pre>";
+	}
+	
 	/**
 	 * 
 	 * @param unknown $hookName
@@ -249,7 +258,8 @@ class DainstThemePlugin extends ThemePlugin {
 		$templateMgr =& TemplateManager::getManager();
 				
 		// cache cleansing
-		/*$templateMgr->caching = 0;
+		/*
+		$templateMgr->caching = 0;
 		$templateMgr->cache_lifetime = 0;
 		$templateMgr->clear_all_cache();
 		$templateMgr->clear_compiled_tpl(); //*/
@@ -288,13 +298,13 @@ class DainstThemePlugin extends ThemePlugin {
 		$smarty->register_function("idai_footer", array($this, "getFooter"));
 		$smarty->register_function("pdf_viewer", array($this, "getViewer"));
 		$smarty->register_function("daian_article", array($this, "getDaian"));
+		$smarty->register_function("getHtaccessDebug", array($this, "getHtaccessDebug"));
 		
 		// register function for in-frontpage-archieve
 		$smarty->register_function("journal_archive", array($this, "getArchive"));
 			
 		// override the default templates 
 		array_unshift($smarty->template_dir, $this->getTemplatePath());
-		
 		
 		//}
 

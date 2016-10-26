@@ -24,8 +24,6 @@
 
 
 
-
-
 {if $galley}
 	{if $galley->isHTMLGalley()}
 		{$galley->getHTMLContents()}

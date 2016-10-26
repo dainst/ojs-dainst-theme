@@ -292,7 +292,6 @@ ul.filter li {
 	margin-bottom: 0.3em;
 	float: left;
 	margin-right: 1em;
-	margin-top: 20px;
 }
 
 #homepageImage > img {
@@ -300,6 +299,17 @@ ul.filter li {
 	height: auto;
 	margin-left: 1em;
 	float:right
+}
+
+.journalDescription {
+    text-align: justify;
+}
+
+.journalDescription + p {
+    margin-bottom: 50px;
+	text-align: right;
+	border-bottom: 1px solid silver;
+	padding-bottom: 2em;
 }
 
 /*#issues .issueDescription {
@@ -600,7 +610,7 @@ input.button {
 }
 
 #dai_navbar {
-	background-color: rgba(85, 114, 161, 1) 
+	background-color: #6580aa 
 }
 
 body {
@@ -630,7 +640,6 @@ body {
 #dainstPdfViewer {
 	border: 1px solid transparent;
 	border-radius: 4px;
-	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
 }
 
 

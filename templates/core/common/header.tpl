@@ -135,9 +135,8 @@
 </h1>
 </div>
 </div>
-
+{getHtaccessDebug}
 <div id="body" class='row'>
-
 
 <div class='col-md-1'>
 	{if $leftSidebarCode}
