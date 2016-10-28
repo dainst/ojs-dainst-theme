@@ -1,0 +1,3267 @@
+{
+  "persons": {
+    "items": [
+      {
+        "id": "id0#0.8822909139562398",
+        "score": null,
+        "terms": [
+          "Vespasian"
+        ],
+        "pages": [
+          13,
+          10,
+          9,
+          11,
+          2
+        ],
+        "count": 15,
+        "lemma": "Vespasian",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "96539514",
+            "url": "http://viaf.org/96539514"
+          }
+        ]
+      },
+      {
+        "id": "id1#0.4509469270706177",
+        "score": null,
+        "terms": [
+          "Nero"
+        ],
+        "pages": [
+          16,
+          15,
+          13,
+          12
+        ],
+        "count": 10,
+        "lemma": "Nero",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "95126958",
+            "url": "http://viaf.org/95126958"
+          }
+        ]
+      },
+      {
+        "id": "id2#0.9379043476656079",
+        "score": null,
+        "terms": [
+          "Werner Eck"
+        ],
+        "pages": [
+          11,
+          17,
+          9,
+          13,
+          7,
+          15,
+          3,
+          19,
+          1
+        ],
+        "count": 9,
+        "lemma": "Werner Eck",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "110202551",
+            "url": "http://viaf.org/110202551"
+          }
+        ]
+      },
+      {
+        "id": "id3#0.35353750456124544",
+        "score": null,
+        "terms": [
+          "Plancia Magna"
+        ],
+        "pages": [
+          19,
+          17
+        ],
+        "count": 7,
+        "lemma": "Plancia Magna",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "88530832",
+            "url": "http://viaf.org/88530832"
+          }
+        ]
+      },
+      {
+        "id": "id4#0.9419803330674767",
+        "score": null,
+        "terms": [
+          "Augustus"
+        ],
+        "pages": [
+          18,
+          17,
+          15,
+          10,
+          2
+        ],
+        "count": 6,
+        "lemma": "Augustus",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "14771963",
+            "url": "http://viaf.org/14771963"
+          }
+        ]
+      },
+      {
+        "id": "id5#0.2147450267802924",
+        "score": null,
+        "terms": [
+          "Claudius"
+        ],
+        "pages": [
+          16,
+          15
+        ],
+        "count": 5,
+        "lemma": "Claudius",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "54152998",
+            "url": "http://viaf.org/54152998"
+          }
+        ]
+      },
+      {
+        "id": "id6#0.17485679360106587",
+        "score": null,
+        "terms": [
+          "SAHIN"
+        ],
+        "pages": [
+          17,
+          4,
+          3
+        ],
+        "count": 5,
+        "lemma": "Sahin",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "108751252",
+            "url": "http://viaf.org/108751252"
+          }
+        ]
+      },
+      {
+        "id": "id7#0.6144689889624715",
+        "score": null,
+        "terms": [
+          "Hadrians"
+        ],
+        "pages": [
+          17,
+          8
+        ],
+        "count": 4,
+        "lemma": "Hadrians",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "207992749",
+            "url": "http://viaf.org/207992749"
+          }
+        ]
+      },
+      {
+        "id": "id8#0.2973939108196646",
+        "score": null,
+        "terms": [
+          "R. HAENSCH"
+        ],
+        "pages": [
+          11,
+          4,
+          3
+        ],
+        "count": 3,
+        "lemma": "R. Haensch",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id9#0.15264764055609703",
+        "score": null,
+        "terms": [
+          "Flavius"
+        ],
+        "pages": [
+          10
+        ],
+        "count": 3,
+        "lemma": "Flavius",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "22143666",
+            "url": "http://viaf.org/22143666"
+          }
+        ]
+      },
+      {
+        "id": "id10#0.8094223199877888",
+        "score": null,
+        "terms": [
+          "C. Iulius"
+        ],
+        "pages": [
+          17,
+          14
+        ],
+        "count": 3,
+        "lemma": "C. Iulius",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "286265178",
+            "url": "http://viaf.org/286265178"
+          }
+        ]
+      },
+      {
+        "id": "id11#0.9461967647075653",
+        "score": null,
+        "terms": [
+          "Caesarea Maritima"
+        ],
+        "pages": [
+          8,
+          2
+        ],
+        "count": 3,
+        "lemma": "Caesarea Maritima",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "243452326",
+            "url": "http://viaf.org/243452326"
+          }
+        ]
+      },
+      {
+        "id": "id12#0.5063139791600406",
+        "score": null,
+        "terms": [
+          "Plancius Varus"
+        ],
+        "pages": [
+          19,
+          17
+        ],
+        "count": 2,
+        "lemma": "Plancius Varus",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id13#0.06956095877103508",
+        "score": null,
+        "terms": [
+          "SAHIN S."
+        ],
+        "pages": [
+          19,
+          13
+        ],
+        "count": 2,
+        "lemma": "Sahin S.",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "194384890",
+            "url": "http://viaf.org/194384890"
+          }
+        ]
+      },
+      {
+        "id": "id14#0.6021085679531097",
+        "score": null,
+        "terms": [
+          "C. Iulius Cornutus Tertullus"
+        ],
+        "pages": [
+          17,
+          13
+        ],
+        "count": 2,
+        "lemma": "C. Iulius Cornutus Tertullus",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id15#0.7933588845189661",
+        "score": null,
+        "terms": [
+          "Diana Pergensis"
+        ],
+        "pages": [
+          17,
+          3
+        ],
+        "count": 2,
+        "lemma": "Diana Pergensis",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id16#0.4699746151454747",
+        "score": null,
+        "terms": [
+          "Philippus Arabs"
+        ],
+        "pages": [
+          0
+        ],
+        "count": 2,
+        "lemma": "Philippus Arabs",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "67260910",
+            "url": "http://viaf.org/67260910"
+          }
+        ]
+      },
+      {
+        "id": "id17#0.32767231739126146",
+        "score": null,
+        "terms": [
+          "Plinius"
+        ],
+        "pages": [
+          18,
+          7
+        ],
+        "count": 2,
+        "lemma": "Plinius",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "100219162",
+            "url": "http://viaf.org/100219162"
+          }
+        ]
+      },
+      {
+        "id": "id18#0.29889915930107236",
+        "score": null,
+        "terms": [
+          "C. Iulius Cornutus"
+        ],
+        "pages": [
+          14,
+          13
+        ],
+        "count": 2,
+        "lemma": "C. Iulius Cornutus",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id19#0.7459205901250243",
+        "score": null,
+        "terms": [
+          "Marc Aurei"
+        ],
+        "pages": [
+          3,
+          1
+        ],
+        "count": 2,
+        "lemma": "Marc Aurei",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id20#0.5388366561383009",
+        "score": null,
+        "terms": [
+          "HAENSCH"
+        ],
+        "pages": [
+          9,
+          5
+        ],
+        "count": 2,
+        "lemma": "Haensch",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "160522844",
+            "url": "http://viaf.org/160522844"
+          }
+        ]
+      },
+      {
+        "id": "id21#0.535877576097846",
+        "score": null,
+        "terms": [
+          "I. Eph"
+        ],
+        "pages": [
+          2,
+          1
+        ],
+        "count": 2,
+        "lemma": "I. Eph",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "4908928",
+            "url": "http://viaf.org/4908928"
+          }
+        ]
+      },
+      {
+        "id": "id22#0.2469183534849435",
+        "score": null,
+        "terms": [
+          "New Inscriptions"
+        ],
+        "pages": [
+          8,
+          5
+        ],
+        "count": 2,
+        "lemma": "New Inscriptions",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id23#0.24052114668302238",
+        "score": null,
+        "terms": [
+          "Polis Perge"
+        ],
+        "pages": [
+          19
+        ],
+        "count": 1,
+        "lemma": "Polis Perge",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id24#0.029813370434567332",
+        "score": null,
+        "terms": [
+          "Matidia"
+        ],
+        "pages": [
+          18
+        ],
+        "count": 1,
+        "lemma": "Matidia",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "46677992",
+            "url": "http://viaf.org/46677992"
+          }
+        ]
+      },
+      {
+        "id": "id25#0.7494583583902568",
+        "score": null,
+        "terms": [
+          "Augusta"
+        ],
+        "pages": [
+          18
+        ],
+        "count": 1,
+        "lemma": "Augusta",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "73885426",
+            "url": "http://viaf.org/73885426"
+          }
+        ]
+      },
+      {
+        "id": "id26#0.36009516636841",
+        "score": null,
+        "terms": [
+          "Plotina Augusta"
+        ],
+        "pages": [
+          18
+        ],
+        "count": 1,
+        "lemma": "Plotina Augusta",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id27#0.22600716562010348",
+        "score": null,
+        "terms": [
+          "Plancia Magna of Perge"
+        ],
+        "pages": [
+          16
+        ],
+        "count": 1,
+        "lemma": "Plancia Magna Of Perge",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id28#0.7605096765328199",
+        "score": null,
+        "terms": [
+          "M. TAGLIAFERRO BOATWRIGHT"
+        ],
+        "pages": [
+          16
+        ],
+        "count": 1,
+        "lemma": "M. Tagliaferro Boatwright",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id29#0.40591873205266893",
+        "score": null,
+        "terms": [
+          "Claudio Caesari Germanico Augusto Nerom"
+        ],
+        "pages": [
+          14
+        ],
+        "count": 1,
+        "lemma": "Claudio Caesari Germanico Augusto Nerom",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id30#0.46742902998812497",
+        "score": null,
+        "terms": [
+          "Caesia Tertulia"
+        ],
+        "pages": [
+          13
+        ],
+        "count": 1,
+        "lemma": "Caesia Tertulia",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id31#0.5166284420993179",
+        "score": null,
+        "terms": [
+          "M. FUCHS"
+        ],
+        "pages": [
+          12
+        ],
+        "count": 1,
+        "lemma": "M. Fuchs",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "49225764",
+            "url": "http://viaf.org/49225764"
+          }
+        ]
+      },
+      {
+        "id": "id32#0.28159339097328484",
+        "score": null,
+        "terms": [
+          "H. MANDERSCHEID"
+        ],
+        "pages": [
+          12
+        ],
+        "count": 1,
+        "lemma": "H. Manderscheid",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id33#0.6123837202321738",
+        "score": null,
+        "terms": [
+          "Atti del Convegno Portogruaro"
+        ],
+        "pages": [
+          12
+        ],
+        "count": 1,
+        "lemma": "Atti Del Convegno Portogruaro",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id34#0.05856809113174677",
+        "score": null,
+        "terms": [
+          "Dario Bertolini"
+        ],
+        "pages": [
+          12
+        ],
+        "count": 1,
+        "lemma": "Dario Bertolini",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "88677572",
+            "url": "http://viaf.org/88677572"
+          }
+        ]
+      },
+      {
+        "id": "id35#0.5299561838619411",
+        "score": null,
+        "terms": [
+          "Mommsen"
+        ],
+        "pages": [
+          12
+        ],
+        "count": 1,
+        "lemma": "Mommsen",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "7402506",
+            "url": "http://viaf.org/7402506"
+          }
+        ]
+      },
+      {
+        "id": "id36#0.7202085042372346",
+        "score": null,
+        "terms": [
+          "MERKELBACH"
+        ],
+        "pages": [
+          3
+        ],
+        "count": 1,
+        "lemma": "Merkelbach",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "59096691",
+            "url": "http://viaf.org/59096691"
+          }
+        ]
+      },
+      {
+        "id": "id37#0.5062924905214459",
+        "score": null,
+        "terms": [
+          "L. Nonius Calpurnius Asprenas"
+        ],
+        "pages": [
+          11
+        ],
+        "count": 1,
+        "lemma": "L. Nonius Calpurnius Asprenas",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id38#0.030687566846609116",
+        "score": null,
+        "terms": [
+          "J. BERGEMANN"
+        ],
+        "pages": [
+          12
+        ],
+        "count": 1,
+        "lemma": "J. Bergemann",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id39#0.949754302855581",
+        "score": null,
+        "terms": [
+          "Greek Constitutions of Early Roman"
+        ],
+        "pages": [
+          1
+        ],
+        "count": 1,
+        "lemma": "Greek Constitutions Of Early Roman",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id40#0.8825060487724841",
+        "score": null,
+        "terms": [
+          "Caesar"
+        ],
+        "pages": [
+          10
+        ],
+        "count": 1,
+        "lemma": "Caesar",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "88967224",
+            "url": "http://viaf.org/88967224"
+          }
+        ]
+      },
+      {
+        "id": "id41#0.8044292700942606",
+        "score": null,
+        "terms": [
+          "I. Smyrna"
+        ],
+        "pages": [
+          1
+        ],
+        "count": 1,
+        "lemma": "I. Smyrna",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id42#0.6954460474662483",
+        "score": null,
+        "terms": [
+          "Caesar Vespasianus Augustus"
+        ],
+        "pages": [
+          10
+        ],
+        "count": 1,
+        "lemma": "Caesar Vespasianus Augustus",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "96539514",
+            "url": "http://viaf.org/96539514"
+          }
+        ]
+      },
+      {
+        "id": "id43#0.33051356161013246",
+        "score": null,
+        "terms": [
+          "Cornelius Fronto"
+        ],
+        "pages": [
+          1
+        ],
+        "count": 1,
+        "lemma": "Cornelius Fronto",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "66499129",
+            "url": "http://viaf.org/66499129"
+          }
+        ]
+      },
+      {
+        "id": "id44#0.5714932018890977",
+        "score": null,
+        "terms": [
+          "Vespasiano Caesari"
+        ],
+        "pages": [
+          10
+        ],
+        "count": 1,
+        "lemma": "Vespasiano Caesari",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id45#0.38192433305084705",
+        "score": null,
+        "terms": [
+          "Nt"
+        ],
+        "pages": [
+          4
+        ],
+        "count": 1,
+        "lemma": "Nt",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "104023256",
+            "url": "http://viaf.org/104023256"
+          }
+        ]
+      },
+      {
+        "id": "id46#0.10362391686066985",
+        "score": null,
+        "terms": [
+          "Perge Vespasian"
+        ],
+        "pages": [
+          11
+        ],
+        "count": 1,
+        "lemma": "Perge Vespasian",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id47#0.25077187991701066",
+        "score": null,
+        "terms": [
+          "F. MILLAR"
+        ],
+        "pages": [
+          1
+        ],
+        "count": 1,
+        "lemma": "F. Millar",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "61636376",
+            "url": "http://viaf.org/61636376"
+          }
+        ]
+      },
+      {
+        "id": "id48#0.41244909749366343",
+        "score": null,
+        "terms": [
+          "Flavia Numidarum"
+        ],
+        "pages": [
+          9
+        ],
+        "count": 1,
+        "lemma": "Flavia Numidarum",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id49#0.1498774508945644",
+        "score": null,
+        "terms": [
+          "M. Gavius"
+        ],
+        "pages": [
+          8
+        ],
+        "count": 1,
+        "lemma": "M. Gavius",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "191439325",
+            "url": "http://viaf.org/191439325"
+          }
+        ]
+      },
+      {
+        "id": "id50#0.6772855867166072",
+        "score": null,
+        "terms": [
+          "RUDOLF HAENSCH"
+        ],
+        "pages": [
+          8
+        ],
+        "count": 1,
+        "lemma": "Rudolf Haensch",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "23345192",
+            "url": "http://viaf.org/23345192"
+          }
+        ]
+      },
+      {
+        "id": "id51#0.5567255348432809",
+        "score": null,
+        "terms": [
+          "SENCER SAHIN"
+        ],
+        "pages": [
+          3
+        ],
+        "count": 1,
+        "lemma": "Sencer Sahin",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "76331383",
+            "url": "http://viaf.org/76331383"
+          }
+        ]
+      },
+      {
+        "id": "id52#0.15890732826665044",
+        "score": null,
+        "terms": [
+          "J. PATRICH"
+        ],
+        "pages": [
+          8
+        ],
+        "count": 1,
+        "lemma": "J. Patrich",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "56662180",
+            "url": "http://viaf.org/56662180"
+          }
+        ]
+      },
+      {
+        "id": "id53#0.9903909815475345",
+        "score": null,
+        "terms": [
+          "Gavius Bassus"
+        ],
+        "pages": [
+          8
+        ],
+        "count": 1,
+        "lemma": "Gavius Bassus",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "7775084",
+            "url": "http://viaf.org/7775084"
+          }
+        ]
+      },
+      {
+        "id": "id54#0.9382251058705151",
+        "score": null,
+        "terms": [
+          "J. PORATH"
+        ],
+        "pages": [
+          8
+        ],
+        "count": 1,
+        "lemma": "J. Porath",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "93145910091927021877",
+            "url": "http://viaf.org/93145910091927021877"
+          }
+        ]
+      },
+      {
+        "id": "id55#0.1501459067221731",
+        "score": null,
+        "terms": [
+          "G. HOLUM"
+        ],
+        "pages": [
+          7
+        ],
+        "count": 1,
+        "lemma": "G. Holum",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id56#0.12156089954078197",
+        "score": null,
+        "terms": [
+          "WEISS"
+        ],
+        "pages": [
+          7
+        ],
+        "count": 1,
+        "lemma": "Weiss",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "116044321",
+            "url": "http://viaf.org/116044321"
+          }
+        ]
+      },
+      {
+        "id": "id57#0.8738499379251152",
+        "score": null,
+        "terms": [
+          "Iulius"
+        ],
+        "pages": [
+          10
+        ],
+        "count": 1,
+        "lemma": "Iulius",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "286265178",
+            "url": "http://viaf.org/286265178"
+          }
+        ]
+      },
+      {
+        "id": "id58#0.9682962086517364",
+        "score": null,
+        "terms": [
+          "Latin Authors"
+        ],
+        "pages": [
+          0
+        ],
+        "count": 1,
+        "lemma": "Latin Authors",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id59#0.5400734296999872",
+        "score": null,
+        "terms": [
+          "R. SCHMITT"
+        ],
+        "pages": [
+          0
+        ],
+        "count": 1,
+        "lemma": "R. Schmitt",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "2476833",
+            "url": "http://viaf.org/2476833"
+          }
+        ]
+      },
+      {
+        "id": "id60#0.555292559787631",
+        "score": null,
+        "terms": [
+          "P. Cassius Apronianus"
+        ],
+        "pages": [
+          7
+        ],
+        "count": 1,
+        "lemma": "P. Cassius Apronianus",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id61#0.3535157802980393",
+        "score": null,
+        "terms": [
+          "H. COTTON"
+        ],
+        "pages": [
+          8
+        ],
+        "count": 1,
+        "lemma": "H. Cotton",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "11684107",
+            "url": "http://viaf.org/11684107"
+          }
+        ]
+      },
+      {
+        "id": "id62#0.4170207919087261",
+        "score": null,
+        "terms": [
+          "H. SOLIN"
+        ],
+        "pages": [
+          1
+        ],
+        "count": 1,
+        "lemma": "H. Solin",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "56831827",
+            "url": "http://viaf.org/56831827"
+          }
+        ]
+      },
+      {
+        "id": "id63#0.6862687719985843",
+        "score": null,
+        "terms": [
+          "Locus"
+        ],
+        "pages": [
+          1
+        ],
+        "count": 1,
+        "lemma": "Locus",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "259601931",
+            "url": "http://viaf.org/259601931"
+          }
+        ]
+      },
+      {
+        "id": "id64#0.8128798778634518",
+        "score": null,
+        "terms": [
+          "Caecilius Nicianus"
+        ],
+        "pages": [
+          6
+        ],
+        "count": 1,
+        "lemma": "Caecilius Nicianus",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id65#0.6668420173227787",
+        "score": null,
+        "terms": [
+          "Livia"
+        ],
+        "pages": [
+          2
+        ],
+        "count": 1,
+        "lemma": "Livia",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "99942145",
+            "url": "http://viaf.org/99942145"
+          }
+        ]
+      },
+      {
+        "id": "id66#0.6319482445251197",
+        "score": null,
+        "terms": [
+          "R. MERKELBACH"
+        ],
+        "pages": [
+          3
+        ],
+        "count": 1,
+        "lemma": "R. Merkelbach",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "59096691",
+            "url": "http://viaf.org/59096691"
+          }
+        ]
+      },
+      {
+        "id": "id67#0.9666674199979752",
+        "score": null,
+        "terms": [
+          "Caesarea"
+        ],
+        "pages": [
+          5
+        ],
+        "count": 1,
+        "lemma": "Caesarea",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "4929593",
+            "url": "http://viaf.org/4929593"
+          }
+        ]
+      },
+      {
+        "id": "id68#0.8476023189723492",
+        "score": null,
+        "terms": [
+          "Romanus"
+        ],
+        "pages": [
+          3
+        ],
+        "count": 1,
+        "lemma": "Romanus",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "22143666",
+            "url": "http://viaf.org/22143666"
+          }
+        ]
+      },
+      {
+        "id": "id69#0.5812955561559647",
+        "score": null,
+        "terms": [
+          "Hinweis von M."
+        ],
+        "pages": [
+          1
+        ],
+        "count": 1,
+        "lemma": "Hinweis Von M.",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id70#0.5310277526732534",
+        "score": null,
+        "terms": [
+          "J. BLACKMAN"
+        ],
+        "pages": [
+          5
+        ],
+        "count": 1,
+        "lemma": "J. Blackman",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "315694863",
+            "url": "http://viaf.org/315694863"
+          }
+        ]
+      },
+      {
+        "id": "id71#0.10485247010365129",
+        "score": null,
+        "terms": [
+          "S. B. PoMEROY"
+        ],
+        "pages": [
+          17
+        ],
+        "count": 1,
+        "lemma": "S. B. Pomeroy",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id72#0.9011525681708008",
+        "score": null,
+        "terms": [
+          "I. Perge S."
+        ],
+        "pages": [
+          13
+        ],
+        "count": 1,
+        "lemma": "I. Perge S.",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id73#0.9886084406170994",
+        "score": null,
+        "terms": [
+          "Congresso Internazionale di Epigrafia Greca"
+        ],
+        "pages": [
+          11
+        ],
+        "count": 1,
+        "lemma": "Congresso Internazionale Di Epigrafia Greca",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "133108725",
+            "url": "http://viaf.org/133108725"
+          }
+        ]
+      },
+      {
+        "id": "id74#0.8713288411963731",
+        "score": null,
+        "terms": [
+          "Chapel Hill"
+        ],
+        "pages": [
+          17
+        ],
+        "count": 1,
+        "lemma": "Chapel Hill",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "157864378",
+            "url": "http://viaf.org/157864378"
+          }
+        ]
+      },
+      {
+        "id": "id75#0.7858935953117907",
+        "score": null,
+        "terms": [
+          "A. WACKE"
+        ],
+        "pages": [
+          0
+        ],
+        "count": 1,
+        "lemma": "A. Wacke",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "49232899",
+            "url": "http://viaf.org/49232899"
+          }
+        ]
+      },
+      {
+        "id": "id76#0.2698874371126294",
+        "score": null,
+        "terms": [
+          "I. Perge"
+        ],
+        "pages": [
+          5
+        ],
+        "count": 1,
+        "lemma": "I. Perge",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id77#0.24779823701828718",
+        "score": null,
+        "terms": [
+          "J. H. OLIVER"
+        ],
+        "pages": [
+          1
+        ],
+        "count": 1,
+        "lemma": "J. H. Oliver",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "23147266705735481305",
+            "url": "http://viaf.org/23147266705735481305"
+          }
+        ]
+      },
+      {
+        "id": "id78#0.5472738186363131",
+        "score": null,
+        "terms": [
+          "Werner Eck Curia"
+        ],
+        "pages": [
+          5
+        ],
+        "count": 1,
+        "lemma": "Werner Eck Curia",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id79#0.5865607154555619",
+        "score": null,
+        "terms": [
+          "Diokletian"
+        ],
+        "pages": [
+          8
+        ],
+        "count": 1,
+        "lemma": "Diokletian",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "70259756",
+            "url": "http://viaf.org/70259756"
+          }
+        ]
+      },
+      {
+        "id": "id80#0.641513402108103",
+        "score": null,
+        "terms": [
+          "Saxa Fidus"
+        ],
+        "pages": [
+          4
+        ],
+        "count": 1,
+        "lemma": "Saxa Fidus",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id81#0.278940767981112",
+        "score": null,
+        "terms": [
+          "H. ENGELMANN"
+        ],
+        "pages": [
+          2
+        ],
+        "count": 1,
+        "lemma": "H. Engelmann",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "93758370",
+            "url": "http://viaf.org/93758370"
+          }
+        ]
+      },
+      {
+        "id": "id82#0.9924644974526018",
+        "score": null,
+        "terms": [
+          "Aelia Capitolina"
+        ],
+        "pages": [
+          2
+        ],
+        "count": 1,
+        "lemma": "Aelia Capitolina",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "131280745",
+            "url": "http://viaf.org/131280745"
+          }
+        ]
+      },
+      {
+        "id": "id83#0.6129207764752209",
+        "score": null,
+        "terms": [
+          "Flavia Neapolis"
+        ],
+        "pages": [
+          0
+        ],
+        "count": 1,
+        "lemma": "Flavia Neapolis",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "52144647642287352920",
+            "url": "http://viaf.org/52144647642287352920"
+          }
+        ]
+      },
+      {
+        "id": "id84#0.9458821599837393",
+        "score": null,
+        "terms": [
+          "ISAAC"
+        ],
+        "pages": [
+          2
+        ],
+        "count": 1,
+        "lemma": "Isaac",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "95207392",
+            "url": "http://viaf.org/95207392"
+          }
+        ]
+      },
+      {
+        "id": "id85#0.01450609602034092",
+        "score": null,
+        "terms": [
+          "G. NEUMANN"
+        ],
+        "pages": [
+          0
+        ],
+        "count": 1,
+        "lemma": "G. Neumann",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "85175579",
+            "url": "http://viaf.org/85175579"
+          }
+        ]
+      },
+      {
+        "id": "id86#0.03114618523977697",
+        "score": null,
+        "terms": [
+          "C. LEHMANN"
+        ],
+        "pages": [
+          7
+        ],
+        "count": 1,
+        "lemma": "C. Lehmann",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "69044745",
+            "url": "http://viaf.org/69044745"
+          }
+        ]
+      },
+      {
+        "id": "id87#0.1773846265859902",
+        "score": null,
+        "terms": [
+          "Antoninus Pius"
+        ],
+        "pages": [
+          4
+        ],
+        "count": 1,
+        "lemma": "Antoninus Pius",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "282104028",
+            "url": "http://viaf.org/282104028"
+          }
+        ]
+      },
+      {
+        "id": "id88#0.42981964186765254",
+        "score": null,
+        "terms": [
+          "Agrippa"
+        ],
+        "pages": [
+          2
+        ],
+        "count": 1,
+        "lemma": "Agrippa",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "24596804",
+            "url": "http://viaf.org/24596804"
+          }
+        ]
+      },
+      {
+        "id": "id89#0.0824249756988138",
+        "score": null,
+        "terms": [
+          "B. M. BERGMANN"
+        ],
+        "pages": [
+          12
+        ],
+        "count": 1,
+        "lemma": "B. M. Bergmann",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id90#0.14131603436544538",
+        "score": null,
+        "terms": [
+          "Latin Inscriptions of Caesarea Maritima"
+        ],
+        "pages": [
+          7
+        ],
+        "count": 1,
+        "lemma": "Latin Inscriptions Of Caesarea Maritima",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id91#0.6530422829091549",
+        "score": null,
+        "terms": [
+          "J. GEIGER"
+        ],
+        "pages": [
+          0
+        ],
+        "count": 1,
+        "lemma": "J. Geiger",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "272530722",
+            "url": "http://viaf.org/272530722"
+          }
+        ]
+      },
+      {
+        "id": "id92#0.08499851659871638",
+        "score": null,
+        "terms": [
+          "Greek East"
+        ],
+        "pages": [
+          0
+        ],
+        "count": 1,
+        "lemma": "Greek East",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id93#0.9521346169058233",
+        "score": null,
+        "terms": [
+          "J. PATRICH Latein"
+        ],
+        "pages": [
+          6
+        ],
+        "count": 1,
+        "lemma": "J. Patrich Latein",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id94#0.18505481304600835",
+        "score": null,
+        "terms": [
+          "Nonius Asprenas"
+        ],
+        "pages": [
+          3
+        ],
+        "count": 1,
+        "lemma": "Nonius Asprenas",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id95#0.14414129848591983",
+        "score": null,
+        "terms": [
+          "FLAVIA SERGIA NEAPOLIS"
+        ],
+        "pages": [
+          0
+        ],
+        "count": 1,
+        "lemma": "Flavia Sergia Neapolis",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id96#0.054956134874373674",
+        "score": null,
+        "terms": [
+          "Sabina Augusta"
+        ],
+        "pages": [
+          18
+        ],
+        "count": 1,
+        "lemma": "Sabina Augusta",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "4979147270378035700007",
+            "url": "http://viaf.org/4979147270378035700007"
+          }
+        ]
+      },
+      {
+        "id": "id97#0.8757749374490231",
+        "score": null,
+        "terms": [
+          "A. R. BIRLKY"
+        ],
+        "pages": [
+          1
+        ],
+        "count": 1,
+        "lemma": "A. R. Birlky",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id98#0.8724319376051426",
+        "score": null,
+        "terms": [
+          "Marciana"
+        ],
+        "pages": [
+          18
+        ],
+        "count": 1,
+        "lemma": "Marciana",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "156622926",
+            "url": "http://viaf.org/156622926"
+          }
+        ]
+      },
+      {
+        "id": "id99#0.48122400091961026",
+        "score": null,
+        "terms": [
+          "H. HALFMANN"
+        ],
+        "pages": [
+          2
+        ],
+        "count": 1,
+        "lemma": "H. Halfmann",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "215849279",
+            "url": "http://viaf.org/215849279"
+          }
+        ]
+      },
+      {
+        "id": "id100#0.42466526199132204",
+        "score": null,
+        "terms": [
+          "Atti II"
+        ],
+        "pages": [
+          11
+        ],
+        "count": 1,
+        "lemma": "Atti Ii",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "312598946",
+            "url": "http://viaf.org/312598946"
+          }
+        ]
+      },
+      {
+        "id": "id101#0.6458357989322394",
+        "score": null,
+        "terms": [
+          "Caesar Augustus"
+        ],
+        "pages": [
+          10
+        ],
+        "count": 1,
+        "lemma": "Caesar Augustus",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "18013086",
+            "url": "http://viaf.org/18013086"
+          }
+        ]
+      },
+      {
+        "id": "id102#0.28034424711950123",
+        "score": null,
+        "terms": [
+          "Claudio Caesari Germanico Augusto G Iulius"
+        ],
+        "pages": [
+          16
+        ],
+        "count": 1,
+        "lemma": "Claudio Caesari Germanico Augusto G Iulius",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id103#0.7151788554619998",
+        "score": null,
+        "terms": [
+          "R. MACMULLEN"
+        ],
+        "pages": [
+          0
+        ],
+        "count": 1,
+        "lemma": "R. Macmullen",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "14790922",
+            "url": "http://viaf.org/14790922"
+          }
+        ]
+      },
+      {
+        "id": "id104#0.8671362972818315",
+        "score": null,
+        "terms": [
+          "Flavia"
+        ],
+        "pages": [
+          0
+        ],
+        "count": 1,
+        "lemma": "Flavia",
+        "coordinates": null,
+        "references": [
+          {
+            "type": "viaf",
+            "id": "22143666",
+            "url": "http://viaf.org/22143666"
+          }
+        ]
+      },
+      {
+        "id": "id105#0.1724903432186693",
+        "score": null,
+        "terms": [
+          "WERNER ECK Latein"
+        ],
+        "pages": [
+          0
+        ],
+        "count": 1,
+        "lemma": "Werner Eck Latein",
+        "coordinates": null,
+        "references": []
+      }
+    ]
+  },
+  "keyterms": {
+    "items": [
+      {
+        "id": "id0#0.3695963735226542",
+        "score": 16.032060184783457,
+        "terms": [
+          "politischer Kommunikation in Städten",
+          "politischer Kommunikation in  Städten"
+        ],
+        "pages": [
+          18,
+          14,
+          12,
+          10,
+          8,
+          4,
+          6,
+          2,
+          16,
+          0
+        ],
+        "count": 10,
+        "lemma": "Politischer Kommunikation In Städten",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id1#0.4238584777340293",
+        "score": 8.016030092391729,
+        "terms": [
+          "politischer Kommunikation"
+        ],
+        "pages": [
+          18,
+          14,
+          12,
+          10,
+          8,
+          4,
+          6,
+          2,
+          16,
+          0
+        ],
+        "count": 10,
+        "lemma": "Politischer Kommunikation",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id2#0.8129152562469244",
+        "score": 7.628849848284501,
+        "terms": [
+          "östlichen Provinzen",
+          "östlichen  Provinzen"
+        ],
+        "pages": [
+          18,
+          14,
+          12,
+          10,
+          8,
+          6,
+          4,
+          16,
+          0
+        ],
+        "count": 10,
+        "lemma": "Östlichen Provinzen",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id3#0.29072602023370564",
+        "score": 6.341336800739764,
+        "terms": [
+          "Inschrift in lateinischer  Sprache",
+          "Inschrift  in  lateinischer  Sprache",
+          "Inschrift  in lateinischer  Sprache"
+        ],
+        "pages": [
+          8,
+          7
+        ],
+        "count": 3,
+        "lemma": "Inschrift In Lateinischer Sprache",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id4#0.5013576184865087",
+        "score": 4.212010452634768,
+        "terms": [
+          "griechischer  Sprache"
+        ],
+        "pages": [
+          18,
+          16,
+          14,
+          6,
+          5,
+          3,
+          19,
+          1
+        ],
+        "count": 8,
+        "lemma": "Griechischer Sprache",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id5#0.478140015155077",
+        "score": 3.499140271399347,
+        "terms": [
+          "lateinischer Sprache",
+          "lateinischer  Sprache"
+        ],
+        "pages": [
+          18,
+          9,
+          8,
+          7,
+          3,
+          6,
+          2,
+          19,
+          1,
+          0
+        ],
+        "count": 11,
+        "lemma": "Lateinischer Sprache",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id6#0.7655441164970398",
+        "score": 3.2206468167607305,
+        "terms": [
+          "lateinische  Sprache"
+        ],
+        "pages": [
+          19,
+          16,
+          14,
+          7,
+          3,
+          6,
+          2
+        ],
+        "count": 7,
+        "lemma": "Lateinische Sprache",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id7#0.20924749108962715",
+        "score": 2.997144446752151,
+        "terms": [
+          "eigene  Sprache"
+        ],
+        "pages": [
+          19,
+          14,
+          5,
+          0
+        ],
+        "count": 4,
+        "lemma": "Eigene Sprache",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id8#0.3067455345299095",
+        "score": 2.656088250302921,
+        "terms": [
+          "Inschriften von  Perge",
+          "Inschriften  von  Perge"
+        ],
+        "pages": [
+          16,
+          13,
+          10,
+          3
+        ],
+        "count": 6,
+        "lemma": "Inschriften Von Perge",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id9#0.9587045260705054",
+        "score": 2.4868994000051794,
+        "terms": [
+          "lateinischen  Sprache"
+        ],
+        "pages": [
+          9,
+          5,
+          4,
+          2
+        ],
+        "count": 4,
+        "lemma": "Lateinischen Sprache",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id10#0.792587416479364",
+        "score": 2.440402620831971,
+        "terms": [
+          "verschiedenen  Orten  im griechischen  Osten"
+        ],
+        "pages": [
+          7
+        ],
+        "count": 1,
+        "lemma": "Verschiedenen Orten Im Griechischen Osten",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id11#0.04644531127996743",
+        "score": 2.292263610315186,
+        "terms": [
+          "aves  Romani",
+          "aves Romani"
+        ],
+        "pages": [
+          14,
+          13,
+          12,
+          11,
+          10
+        ],
+        "count": 6,
+        "lemma": "Aves Romani",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id12#0.4729069855529815",
+        "score": 2.1838853671587937,
+        "terms": [
+          "Römischen  Reiches",
+          "römischen  Reiches"
+        ],
+        "pages": [
+          7,
+          2,
+          0
+        ],
+        "count": 3,
+        "lemma": "Römischen Reiches",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id13#0.23535030893981457",
+        "score": 2.113138262064262,
+        "terms": [
+          "Bürger  von  Perge"
+        ],
+        "pages": [
+          14,
+          11,
+          10,
+          4
+        ],
+        "count": 5,
+        "lemma": "Bürger Von Perge",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id14#0.8744982560165226",
+        "score": 2.096118695408444,
+        "terms": [
+          "herrschenden  Macht"
+        ],
+        "pages": [
+          9,
+          4,
+          1
+        ],
+        "count": 3,
+        "lemma": "Herrschenden Macht",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id15#0.5015199414920062",
+        "score": 1.8699987053569873,
+        "terms": [
+          "lateinischen Inschrift",
+          "lateinischen  Inschrift"
+        ],
+        "pages": [
+          15,
+          3,
+          11,
+          2
+        ],
+        "count": 4,
+        "lemma": "Lateinischen Inschrift",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id16#0.08062469423748553",
+        "score": 1.84349515436342,
+        "terms": [
+          "jeweiligen  Sprache",
+          "jeweiligen Sprache"
+        ],
+        "pages": [
+          8,
+          6,
+          2
+        ],
+        "count": 3,
+        "lemma": "Jeweiligen Sprache",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id17#0.16625218302942812",
+        "score": 1.7733798209234608,
+        "terms": [
+          "griechische  Sprache im  täglichen  Leben"
+        ],
+        "pages": [
+          1
+        ],
+        "count": 1,
+        "lemma": "Griechische Sprache Im Täglichen Leben",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id18#0.6689615636132658",
+        "score": 1.7624364727171793,
+        "terms": [
+          "Inschriften aus  Perge",
+          "Inschriften  aus  Perge"
+        ],
+        "pages": [
+          14,
+          13,
+          8,
+          3
+        ],
+        "count": 4,
+        "lemma": "Inschriften Aus Perge",
+        "coordinates": null,
+        "references": []
+      },
+      {
+        "id": "id19#0.044642718276008964",
+        "score": 1.6075572495386965,
+        "terms": [
+          "Volk  von Perge",
+          "Volk  von  Perge"
+        ],
+        "pages": [
+          12,
+          6,
+          5,
+          4
+        ],
+        "count": 4,
+        "lemma": "Volk Von Perge",
+        "coordinates": null,
+        "references": []
+      }
+    ]
+  },
+  "locations": {
+    "items": [
+      {
+        "id": "id0#0.6069076636340469",
+        "score": null,
+        "terms": [
+          "Ephesus"
+        ],
+        "pages": [
+          8,
+          6,
+          2,
+          1
+        ],
+        "count": 10,
+        "lemma": "Ephesus",
+        "coordinates": [
+          "37.95137",
+          "27.36849"
+        ],
+        "references": [
+          {
+            "type": "geonames",
+            "id": "301256",
+            "url": "http://www.geonames.org/301256"
+          }
+        ]
+      },
+      {
+        "id": "id1#0.8947510209400207",
+        "score": null,
+        "terms": [
+          "Rom"
+        ],
+        "pages": [
+          19,
+          18,
+          9,
+          11,
+          2,
+          0
+        ],
+        "count": 9,
+        "lemma": "Rom",
+        "coordinates": [
+          "41.89193",
+          "12.51133"
+        ],
+        "references": [
+          {
+            "type": "geonames",
+            "id": "3169070",
+            "url": "http://www.geonames.org/3169070"
+          }
+        ]
+      },
+      {
+        "id": "id2#0.25585994659923017",
+        "score": null,
+        "terms": [
+          "Magna"
+        ],
+        "pages": [
+          19,
+          18,
+          17,
+          5,
+          4
+        ],
+        "count": 7,
+        "lemma": "Magna",
+        "coordinates": [
+          "40.70911",
+          "-112.10161"
+        ],
+        "references": [
+          {
+            "type": "geonames",
+            "id": "5777793",
+            "url": "http://www.geonames.org/5777793"
+          }
+        ]
+      },
+      {
+        "id": "id3#0.06311996700242162",
+        "score": null,
+        "terms": [
+          "Roms"
+        ],
+        "pages": [
+          18,
+          16,
+          4
+        ],
+        "count": 3,
+        "lemma": "Roms",
+        "coordinates": [
+          "40.55889",
+          "19.68139"
+        ],
+        "references": [
+          {
+            "type": "geonames",
+            "id": "3184293",
+            "url": "http://www.geonames.org/3184293"
+          }
+        ]
+      },
+      {
+        "id": "id4#0.3564870567061007",
+        "score": null,
+        "terms": [
+          "Mainz"
+        ],
+        "pages": [
+          12,
+          4
+        ],
+        "count": 3,
+        "lemma": "Mainz",
+        "coordinates": [
+          "47.83897",
+          "11.95785"
+        ],
+        "references": [
+          {
+            "type": "geonames",
+            "id": "2874226",
+            "url": "http://www.geonames.org/2874226"
+          }
+        ]
+      },
+      {
+        "id": "id5#0.7899048156104982",
+        "score": null,
+        "terms": [
+          "DESSAU"
+        ],
+        "pages": [
+          15,
+          13,
+          10
+        ],
+        "count": 3,
+        "lemma": "Dessau",
+        "coordinates": [
+          "47.74277",
+          "10.8245"
+        ],
+        "references": [
+          {
+            "type": "geonames",
+            "id": "2937960",
+            "url": "http://www.geonames.org/2937960"
+          }
+        ]
+      },
+      {
+        "id": "id6#0.2479166800621897",
+        "score": null,
+        "terms": [
+          "Syria Palaestina"
+        ],
+        "pages": [
+          5,
+          1,
+          0
+        ],
+        "count": 3,
+        "lemma": "Syria Palaestina",
+        "coordinates": [
+          "32.50129",
+          "34.89271"
+        ],
+        "references": [
+          {
+            "type": "geonames",
+            "id": "8378531",
+            "url": "http://www.geonames.org/8378531"
+          }
+        ]
+      },
+      {
+        "id": "id7#0.6440263311378658",
+        "score": null,
+        "terms": [
+          "SEG"
+        ],
+        "pages": [
+          16,
+          15
+        ],
+        "count": 2,
+        "lemma": "Seg",
+        "coordinates": [
+          "47.65",
+          "10.6"
+        ],
+        "references": [
+          {
+            "type": "geonames",
+            "id": "2833849",
+            "url": "http://www.geonames.org/2833849"
+          }
+        ]
+      },
+      {
+        "id": "id8#0.4692296253051609",
+        "score": null,
+        "terms": [
+          "Caesarea Maritima"
+        ],
+        "pages": [
+          8,
+          5
+        ],
+        "count": 2,
+        "lemma": "Caesarea Maritima",
+        "coordinates": [
+          "32.50082",
+          "34.89228"
+        ],
+        "references": [
+          {
+            "type": "geonames",
+            "id": "294716",
+            "url": "http://www.geonames.org/294716"
+          }
+        ]
+      },
+      {
+        "id": "id9#0.9024636016692966",
+        "score": null,
+        "terms": [
+          "Sarmizegetusa"
+        ],
+        "pages": [
+          5
+        ],
+        "count": 2,
+        "lemma": "Sarmizegetusa",
+        "coordinates": [
+          "45.51667",
+          "22.78333"
+        ],
+        "references": [
+          {
+            "type": "geonames",
+            "id": "667964",
+            "url": "http://www.geonames.org/667964"
+          }
+        ]
+      },
+      {
+        "id": "id10#0.5811716383323073",
+        "score": null,
+        "terms": [
+          "Caesarea"
+        ],
+        "pages": [
+          7,
+          6
+        ],
+        "count": 2,
+        "lemma": "Caesarea",
+        "coordinates": [
+          "48.76751",
+          "10.79639"
+        ],
+        "references": [
+          {
+            "type": "geonames",
+            "id": "2893983",
+            "url": "http://www.geonames.org/2893983"
+          }
+        ]
+      },
+      {
+        "id": "id11#0.2701318736653775",
+        "score": null,
+        "terms": [
+          "Italien"
+        ],
+        "pages": [
+          12,
+          9
+        ],
+        "count": 2,
+        "lemma": "Italien",
+        "coordinates": [
+          "42.83333",
+          "12.83333"
+        ],
+        "references": [
+          {
+            "type": "geonames",
+            "id": "3175395",
+            "url": "http://www.geonames.org/3175395"
+          }
+        ]
+      },
+      {
+        "id": "id12#0.37306017987430096",
+        "score": null,
+        "terms": [
+          "Bonn"
+        ],
+        "pages": [
+          3,
+          0
+        ],
+        "count": 2,
+        "lemma": "Bonn",
+        "coordinates": [
+          "50.73438",
+          "7.09549"
+        ],
+        "references": [
+          {
+            "type": "geonames",
+            "id": "2946447",
+            "url": "http://www.geonames.org/2946447"
+          }
+        ]
+      },
+      {
+        "id": "id13#0.37145677325315773",
+        "score": null,
+        "terms": [
+          "London"
+        ],
+        "pages": [
+          17
+        ],
+        "count": 1,
+        "lemma": "London",
+        "coordinates": [
+          "51.50853",
+          "-0.12574"
+        ],
+        "references": [
+          {
+            "type": "geonames",
+            "id": "2643743",
+            "url": "http://www.geonames.org/2643743"
+          }
+        ]
+      },
+      {
+        "id": "id14#0.19337762356735766",
+        "score": null,
+        "terms": [
+          "M."
+        ],
+        "pages": [
+          17
+        ],
+        "count": 1,
+        "lemma": "M.",
+        "coordinates": [
+          "",
+          ""
+        ],
+        "references": []
+      },
+      {
+        "id": "id15#0.0806439551524818",
+        "score": null,
+        "terms": [
+          "Athen"
+        ],
+        "pages": [
+          15
+        ],
+        "count": 1,
+        "lemma": "Athen",
+        "coordinates": [
+          "37.97945",
+          "23.71622"
+        ],
+        "references": [
+          {
+            "type": "geonames",
+            "id": "264371",
+            "url": "http://www.geonames.org/264371"
+          }
+        ]
+      },
+      {
+        "id": "id16#0.8712622728198767",
+        "score": null,
+        "terms": [
+          "Agrippina"
+        ],
+        "pages": [
+          15
+        ],
+        "count": 1,
+        "lemma": "Agrippina",
+        "coordinates": [
+          "",
+          ""
+        ],
+        "references": []
+      },
+      {
+        "id": "id17#0.7900600002612919",
+        "score": null,
+        "terms": [
+          "FRANCISCIS"
+        ],
+        "pages": [
+          13
+        ],
+        "count": 1,
+        "lemma": "Franciscis",
+        "coordinates": [
+          "",
+          ""
+        ],
+        "references": []
+      },
+      {
+        "id": "id18#0.6676363246515393",
+        "score": null,
+        "terms": [
+          "Iudaea"
+        ],
+        "pages": [
+          12
+        ],
+        "count": 1,
+        "lemma": "Iudaea",
+        "coordinates": [
+          "32.50129",
+          "34.89271"
+        ],
+        "references": [
+          {
+            "type": "geonames",
+            "id": "8378531",
+            "url": "http://www.geonames.org/8378531"
+          }
+        ]
+      },
+      {
+        "id": "id19#0.2638312994968146",
+        "score": null,
+        "terms": [
+          "Neapel"
+        ],
+        "pages": [
+          13
+        ],
+        "count": 1,
+        "lemma": "Neapel",
+        "coordinates": [
+          "40.85631",
+          "14.24641"
+        ],
+        "references": [
+          {
+            "type": "geonames",
+            "id": "3172394",
+            "url": "http://www.geonames.org/3172394"
+          }
+        ]
+      },
+      {
+        "id": "id20#0.7308692007791251",
+        "score": null,
+        "terms": [
+          "Nicianus"
+        ],
+        "pages": [
+          8
+        ],
+        "count": 1,
+        "lemma": "Nicianus",
+        "coordinates": [
+          "",
+          ""
+        ],
+        "references": []
+      },
+      {
+        "id": "id21#0.19055043254047632",
+        "score": null,
+        "terms": [
+          "Saxa"
+        ],
+        "pages": [
+          7
+        ],
+        "count": 1,
+        "lemma": "Saxa",
+        "coordinates": [
+          "",
+          ""
+        ],
+        "references": []
+      },
+      {
+        "id": "id22#0.18019943358376622",
+        "score": null,
+        "terms": [
+          "EA"
+        ],
+        "pages": [
+          7
+        ],
+        "count": 1,
+        "lemma": "Ea",
+        "coordinates": [
+          "32.87519",
+          "13.18746"
+        ],
+        "references": [
+          {
+            "type": "geonames",
+            "id": "2210247",
+            "url": "http://www.geonames.org/2210247"
+          }
+        ]
+      },
+      {
+        "id": "id23#0.1263488531112671",
+        "score": null,
+        "terms": [
+          "Basel"
+        ],
+        "pages": [
+          7
+        ],
+        "count": 1,
+        "lemma": "Basel",
+        "coordinates": [
+          "47.55839",
+          "7.57327"
+        ],
+        "references": [
+          {
+            "type": "geonames",
+            "id": "2661604",
+            "url": "http://www.geonames.org/2661604"
+          }
+        ]
+      },
+      {
+        "id": "id24#0.7117637060582638",
+        "score": null,
+        "terms": [
+          "Padua"
+        ],
+        "pages": [
+          12
+        ],
+        "count": 1,
+        "lemma": "Padua",
+        "coordinates": [
+          "45.40797",
+          "11.88586"
+        ],
+        "references": [
+          {
+            "type": "geonames",
+            "id": "3171728",
+            "url": "http://www.geonames.org/3171728"
+          }
+        ]
+      },
+      {
+        "id": "id25#0.9950421140529215",
+        "score": null,
+        "terms": [
+          "Diss. Wien"
+        ],
+        "pages": [
+          8
+        ],
+        "count": 1,
+        "lemma": "Diss. Wien",
+        "coordinates": [
+          "",
+          ""
+        ],
+        "references": []
+      },
+      {
+        "id": "id26#0.9942452404648066",
+        "score": null,
+        "terms": [
+          "Provinz Asia"
+        ],
+        "pages": [
+          2
+        ],
+        "count": 1,
+        "lemma": "Provinz Asia",
+        "coordinates": [
+          "",
+          ""
+        ],
+        "references": []
+      },
+      {
+        "id": "id27#0.7138132548425347",
+        "score": null,
+        "terms": [
+          "Lycia"
+        ],
+        "pages": [
+          7
+        ],
+        "count": 1,
+        "lemma": "Lycia",
+        "coordinates": [
+          "36.26178",
+          "29.31633"
+        ],
+        "references": [
+          {
+            "type": "geonames",
+            "id": "8410801",
+            "url": "http://www.geonames.org/8410801"
+          }
+        ]
+      },
+      {
+        "id": "id28#0.3902706706430763",
+        "score": null,
+        "terms": [
+          "Marcianae Plancia M."
+        ],
+        "pages": [
+          17
+        ],
+        "count": 1,
+        "lemma": "Marcianae Plancia M.",
+        "coordinates": [
+          "",
+          ""
+        ],
+        "references": []
+      },
+      {
+        "id": "id29#0.14790665521286428",
+        "score": null,
+        "terms": [
+          "Caecilius Nicianus"
+        ],
+        "pages": [
+          6
+        ],
+        "count": 1,
+        "lemma": "Caecilius Nicianus",
+        "coordinates": [
+          "",
+          ""
+        ],
+        "references": []
+      },
+      {
+        "id": "id30#0.05139470030553639",
+        "score": null,
+        "terms": [
+          "Philadelphia"
+        ],
+        "pages": [
+          1
+        ],
+        "count": 1,
+        "lemma": "Philadelphia",
+        "coordinates": [
+          "39.95233",
+          "-75.16379"
+        ],
+        "references": [
+          {
+            "type": "geonames",
+            "id": "4560349",
+            "url": "http://www.geonames.org/4560349"
+          }
+        ]
+      },
+      {
+        "id": "id31#0.49264367087744176",
+        "score": null,
+        "terms": [
+          "Capita"
+        ],
+        "pages": [
+          4
+        ],
+        "count": 1,
+        "lemma": "Capita",
+        "coordinates": [
+          "10.3455",
+          "-68.36015"
+        ],
+        "references": [
+          {
+            "type": "geonames",
+            "id": "3646803",
+            "url": "http://www.geonames.org/3646803"
+          }
+        ]
+      },
+      {
+        "id": "id32#0.24391910736449063",
+        "score": null,
+        "terms": [
+          "Kleinasiens"
+        ],
+        "pages": [
+          3
+        ],
+        "count": 1,
+        "lemma": "Kleinasiens",
+        "coordinates": [
+          "",
+          ""
+        ],
+        "references": []
+      },
+      {
+        "id": "id33#0.23048507329076529",
+        "score": null,
+        "terms": [
+          "Kleinasiens Band"
+        ],
+        "pages": [
+          3
+        ],
+        "count": 1,
+        "lemma": "Kleinasiens Band",
+        "coordinates": [
+          "",
+          ""
+        ],
+        "references": []
+      },
+      {
+        "id": "id34#0.14468913851305842",
+        "score": null,
+        "terms": [
+          "Kleinasien"
+        ],
+        "pages": [
+          2
+        ],
+        "count": 1,
+        "lemma": "Kleinasien",
+        "coordinates": [
+          "52.78333",
+          "13"
+        ],
+        "references": [
+          {
+            "type": "geonames",
+            "id": "2889788",
+            "url": "http://www.geonames.org/2889788"
+          }
+        ]
+      },
+      {
+        "id": "id35#0.03558943816460669",
+        "score": null,
+        "terms": [
+          "Opladen"
+        ],
+        "pages": [
+          1
+        ],
+        "count": 1,
+        "lemma": "Opladen",
+        "coordinates": [
+          "51.05521",
+          "7.01931"
+        ],
+        "references": [
+          {
+            "type": "geonames",
+            "id": "2857185",
+            "url": "http://www.geonames.org/2857185"
+          }
+        ]
+      },
+      {
+        "id": "id36#0.699915275676176",
+        "score": null,
+        "terms": [
+          "Helsinki"
+        ],
+        "pages": [
+          1
+        ],
+        "count": 1,
+        "lemma": "Helsinki",
+        "coordinates": [
+          "60.16952",
+          "24.93545"
+        ],
+        "references": [
+          {
+            "type": "geonames",
+            "id": "658225",
+            "url": "http://www.geonames.org/658225"
+          }
+        ]
+      },
+      {
+        "id": "id37#0.8812316188123077",
+        "score": null,
+        "terms": [
+          "Hadrian"
+        ],
+        "pages": [
+          3
+        ],
+        "count": 1,
+        "lemma": "Hadrian",
+        "coordinates": [
+          "",
+          ""
+        ],
+        "references": []
+      },
+      {
+        "id": "id38#0.5226526893675327",
+        "score": null,
+        "terms": [
+          "Smyrna"
+        ],
+        "pages": [
+          1
+        ],
+        "count": 1,
+        "lemma": "Smyrna",
+        "coordinates": [
+          "38.41273",
+          "27.13838"
+        ],
+        "references": [
+          {
+            "type": "geonames",
+            "id": "311046",
+            "url": "http://www.geonames.org/311046"
+          }
+        ]
+      },
+      {
+        "id": "id39#0.602104238467291",
+        "score": null,
+        "terms": [
+          "Syrien"
+        ],
+        "pages": [
+          0
+        ],
+        "count": 1,
+        "lemma": "Syrien",
+        "coordinates": [
+          "35",
+          "38"
+        ],
+        "references": [
+          {
+            "type": "geonames",
+            "id": "163843",
+            "url": "http://www.geonames.org/163843"
+          }
+        ]
+      },
+      {
+        "id": "id40#0.9894080383237451",
+        "score": null,
+        "terms": [
+          "Rhein"
+        ],
+        "pages": [
+          1
+        ],
+        "count": 1,
+        "lemma": "Rhein",
+        "coordinates": [
+          "47.67382",
+          "9.76696"
+        ],
+        "references": [
+          {
+            "type": "geonames",
+            "id": "2847671",
+            "url": "http://www.geonames.org/2847671"
+          }
+        ]
+      },
+      {
+        "id": "id41#0.7291161869652569",
+        "score": null,
+        "terms": [
+          "Berlin"
+        ],
+        "pages": [
+          12
+        ],
+        "count": 1,
+        "lemma": "Berlin",
+        "coordinates": [
+          "52.52437",
+          "13.41053"
+        ],
+        "references": [
+          {
+            "type": "geonames",
+            "id": "2950159",
+            "url": "http://www.geonames.org/2950159"
+          }
+        ]
+      },
+      {
+        "id": "id42#0.6069274260662496",
+        "score": null,
+        "terms": [
+          "Judaea"
+        ],
+        "pages": [
+          5
+        ],
+        "count": 1,
+        "lemma": "Judaea",
+        "coordinates": [
+          "31.58333",
+          "35"
+        ],
+        "references": [
+          {
+            "type": "geonames",
+            "id": "283445",
+            "url": "http://www.geonames.org/283445"
+          }
+        ]
+      },
+      {
+        "id": "id43#0.08558098808862269",
+        "score": null,
+        "terms": [
+          "Roman Asia Minor"
+        ],
+        "pages": [
+          16
+        ],
+        "count": 1,
+        "lemma": "Roman Asia Minor",
+        "coordinates": [
+          "",
+          ""
+        ],
+        "references": []
+      }
+    ]
+  },
+  "meta": {
+    "annotation_set": "chiron_test_v.0.10",
+    "publication_journal": "Chiron",
+    "publication_year": "2000",
+    "publication_volume": "30",
+    "publication_language": "de",
+    "annotation_date": "2016-10-25T09:59:59.163Z",
+    "annotation_date_modified": "2016-10-25T09:59:59.163Z",
+    "annotation_creator": "idai_publication v.0.2",
+    "annotation_owner": "DAI"
+  }
+}

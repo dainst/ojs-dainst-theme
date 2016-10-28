@@ -1706,7 +1706,7 @@ exports.ViewHistory = ViewHistory;
 				
 				if (identifier.filename) {
 					this.setFilename(identifier.filename);
-					this.getAnnotations(['testdata', 'digest_' + this.filename + '.json'],'http://195.37.232.186/DAIbookViewer');
+					this.getAnnotations(['testdata', 'digest_' + this.filename + '.json'],'https://journals.dainst.org/ojs/plugins/themes/dainst/inc/dbv');
 					return;
 				}
 			},
