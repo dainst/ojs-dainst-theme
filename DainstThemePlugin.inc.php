@@ -216,25 +216,10 @@ class DainstThemePlugin extends ThemePlugin {
 	 * @return string
 	 */
 	function getViewer($params, &$smarty) {
-		$viewerSrc = $this->theUrl . '/plugins/themes/dainst/inc/pdf.js/web/viewer.html';
-		$viewerSrc = 'http://195.37.232.186/DAIbookViewer/dbv/dbv-web/viewer.html';
-		$viewerSrc = 'http://195.37.232.186/DAIbookViewer/dbv/build/generic/dbv-web/viewer.html';
-		
+		$viewerSrc = $this->theUrl . '/plugins/themes/dainst/inc/dbv/viewer.html';		
 		return "<iframe id='dainstPdfViewer' onload='setViewerHeight()' src='$viewerSrc?file={$params['file']}'></iframe>";
 	} 
 	
-	/**
-	 * show the pdf reader daian addon
-	 * 
-	 * registered as samrty function
-	 * 
-	 * @param array $params
-	 * @param ref $smarty
-	 * @return string
-	 */
-	function getDaian($params, &$smarty) {
-		return '<div id="idai_annotations"></div>';
-	}
 	
 	
 	function getHtaccessDebug() {
@@ -297,7 +282,6 @@ class DainstThemePlugin extends ThemePlugin {
 		$smarty->register_block("idai_navbar", array($this, "getNavbar"));
 		$smarty->register_function("idai_footer", array($this, "getFooter"));
 		$smarty->register_function("pdf_viewer", array($this, "getViewer"));
-		$smarty->register_function("daian_article", array($this, "getDaian"));
 		$smarty->register_function("getHtaccessDebug", array($this, "getHtaccessDebug"));
 		
 		// register function for in-frontpage-archieve
