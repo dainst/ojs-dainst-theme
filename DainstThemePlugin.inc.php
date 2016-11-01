@@ -137,7 +137,7 @@ class DainstThemePlugin extends ThemePlugin {
 		// construct the navbar via the settings array
 		$this->_idaic->settings['return']							= true;
 		$this->_idaic->settings['logo']['text'] 					= '';
-		$this->_idaic->settings['logo']['src'] 						= $this->theUrl . '/' . $this->pluginPath . '/img/logo_journals.png';
+		$this->_idaic->settings['logo']['src'] 						= $this->theUrl . '/' . $this->pluginPath . '/img/logo_publications.jpg';
 		$this->_idaic->settings['logo']['href'] 					= $this->theUrl;  
 		$this->_idaic->settings['logo']['href2'] 					= $smarty->smartyUrl(array('page' => "index"));
 		
