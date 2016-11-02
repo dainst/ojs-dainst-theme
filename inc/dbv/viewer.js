@@ -1700,13 +1700,17 @@ exports.ViewHistory = ViewHistory;
 			 * @param identifier	<object>	{<filename|daiPubId>: <string>} 
 			 */
 			get: function(identifier) {
+				console.log("die!!!!!!!!!!", identifier);
 				if (identifier.daiPubId) {
 					console.warn("get Annotations by daiPubId is not implemented right now");
 				}
 				
 				if (identifier.filename) {
+					identifier.filename = identifier.filename.replace(/.*\/(.*)\.pdf/g, '$1');					
 					this.setFilename(identifier.filename);
-					this.getAnnotations(['testdata', 'digest_' + this.filename + '.json'],'https://journals.dainst.org/ojs/plugins/themes/dainst/inc/dbv');
+					//this.getAnnotations(['testdata', 'digest_' + this.filename + '.json'], 'http://195.37.232.186/DAIbookViewer');
+					this.getAnnotations(['test', identifier.filename]);
+
 					return;
 				}
 			},
@@ -1729,8 +1733,10 @@ exports.ViewHistory = ViewHistory;
 				var self = this;
 
 				var restprams = restparams || [];
-				var source = source || 'https://nlp.dainst.org:3000/';
+				var source = source || 'https://nlp.dainst.org:3000';
 				var url = source + '/' + restparams.join('/') + '?cachekiller' + Date.now();
+				console.log("!!!!", url, restparams);
+				console.trace();
 				var get = post ? 'POST': 'GET';
 				
 				//console.log('fetch', get, url);
@@ -9578,8 +9584,8 @@ var DISABLE_AUTO_FETCH_LOADING_BAR_TIMEOUT = 5000;
 
 function configure(PDFJS) {
   PDFJS.imageResourcesPath = './images/';
-  PDFJS.workerSrc = 'build/pdf.worker.js';
-  PDFJS.cMapUrl = './cmaps/';
+  PDFJS.workerSrc = '../pdf.worker.js';
+  PDFJS.cMapUrl = '../pdf.js/web/cmaps/';
   PDFJS.cMapPacked = true;
 }
 
