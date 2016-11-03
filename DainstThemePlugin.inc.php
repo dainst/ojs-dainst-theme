@@ -19,7 +19,7 @@ class DainstThemePlugin extends ThemePlugin {
 	/**
 	 * Get the name of this plugin. The name must be unique within
 	 * its category.
-	 * @return String name of pluginf
+	 * @return String name of plugin
 	 */
 	function getName() {
 		return 'DainstThemePlugin';
@@ -143,7 +143,8 @@ class DainstThemePlugin extends ThemePlugin {
 		
 		$this->_idaic->settings['search']['href']					= ($journal != null) ? $smarty->smartyUrl(array("page" => "search", "context" => $journal->getPath(), "op" => 'search')) : 'index.php/index/search/search?';
 		$this->_idaic->settings['search']['name'] 					= "simpleQuery";
-		$this->_idaic->settings['search']["params"] 				= array('searchField' => 'query');		
+		$this->_idaic->settings['search']["params"] 				= array('searchField' => 'query');
+		$this->_idaic->settings['search']["label"]					= strtoupper(AppLocale::translate("plugins.themes.dainst.search"));
 		
 		$this->_idaic->settings["user"]["name"] 					= (Validation::isLoggedIn()) ? $session->userName : '';
 		

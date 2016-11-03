@@ -27,4 +27,5 @@
 		<message key="plugins.themes.dainst.omp">Monographs</message>
 		<message key="plugins.themes.dainst.aboutLink">About</message>
 		<message key="plugins.themes.dainst.archive">Available digital issues</message>
+		<message key="plugins.themes.dainst.search">Search</message>
 </locale>

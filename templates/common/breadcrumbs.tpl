@@ -3,7 +3,7 @@
  *
  *}
 <ol class="breadcrumb">
-	<li><a href="{url context=$homeContext page="index"}">{translate key="navigation.home"}</a></li>
+	<li><a href="{url context=$homeContext page=""}">{translate key="navigation.home"}</a></li>
 	{foreach from=$pageHierarchy item=hierarchyLink}
 		<li><a href="{$hierarchyLink[0]|escape}" class="hierarchyLink">{if not $hierarchyLink[2]}{translate key=$hierarchyLink[1]}{else}{$hierarchyLink[1]|escape}{/if}</a></li>
 	{/foreach}
