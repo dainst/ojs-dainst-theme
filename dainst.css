@@ -571,17 +571,24 @@ input.button {
 }
 
 
-
-#formErrors {
+.pkp_form_error,
+.pkp_form_error_list li {
     padding: 15px;
-    margin-bottom: 20px;
     border: 1px solid transparent;
     border-radius: 4px;	
 	color: #a94442;
 	background-color: #f2dede;
 	border-color: #ebccd1;
-	
+	display: inline-block	
 }
+
+.pkp_form_error_list {
+	list-style-position: inside;
+	padding-left: 0px;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
 .warningMessage {
 	color: #8a6d3b;
     background-color: #fcf8e3;
