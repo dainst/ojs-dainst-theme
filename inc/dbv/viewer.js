@@ -1700,7 +1700,6 @@ exports.ViewHistory = ViewHistory;
 			 * @param identifier	<object>	{<filename|daiPubId>: <string>} 
 			 */
 			get: function(identifier) {
-				console.log("die!!!!!!!!!!", identifier);
 				if (identifier.daiPubId) {
 					console.warn("get Annotations by daiPubId is not implemented right now");
 				}
@@ -1709,7 +1708,7 @@ exports.ViewHistory = ViewHistory;
 					identifier.filename = identifier.filename.replace(/.*\/(.*)\.pdf/g, '$1');					
 					this.setFilename(identifier.filename);
 					//this.getAnnotations(['testdata', 'digest_' + this.filename + '.json'], 'http://195.37.232.186/DAIbookViewer');
-					this.getAnnotations(['test', identifier.filename]);
+					this.getAnnotations(['annotations', identifier.filename]);
 
 					return;
 				}
@@ -1735,8 +1734,7 @@ exports.ViewHistory = ViewHistory;
 				var restprams = restparams || [];
 				var source = source || 'https://nlp.dainst.org:3000';
 				var url = source + '/' + restparams.join('/') + '?cachekiller' + Date.now();
-				console.log("!!!!", url, restparams);
-				console.trace();
+
 				var get = post ? 'POST': 'GET';
 				
 				//console.log('fetch', get, url);
