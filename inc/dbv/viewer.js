@@ -1643,6 +1643,7 @@ exports.ViewHistory = ViewHistory;
 			/* file information */
 			url: '',
 			filename: '',
+			pubid: '',
 			metadata: {},
 			
 			/* registry for loaded annotations ordered by ID */
@@ -1700,17 +1701,30 @@ exports.ViewHistory = ViewHistory;
 			 * @param identifier	<object>	{<filename|daiPubId>: <string>} 
 			 */
 			get: function(identifier) {
-				if (identifier.daiPubId) {
-					console.warn("get Annotations by daiPubId is not implemented right now");
-				}
+				console.log(identifier);
 				
 				if (identifier.filename) {
-					identifier.filename = identifier.filename.replace(/.*\/(.*)\.pdf/g, '$1');					
 					this.setFilename(identifier.filename);
-					//this.getAnnotations(['testdata', 'digest_' + this.filename + '.json'], 'http://195.37.232.186/DAIbookViewer');
-					this.getAnnotations(['annotations', identifier.filename]);
-
+				}
+				
+				this.pubid = identifier.pubid;
+				
+				// dai pubid
+				if (identifier.pubid) {
+					this.getAnnotations(['annotations', identifier.pubid]);
+					console.log("get Annotations by daiPubId: " + identifier.pubid);
 					return;
+				}
+				
+				// filename
+				if (identifier.filename) {
+					console.warn("get Annotations by filename is for testing only");
+					//#if !PRODUCTION
+					//identifier.filename = identifier.filename.replace(/.*\/(.*)\.pdf/g, '$1');
+					this.getAnnotations(['testdata', 'digest_' + this.filename + '.json'], 'http://195.37.232.186/DAIbookViewer');
+					//this.getAnnotations(['annotations', identifier.filename]);
+					return;
+					//#endif
 				}
 			},
 			
@@ -10052,8 +10066,7 @@ var PDFViewerApplication = {
    *                      is opened.
    */
   open: function pdfViewOpen(file, args) {
-
-	  
+  
     var scale = 0;
     if (arguments.length > 2 || typeof args === 'number') {
       console.warn('Call of open() with obsolete signature.');
@@ -10122,11 +10135,17 @@ var PDFViewerApplication = {
     var result = loadingTask.promise.then(
       function getDocumentCallback(pdfDocument) {
     	  
-    	console.log('RESC try to get annotations!', self);
+    	console.log('RESC try to get annotations!', args);
     	self.annoViewer.load();
     	self.annoInfo.load();
     	self.findBar.load();
-    	self.annoRegistry.get({filename: parameters.filename || parameters.url}); // @ TODO if no annotations found, try again later with daiPubId if present
+    	
+    	var identifier = {filename: parameters.filename || parameters.url};
+    	if (typeof args.pubid !== 'undefined') {
+    		identifier.pubid = args.pubid;
+    	}
+    	
+    	self.annoRegistry.get(identifier);   	
 
     	self.load(pdfDocument, scale);
     	
@@ -10722,7 +10741,7 @@ var PDFViewerApplication = {
   }
 };
 
-var HOSTED_VIEWER_ORIGINS = ['null', 'http://mozilla.github.io', 'https://mozilla.github.io'];
+var HOSTED_VIEWER_ORIGINS = ['https://github.com/dainst/dai-book-viewer'];
 function validateFileURL(file) {
   try {
     var viewerOrigin = new URL(window.location.href).origin || 'null';
@@ -10773,8 +10792,9 @@ function webViewerInitialized() {
   var params = parseQueryString(queryString);
   var file = 'file' in params ? params.file : DEFAULT_URL;
 
-  validateFileURL(file);
+  var pubid = 'pubid' in params ? params.pubid : undefined;
 
+  validateFileURL(file);
 
   var waitForBeforeOpening = [];
   var appConfig = PDFViewerApplication.appConfig;
@@ -10860,7 +10880,7 @@ function webViewerInitialized() {
       var enabled = pdfBug.split(',');
       waitForBeforeOpening.push(loadAndEnablePDFBug(enabled));
     }
-    
+        
   }
 
 
@@ -10956,7 +10976,7 @@ function webViewerInitialized() {
   });
   
   Promise.all(waitForBeforeOpening).then(function () {
-    webViewerOpenFileViaURL(file);
+    webViewerOpenFileViaURL(file, {pubid: pubid});
   }).catch(function (reason) {
     PDFViewerApplication.error(mozL10n.get('loading_error', null,
       'An error occurred while opening.'), reason);
@@ -10964,7 +10984,8 @@ function webViewerInitialized() {
 }
 
 
-function webViewerOpenFileViaURL(file) {
+function webViewerOpenFileViaURL(file, params) {
+	
   if (file && file.lastIndexOf('file:', 0) === 0) {
     // file:-scheme. Load the contents in the main thread because QtWebKit
     // cannot load file:-URLs in a Web Worker. file:-URLs are usually loaded
@@ -10986,7 +11007,7 @@ function webViewerOpenFileViaURL(file) {
   }
 
   if (file) {
-    PDFViewerApplication.open(file);
+    PDFViewerApplication.open(file, params);
   }
 }
 

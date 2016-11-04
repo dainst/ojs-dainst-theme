@@ -17,7 +17,7 @@
 
 {translate|assign:"noPluginText" key='article.pdf.pluginMissing'}
 
-{pdf_viewer file="$pdfUrl"}
+{pdf_viewer file="$pdfUrl" article="$articleId"}
 
 
 

@@ -217,8 +217,8 @@ class DainstThemePlugin extends ThemePlugin {
 	 * @return string
 	 */
 	function getViewer($params, &$smarty) {
-		$viewerSrc = $this->theUrl . '/plugins/themes/dainst/inc/dbv/viewer.html';		
-		return "<iframe id='dainstPdfViewer' onload='setViewerHeight()' src='$viewerSrc?file={$params['file']}'></iframe>";
+		$viewerSrc = $this->theUrl . '/plugins/themes/dainst/inc/dbv/viewer.html';
+		return "<iframe id='dainstPdfViewer' onload='setViewerHeight()' src='$viewerSrc?file={$params['file']}&pubid={$params['article']}'></iframe>";
 	} 
 	
 	
