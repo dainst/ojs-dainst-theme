@@ -142,11 +142,11 @@ ul.filter li {
 .tocGalleys, .tocPages {
 	text-align: right;
 }
-
+/*
 .tocPages:before {
 	content: "p. "
 }
-
+*/
 /* pdf button */
 #results a.file,
 .tocGalleys a {
@@ -620,24 +620,6 @@ input.button {
 
 
 
-/* temp fixes for the components stylesheet */
-.breadcrumb > li + li::before {
-    content: "/ " !important;
-}
-
-#dai_navbar .btn {
-    padding: 9px 12px;
-}
-
-#dai_navbar {
-	background-color: #6580aa 
-}
-
-body {
-	margin-top: 52px;
-}
-
-
 /* daian viewer */
 .daian-block-entry {
 	margin: 6px 0px
@@ -660,6 +642,47 @@ body {
 #dainstPdfViewer {
 	border: 1px solid transparent;
 	border-radius: 4px;
+}
+
+/* temp fixes for the components stylesheet */
+.breadcrumb > li + li::before {
+    content: "/ " !important;
+}
+
+#dai_navbar .btn {
+    padding: 9px 12px;
+}
+
+#dai_navbar {
+	background-color: #6580aa 
+}
+
+body {
+	margin-top: 52px;
+}
+
+
+/* breadcrump */
+
+.breadcrumb > li.right {
+    float: right;
+}
+
+.breadcrumb > li.right::before {
+	content: "" !important;
+	padding: 0 2px;
+}
+
+.breadcrumb > li.right + li.right::after {
+	content: " /";
+	padding: 0 2px;
+    color: #ccc;
+}
+
+@media screen and (max-width:768px) {
+	.breadcrumb > li.right {
+    	display: none
+	}
 }
 
 

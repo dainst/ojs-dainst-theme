@@ -12,7 +12,7 @@
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="{$currentLocale|replace:"_":"-"}" xml:lang="{$currentLocale|replace:"_":"-"}">
 <head>
-	<title>{$article->getLocalizedTitle()|strip_tags|escape} | {$article->getFirstAuthor(true)|strip_tags|escape} | {$currentJournal->getLocalizedTitle()|strip_tags|escape}</title>
+	<title>{$article->getFirstAuthor(true)|strip_tags|escape} | {$article->getLocalizedTitle()|strip_tags|escape} | {$currentJournal->getLocalizedTitle()|strip_tags|escape}</title>
 	<meta http-equiv="Content-Type" content="text/html; charset={$defaultCharset|escape}" />
 	<meta name="description" content="{$article->getLocalizedTitle()|strip_tags|escape}" />
 	{if $article->getLocalizedSubject()}
@@ -111,6 +111,26 @@
 	<li><a href="{url page="index"}" target="_parent">{translate key="navigation.home"}</a></li>
 	{if $issue}<li><a href="{url page="issue" op="view" path=$issue->getBestIssueId($currentJournal)}" target="_parent">{$issue->getIssueIdentification(false,true)|escape}</a></li>{/if}
 	<li><a href="{url page="article" op="view" path=$articleId|to_array:$galleyId}" class="current" target="_parent">{$article->getFirstAuthor(true)|escape}</a></li>
+
+	{foreach from=$pubIdPlugins item=pubIdPlugin}
+			{if $issue->getPublished()}
+				{assign var=pubId value=$pubIdPlugin->getPubId($pubObject)}
+			{else}
+				{assign var=pubId value=$pubIdPlugin->getPubId($pubObject, true)}{* Preview rather than assign a pubId *}
+			{/if}
+
+			{if $pubId}
+				<li class="right">
+					{$pubIdPlugin->getPubIdDisplayType()|escape}: 
+					{if $pubIdPlugin->getResolvingURL($currentJournal->getId(), $pubId)|escape}
+						<a id="pub-id::{$pubIdPlugin->getPubIdType()|escape}" href="{$pubIdPlugin->getResolvingURL($currentJournal->getId(), $pubId)|escape}">{$pubId|escape}</a></li>
+					{else}
+						<li class="right">{$pubId|escape}
+					{/if}
+				</li>
+			{/if}
+		{/foreach}
+	</li>
 </ol>
 
 {getHtaccessDebug}
