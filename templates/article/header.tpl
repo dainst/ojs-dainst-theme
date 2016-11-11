@@ -108,7 +108,11 @@
 
 <div id="main" class='col-md-12'>
 <ol class="breadcrumb">
-	<li><a href="{url page="index"}" target="_parent">{translate key="navigation.home"}</a></li>
+	<li><a href="{getOJSDomain}">{translate key="navigation.home"}</a></li>
+	<li><a href="{getOJSDomain}/{getOJSFolder}">{translate key="plugins.themes.dainst.journals"}</a></li>
+	{if $currentJournal}
+		<li><a href="{$currentJournal->getUrl()|strip_tags|escape}">{$currentJournal->getLocalizedTitle()|strip_tags|escape}</a></li>
+	{/if}
 	{if $issue}<li><a href="{url page="issue" op="view" path=$issue->getBestIssueId($currentJournal)}" target="_parent">{$issue->getIssueIdentification(false,true)|escape}</a></li>{/if}
 	<li><a href="{url page="article" op="view" path=$articleId|to_array:$galleyId}" class="current" target="_parent">{$article->getFirstAuthor(true)|escape}</a></li>
 

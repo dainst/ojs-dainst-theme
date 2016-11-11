@@ -230,6 +230,13 @@ class DainstThemePlugin extends ThemePlugin {
 		echo "</pre>";
 	}
 	
+	function getOJSFolder() {
+		echo Config::getVar('dainst', 'ojsFolder');
+	}
+	function getOJSDomain() {
+		echo Config::getVar('dainst', 'ojsDomain');
+	}
+	
 	/**
 	 * 
 	 * @param unknown $hookName
@@ -284,6 +291,8 @@ class DainstThemePlugin extends ThemePlugin {
 		$smarty->register_function("idai_footer", array($this, "getFooter"));
 		$smarty->register_function("pdf_viewer", array($this, "getViewer"));
 		$smarty->register_function("getHtaccessDebug", array($this, "getHtaccessDebug"));
+		$smarty->register_function("getOJSFolder", array($this, "getOJSFolder"));
+		$smarty->register_function("getOJSDomain", array($this, "getOJSDomain"));
 		
 		// register function for in-frontpage-archieve
 		$smarty->register_function("journal_archive", array($this, "getArchive"));
