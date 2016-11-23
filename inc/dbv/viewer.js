@@ -1666,6 +1666,7 @@ exports.ViewHistory = ViewHistory;
 			
 			loadingPromise: null,
 			loadingPromiseResolver: null,
+			loadingPromiseFail: null,
 			
 			reset: function() {
 				this.url = '';
@@ -1679,20 +1680,37 @@ exports.ViewHistory = ViewHistory;
 			},
 			
 			loadingPromiseReset: function() {
-				this.loadingPromise = new Promise(function(resolve) {
-					this.loadingPromiseResolver = resolve;
-				}.bind(this), function (reason) {
-					this.error(reason);
-			    }.bind(this));
+				this.loadingPromise = new Promise(
+					function(resolve, fail) {
+						this.loadingPromiseResolver = resolve;
+						this.loadingPromiseFail = fail;
+					}.bind(this)
+				);
 				
-				this.loadingPromise.then(function(data) {
-					console.log('ADS Resolve', data, this.successFn);
-					this.registerSet(data);
-					for (var fn in this.successFn) {
-						this.successFn[fn](data);
-					}
-					this.setState('ready');
-				}.bind(this));
+				this.loadingPromise
+					.then(
+					function(data) {
+						console.log('ADS Resolve', data, this.successFn);
+						this.registerSet(data);
+						for (var fn in this.successFn) {
+							this.successFn[fn](data);
+						}
+						this.setState('ready');
+					}.bind(this)
+					)
+					['catch'](
+					function(e, x) {
+						e = (typeof e.getMessage === "function") ? eText.getMessage() : e;
+						
+						console.log('Error: ', e, x);		
+						this.setState('error');
+						
+						for (var fn in this.errorFn) {
+							this.errorFn[fn](e, x);
+						}
+					}.bind(this)
+				);
+				
 			},
 			
 			/**
@@ -1764,27 +1782,27 @@ exports.ViewHistory = ViewHistory;
 					if (request.status >= 200 && request.status < 400) {
 						try {
 							var data = JSON.parse(request.responseText);
+							if (self.checkAnnotationCount(data) > 0) {
+								//setTimeout(function(){ 
+								self.loadingPromiseResolver(data);
+								//}, 10000);
+								console.log('ADS Success');
+							} else {
+								return self.loadingPromiseFail('ADS no results', request);
+							}
 						} catch (e) {
-							return self.error(e, request);
+							return self.loadingPromiseFail(e, request);
 						}
-						console.log('ADS Success');
-						
-						//setTimeout(function(){ 
-							self.loadingPromiseResolver(data);
-						//}, 10000);
-						
-
 					} else {
-
-						return self.error('404 not found: ' + url, request);
+						return self.loadingPromiseFail('404 not found: ' + url, request);
 					}
 				}
 				request.onerror = function(e) {
-					return self.error(e, request);
+					return self.loadingPromiseFail(e, request);
 				};
 				request.ontimeout = function(e) {
 					console.log("ADS timeout");
-					return self.error(e, request);
+					return self.loadingPromiseFail(e, request);
 				}
 	
 				request.send();
@@ -1819,7 +1837,7 @@ exports.ViewHistory = ViewHistory;
 			        console.log("Filename: " + file.name + " | Type: " + file.type + " | Size: " + file.size + " bytes");
 			        
 			        if (file.type !== "text/json") {
-			        	this.error("Wrong filetype " +  file.type);
+			        	this.loadingPromiseFail("Wrong filetype " +  file.type);
 			        	return;
 			        }
 			        			        
@@ -1830,13 +1848,13 @@ exports.ViewHistory = ViewHistory;
 			              try {				            	  
 			            	  var result = JSON.parse(e.target.result);
 			              } catch (e) {
-			            	  return this.error(e);
+			            	  return this.loadingPromiseFail(e);
 			              }
 			              this.loadingPromiseResolver(result);
 			        }.bind(this);
 
 			        reader.onerror = function(e){
-			        	return this.error(e);
+			        	return this.loadingPromiseFail(e);
 			        }.bind(this);
 			        
 			        reader.readAsText(file);
@@ -1890,6 +1908,17 @@ exports.ViewHistory = ViewHistory;
 				}
 			},
 			
+			
+			checkAnnotationCount: function(data) {
+				var count = 0;
+				for (var type in data) {
+					if (typeof data[type].items !== "undefined") {
+						count += data[type].items.length;
+					}
+				}
+				return count;
+			},
+			
 			/**
 			 * registers an annotation 
 			 * 
@@ -1937,21 +1966,7 @@ exports.ViewHistory = ViewHistory;
 			},
 			
 			
-			/**
-			 * display Error with errorFn
-			 * 
-			 * 
-			 * @param e
-			 * @param x
-			 */
-			error: function(e, x) {
-				console.log('Error: ', e, x);
-				this.setState('error');
-				this.loadingPromiseResolver({});
-				for (var fn in this.errorFn) {
-					this.errorFn[fn](e, x);
-				}
-			},
+
 			
 			setFilename: function(url) {
 				this.url = url;
@@ -2614,6 +2629,7 @@ var PDFSidebar = (function PDFSidebarClosure() {
     this._addEventListeners();
     
     options.annoRegistry.onGetAnnotations(function(e, x) {this.checkAnnotationFeatures()}.bind(this), function(e, x) {this.checkAnnotationFeatures()}.bind(this));
+    this.annoViewer.openAnnotationsSidebar = function() {this.openAnnotationsView()}.bind(this);
   }
 
   PDFSidebar.prototype = {
@@ -2625,6 +2641,8 @@ var PDFSidebar = (function PDFSidebarClosure() {
 
       this.outlineButton.disabled = false;
       this.attachmentsButton.disabled = false;
+      
+      
     },
 
     /**
@@ -2744,6 +2762,10 @@ var PDFSidebar = (function PDFSidebarClosure() {
 		if (isViewChanged) {
 			this._dispatchEvent();
 		}
+    },
+    
+    openAnnotationsView: function() {
+    	this.switchView('annotations', true);
     },
     
     checkAnnotationFeatures: function() {
@@ -3570,6 +3592,7 @@ exports.binarySearchFirstItem = binarySearchFirstItem;
 			
 
 			this.blocks = {};
+			this.messageBox = null;
 		}
 		
 		AnnoSidebar.prototype = {
@@ -3634,6 +3657,66 @@ exports.binarySearchFirstItem = binarySearchFirstItem;
 				entry.appendChild(this.htmlElement('span', {'classes': ['badge', 'pull-right']}, badgeText));
 		    	
 		    	this.blocks[blockId].body.appendChild(entry);
+			},
+			
+			
+			/**
+			 * message is a "block" in a different layout above the blocks
+			 * 
+			 */
+			
+			message: function(text, warning, autohide) {
+				
+				warning = (typeof warning === "undefined") ? false : warning;
+				autohide = (typeof autohide === "undefined") ? true : autohide;
+				
+				//  generate message obj if not present
+				if (this.messageBox === null) {
+					this.messageBox = {};
+					this.messageBox.box = this.htmlElement('div', {'classes': ["alert"], "role": "alert"}, '', {'click': ['messageHide']});
+					this.container.appendChild(this.messageBox.box);
+					
+					this.messageBox.glyphicon = this.htmlElement('span', {'classes': ["glyphicon"]});
+					this.messageBox.box.appendChild(this.messageBox.glyphicon);
+					
+					this.messageBox.text = this.htmlElement('span');
+					this.messageBox.box.appendChild(this.messageBox.text);
+				}
+				
+				// update message object
+				this.messageBox.text.dataset.l10nId = text;
+				
+				if (text != '') {
+					mozL10n.translate(this.messageBox.text); 
+				}
+				
+				if (!warning) {
+					this.messageBox.box.classList.remove("dbv-colors-error");	
+					this.messageBox.glyphicon.className = "glyphicon glyphicon-info";
+				} else { 
+					this.messageBox.box.classList.add("dbv-colors-error");
+					this.messageBox.glyphicon.className = "glyphicon glyphicon-alert";
+				}
+				
+				if (autohide) {
+					this.messageBox.timeout = setTimeout(function() {this.messageHide()}.bind(this), 50000);
+				}
+
+			},
+			
+			messageHide: function() {
+				console.log('messageHide');
+				if (this.messageBox === null) {
+					return;
+				}
+				this.messageBox.box.classList.add('hiddenBox');
+				this.messageBox.timeout = setTimeout(function() {this.messageRemove()}.bind(this), 1000);
+			},
+			
+			messageRemove: function() {
+				console.log('messageRemove');
+				this.messageBox.box.parentNode.removeChild(this.messageBox.box);
+				this.messageBox = null;
 			},
 			
 			/**
@@ -3827,7 +3910,7 @@ exports.binarySearchFirstItem = binarySearchFirstItem;
   }
 }(this, function (exports, pdfjsLib, uiUtils) {
 	var scrollIntoView = uiUtils.scrollIntoView;
-
+	
 	/**
 	 * @class
 	 */
@@ -3836,6 +3919,7 @@ exports.binarySearchFirstItem = binarySearchFirstItem;
 			this.pdfViewer = options.pdfViewer;
 			this.annoRegistry = options.annoRegistry;
 			this.toggleAnnotationButton = options.toggleAnnotationButton;
+			this.yayBox = options.yayBox;
 			this.$ = options.annoSidebar;
 			this.$.parent = this;
 			
@@ -3857,9 +3941,18 @@ exports.binarySearchFirstItem = binarySearchFirstItem;
 			 */
 			load: function AnnoViewerLoad() { 
 				var self = this;		
+				
+				this.toggleAnnotations(false);
+				
 				this.annoRegistry.onGetAnnotations(
-						function(data) 	{return self.buildBlocks(data)},
-						function(e) 	{return self.$.displayError(e)}
+					function(data) 	{
+						console.log(data);
+						self.enableAnnotations();
+						self.buildBlocks(data)	
+					},
+					function(e) 	{
+						return self.$.displayError(e)
+					}
 				);
 				
 				this.$.clear();
@@ -3887,10 +3980,11 @@ exports.binarySearchFirstItem = binarySearchFirstItem;
 			 */
 			buildBlocks: function(data) {
 				this.$.clear();
-				this.block('keyterms', 'Keyterms', 'tags', data.keyterms);
-				this.block('places', 'Places', 'map-marker', data.locations);
+				this.$.message('dbv-info-annotions_info', false, false);
 				this.block('map', 'Map', 'map-marker', data.locations, 'populateMap', false);
+				this.block('places', 'Places', 'map-marker', data.locations);
 				this.block('persons', 'Persons', 'user', data.persons);
+				this.block('keyterms', 'Keyterms', 'tags', data.keyterms);
 			},
 			
 
@@ -4277,6 +4371,8 @@ exports.binarySearchFirstItem = binarySearchFirstItem;
 		    toggleAnnotations: function(to) {
 		    	console.log('toggle annotations to ' , to);
 		    	
+		    	this.yayboxHide();
+		    	
 		    	this.annotationsVisible = to || !this.annotationsVisible;
 		    	if (!this.annotationsVisible) {
 		    		this.pdfViewer.container.classList.add('dbv-annotations-hidden');
@@ -4284,12 +4380,39 @@ exports.binarySearchFirstItem = binarySearchFirstItem;
 		    	} else {
 		    		this.pdfViewer.container.classList.remove('dbv-annotations-hidden');
 		    		this.toggleAnnotationButton.classList.add('toggled');
+		    		this.openAnnotationsSidebar();
 		    	}
 		    	
+		    },
+		    
+		    enableAnnotations: function() {
+		    	this.yayboxShow();
+		    },
+		    
+		    
+		    /* yay box */
+
+		    
+		    yayboxClick: function() {
+		    	this.yayboxHide();
+		    },
+		    
+		    yayboxHide: function() {
+		    	this.yayBox.classList.add('hiddenBox');
+		    	this.toggleAnnotationButton.classList.remove('blinkButton');
+		    	
+		    },
+		    
+		    yayboxShow: function() {
+		    	this.yayBox.classList.remove('hiddenBox');
+		    	this.toggleAnnotationButton.classList.remove('hidden');
+		    	this.toggleAnnotationButton.classList.add('blinkButton');
+		    	setTimeout(function() {this.yayboxHide()}.bind(this), 50000);
+		    },
+		    
+		    openAnnotationsSidebar:  function(view) {
+		    	console.log('sidebar view not bound');
 		    }
-		    
-		    
-		    
 
 		
 		}
@@ -8837,7 +8960,7 @@ var PDFViewer = (function pdfViewer() {
     this.scroll = watchScroll(this.container, this._scrollUpdate.bind(this));
     this.presentationModeState = PresentationModeState.UNKNOWN;
     this._resetView();
-
+    
     if (this.removePageBorders) {
       this.viewer.classList.add('removePageBorders');
     }
@@ -9767,7 +9890,8 @@ var PDFViewerApplication = {
         pdfViewer: this.pdfViewer,
         annoRegistry: this.annoRegistry,
         annoSidebar: new annoSidebar({container: appConfig.sidebar.annotationsView}),
-        toggleAnnotationButton: appConfig.toolbar.toggleAnnotations
+        toggleAnnotationButton: appConfig.toolbar.toggleAnnotations,
+        yayBox: appConfig.toolbar.yayBox
     });
     this.annoEditor = this.editorMode ? new annoEditor({
         findController: this.findController,
@@ -10737,6 +10861,8 @@ var PDFViewerApplication = {
     eventBus.on('toggleannotations', dbvToggleAnnotations);
     eventBus.on('textmarker', dbvTextmarker);
     eventBus.on('viewNative', dbvViewNative);
+    
+    eventBus.on('yayboxclick', dbvYayboxClick);
 
   }
 };
@@ -10970,6 +11096,9 @@ function webViewerInitialized() {
   appConfig.toolbar.toggleAnnotations.addEventListener('click', function (e) {
 	  PDFViewerApplication.eventBus.dispatch('toggleannotations');
   });
+  appConfig.toolbar.yayBox.addEventListener('click', function (e) {
+	  PDFViewerApplication.eventBus.dispatch('yayboxclick');
+  })
 
   appConfig.viewerContainer.addEventListener('mouseup', function(e) {
 	  PDFViewerApplication.eventBus.dispatch('textmarker', e);
@@ -11425,6 +11554,11 @@ function dbvViewNative(e) {
 	window.location.href = PDFViewerApplication.url;
 }
 
+function dbvYayboxClick(e) {
+	PDFViewerApplication.annoViewer.yayboxClick();
+}
+
+
 var zoomDisabled = false, zoomDisabledTimeout;
 function handleMouseWheel(evt) {
   var MOUSE_WHEEL_DELTA_FACTOR = 40;
@@ -11781,7 +11915,8 @@ function getViewerConfiguration() {
       openFile: document.getElementById('openFile'),
       print: document.getElementById('print'),
       download: document.getElementById('download'),
-      toggleAnnotations: document.getElementById('toggleAnnotations')
+      toggleAnnotations: document.getElementById('toggleAnnotations'),
+      yayBox: document.getElementById('yayBox')
     },
     secondaryToolbar: {
       toolbar: document.getElementById('secondaryToolbar'),

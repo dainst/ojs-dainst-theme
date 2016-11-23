@@ -243,8 +243,6 @@ See https://github.com/adobe-type-tools/cmap-resources
 	          			<h3 data-l10n-id="dbv-product_info-heading" class="panel-title dbv-colors-product_info">About this Viewer<span class="glyphicon glyphicon-info pull-right"></span></h3>
 	          		</div>
 	          		<div class="panel-body">
-	          			<p><b>DAIBookViewer Copyright</b> (C) 2016 Deutsches Archäologisches Institut <br> developed by Philipp Franck<br> based on pdf.js by Mozilla</p>
-	          			<p class='separator'></p>
 	          			<p><b>Get in contact</b></p>
 	          			<ul>
 	          				<li><a href="https://github.com/dainst/dai-book-viewer" target="_blank">Github</a></li>
@@ -254,10 +252,10 @@ See https://github.com/adobe-type-tools/cmap-resources
 	          			<p class='separator'></p>
 	          			<p><b>Licence</b></p>
 	          			<ul>
-	          				<li><a href="https://github.com/mozilla/pdf.js/" target="_blank">PDF.js</a> (c) by <a href='https://www.mozilla.org/' target="_blank">Mozilla</a>: <a href='http://www.apache.org/licenses/' target="_blank">Apache Licence 2.0</a></li>
-	          				<li><a href="http://leafletjs.com/" target="_blank">Leaflet.js</a>: <a href="https://github.com/Leaflet/Leaflet/blob/master/LICENSE" target="_blank">(c) 2010-2016, Vladimir Agafonkin; (c) 2010-2011, CloudMade</a></li>
-	          				<li><a href="http://glyphicons.com/" >Glyphicon Font</a> (c) by <a href="http://jankovarik.net/" target="_blank">Jan Kovarik</a>: <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT License</a> (thanks to Twitter's <a target="_blank" href="http://getbootstrap.com/">Bootstrap</a>)</li>
-	          				<li><a>DAIBookViewer</a>: (c) 2016 Philipp Franck @ <a href="http://dainst.org/" target="_blank">Deutsches Archäologisches Institut</a></li>
+	          				<li><a href="https://github.com/mozilla/pdf.js/" target="_blank">PDF.js</a> © by <a href='https://www.mozilla.org/' target="_blank">Mozilla</a>: <a href='http://www.apache.org/licenses/' target="_blank">Apache Licence 2.0</a></li>
+	          				<li><a href="http://leafletjs.com/" target="_blank">Leaflet.js</a>: <a href="https://github.com/Leaflet/Leaflet/blob/master/LICENSE" target="_blank">© 2010-2016, Vladimir Agafonkin; © 2010-2011, CloudMade</a></li>
+	          				<li><a href="http://glyphicons.com/" >Glyphicon Font</a> © by <a href="http://jankovarik.net/" target="_blank">Jan Kovarik</a>: <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT License</a> (thanks to Twitter's <a target="_blank" href="http://getbootstrap.com/">Bootstrap</a>)</li>
+	          				<li><a>DAIBookViewer</a>: © 2016 Philipp Franck @ <a href="http://dainst.org/" target="_blank">Deutsches Archäologisches Institut</a></li>
 	          			</ul>
 	          			<p class='separator'></p>
 	          			<table>	          			
@@ -282,9 +280,7 @@ See https://github.com/adobe-type-tools/cmap-resources
               <span data-l10n-id="open_file_label">Open</span>
             </button>
 
-            <button id="secondaryDownload" class="secondaryToolbarButton glyphicon-save-file" title="Download" tabindex="52" data-l10n-id="download">
-              <span data-l10n-id="download_label">Download</span>
-            </button>
+
             
             <button id="secondaryPrint" class="secondaryToolbarButton glyphicon-print" title="Print" tabindex="53" data-l10n-id="print">
               <span data-l10n-id="print_label">Print</span>
@@ -355,8 +351,12 @@ See https://github.com/adobe-type-tools/cmap-resources
                 <span id="numPages" class="toolbarLabel"></span>
               </div>
               <div id="toolbarViewerRight">
+              
+                <button id="secondaryDownload" class="toolbarButton glyphicon-save-file" title="Download" tabindex="19" data-l10n-id="download">
+              		<span data-l10n-id="download_label"></span>
+            	</button>
 
-                <button id="secondaryToolbarToggle" class="toolbarButton" title="Tools" tabindex="37" data-l10n-id="tools">
+                <button id="secondaryToolbarToggle" class="toolbarButton" title="Tools" tabindex="20" data-l10n-id="tools">
                   <span data-l10n-id="tools_label">Tools</span>
                 </button>          
 
@@ -392,9 +392,19 @@ See https://github.com/adobe-type-tools/cmap-resources
                     </select>
                   </span>
                   
-                 	<button id="toggleAnnotations" class="toolbarButton toggled" title="Toggle Annotations" tabindex="23">
-              			<span>Togggle Annotations</span>
+
+
+					
+					<div id="yayBox" class="secondaryToolbar doorHangerRight hiddenBox">
+						<div id="yayBoxContainer">
+							<span class="glyphicon glyphicon-info"></span>
+							<span data-l10n-id="dbv-info-annotions_present">annotations present</span>
+						</div>
+					</div>
+					<button id="toggleAnnotations" class="toolbarButton hidden" title="Toggle Annotations" tabindex="23">
+              			<span>Toggle Annotations</span>
             		</button>
+            		
                   
                 </div>
               </div>
