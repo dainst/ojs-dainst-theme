@@ -16,7 +16,7 @@
 
 'use strict';
 
-var DEFAULT_URL = 'compressed.tracemonkey-pldi-09.pdf';
+var DEFAULT_URL = 'images/no_file.pdf';
 
   var pdfjsWebLibs = {
     pdfjsWebPDFJS: window.pdfjsDistBuildPdf
@@ -1667,6 +1667,8 @@ exports.ViewHistory = ViewHistory;
 			loadingPromise: null,
 			loadingPromiseResolver: null,
 			loadingPromiseFail: null,
+			loadingPromiseAlways: null, // gets resolved if loading promise fails or not
+			loadingPromiseAlwaysResolver: null, // gets resolved if loading promise fails or not
 			
 			reset: function() {
 				this.url = '';
@@ -1679,11 +1681,27 @@ exports.ViewHistory = ViewHistory;
 				this.loadingPromiseReset();
 			},
 			
+			/**
+			 * while app loading phase, several componets can bind functions to annotation loading success or fail
+			 * with this.onGetAnnotations
+			 * 
+			 * if some functions shall be bound only on the next loading promise use then() and catch() functions
+			 * of this.loadingPromise oder this.loadingPromiseAlways. The latter resolves when the first resolves or failes
+			 * and can be used to indicate, that the attempt to get annotations fpr this document is now over.
+			 * 
+			 * 
+			 */
 			loadingPromiseReset: function() {
 				this.loadingPromise = new Promise(
 					function(resolve, fail) {
 						this.loadingPromiseResolver = resolve;
 						this.loadingPromiseFail = fail;
+					}.bind(this)
+				);
+				
+				this. loadingPromiseAlways = new Promise(
+					function(resolve, fail) {
+						this.loadingPromiseAlwaysResolver = resolve;
 					}.bind(this)
 				);
 				
@@ -1695,19 +1713,19 @@ exports.ViewHistory = ViewHistory;
 						for (var fn in this.successFn) {
 							this.successFn[fn](data);
 						}
+						this.loadingPromiseAlwaysResolver();
 						this.setState('ready');
 					}.bind(this)
 					)
 					['catch'](
 					function(e, x) {
-						e = (typeof e.getMessage === "function") ? e.getMessage() : e;
-						
+						e = (typeof e.getMessage === "function") ? e.getMessage() : e;						
 						console.log('Error: ', e, x);		
-						this.setState('error');
-						
+						this.setState('error');						
 						for (var fn in this.errorFn) {
 							this.errorFn[fn](e, x);
 						}
+						this.loadingPromiseAlwaysResolver();
 					}.bind(this)
 				);
 				
@@ -1872,6 +1890,7 @@ exports.ViewHistory = ViewHistory;
 			 * @param errorFn
 			 */
 			onGetAnnotations: function(fn, errorFn) {
+				
 				if (typeof fn === 'function') {
 					var name = 'fn__' + Object.keys(this.successFn).length;
 					this.successFn[fn.name || name] = fn;
@@ -2628,7 +2647,7 @@ var PDFSidebar = (function PDFSidebarClosure() {
 
     this._addEventListeners();
     
-    options.annoRegistry.onGetAnnotations(function(e, x) {this.checkAnnotationFeatures()}.bind(this), function(e, x) {this.checkAnnotationFeatures()}.bind(this));
+    options.annoRegistry.onGetAnnotations(function pdfSidebarCheckAnnotationFeatures(e, x) {this.checkAnnotationFeatures()}.bind(this), function pdfSidebarCheckAnnotationFeatures(e, x) {this.checkAnnotationFeatures()}.bind(this));
     this.annoViewer.openAnnotationsSidebar = function() {this.openAnnotationsView()}.bind(this);
   }
 
@@ -3484,7 +3503,7 @@ exports.binarySearchFirstItem = binarySearchFirstItem;
 				"dbv": options.dbvVersion,
 				"pdfjs": options.pdfjsVersion,
 			}
-			this.annoRegistry.onGetAnnotations(function(e, x) {this.checkAnnotationFeatures(e, x)}.bind(this), function(e, x) {this.checkAnnotationFeatures(e, x)}.bind(this));
+			this.annoRegistry.onGetAnnotations(function annoInfoCheckAnnotationFeatures(e, x) {this.checkAnnotationFeatures(e, x)}.bind(this), function annoInfoCheckAnnotationFeatures(e, x) {this.checkAnnotationFeatures(e, x)}.bind(this));
 		}
 	
 		AnnoInfo.prototype = {
@@ -5012,7 +5031,7 @@ var PDFFindController = (function PDFFindControllerClosure() {
       }.bind(this));
       
       
-      this.annoRegistry.onGetAnnotations(function onGetAnnotations_pSetAnnotations() {
+      this.annoRegistry.onGetAnnotations(function finController_pSetAnnotations() {
     	  return this.pSetAnnotations();
       }.bind(this));
       
@@ -5116,7 +5135,9 @@ var PDFFindController = (function PDFFindControllerClosure() {
         		return;
         	}
         	
-	        //console.log('SOP and found:', matches);
+
+        	//console.log('SOP and found:', term, matches);
+	        
 	        for (var i = 0; i < matches.length; i++) {
 	        	var termLength = ((typeof term === "object") ? term[1].length : term.length);
 	    		//console.log('MM:X ', termLength, term);
@@ -5229,7 +5250,7 @@ var PDFFindController = (function PDFFindControllerClosure() {
         	//console.log('MM:' + match.index + ' | ' + match[1] + ' (' + match[1].length + ') | ' + match[2] + ' (' + match[2].length + ')');
         	matches.push({
         		'begin': match.index + match[1].length + match[2].length,
-        		'length': termLength 
+        		'length': match[3].length 
         	});
         }
         //console.log(matches);
@@ -5252,9 +5273,7 @@ var PDFFindController = (function PDFFindControllerClosure() {
         }
         
         var ci = settings.caseSensitive ? '' : 'i';
-        //
-        
-        
+         
         var regexp = new RegExp(query, 'g' + ci);
         //console.log('MM: ', regexp);
         
@@ -5310,7 +5329,7 @@ var PDFFindController = (function PDFFindControllerClosure() {
     	var pageContent = this.normalize(this.pageContents[pageIndex], false);
         query = (settings.regex) ? query : this.normalize(query, true);
         
-        //console.log('FIND ', query, pageIndex, searchsettings);
+        //console.log('FIND ', query, pageIndex, settings);
              
         if (settings.phraseSearch) {
         	return this.calcFindPhraseMatch(query, termLength, pageIndex, pageContent, searchsettings);
@@ -6542,7 +6561,18 @@ var PDFFindBar = (function PDFFindBarClosure() {
         });
     },
     
-
+    onTextmarker: function(tm) {
+    	if (tm.length >  100  || (this.findField.value != '')) {
+    		return
+    	}
+    	
+    	this.findField.value = tm;
+        this.caseSensitive.checked = true;
+        this.phraseSearch.checked = false;
+        this.regex.checked = false; 
+    	
+        this.dispatchEvent('instant');
+    },
     
     searchToAnnotation: function() {
     	this.eventBus.dispatch('searchToAnnotation', {
@@ -8194,8 +8224,6 @@ var TextLayerBuilder = (function TextLayerBuilderClosure() {
       var endOfContent = document.createElement('div');
       endOfContent.className = 'endOfContent';
       this.textLayerDiv.appendChild(endOfContent);
-
-
       
       this.eventBus.dispatch('textlayerrendered', {
         source: this,
@@ -8230,8 +8258,8 @@ var TextLayerBuilder = (function TextLayerBuilderClosure() {
         textDivs: this.textDivs,
         timeout: timeout
       });
-      
-      Promise.all([this.textLayerRenderTask.promise, this.annoRegistry.loadingPromise])      
+
+      Promise.all([this.textLayerRenderTask.promise, this.annoRegistry.loadingPromiseAlways])      
       .then(function textLayerRenderTaskPromiseThen() {
         this.textLayerDiv.appendChild(textLayerFrag);
         this.pUpdateAnnotations();
@@ -8648,7 +8676,7 @@ var TextLayerBuilder = (function TextLayerBuilderClosure() {
         }.bind(this));
     	
     	//var c = this.findController.dbvAnnoMatchesReady[this.pageIdx] ? this.findController.dbvAnnoMatchesReady[this.pageIdx].length : 'NONE';
-    	//console.log('UPDATE ANNOS PAGE ' + this.pageIdx, c);console.trace();
+    	//console.log('UPDATE ANNOS PAGE ' + this.pageIdx, c);
         
     	if (this.findController === null) { console.log('no findcontroller');  return; }
         var dbvAnnotations = this.findController.dbvAnnoMatchesReady[this.pageIdx] || null;
@@ -10598,8 +10626,6 @@ var PDFViewerApplication = {
         self.pdfAttachmentViewer.render({ attachments: attachments });
       });
       
-	    // load annotations (dai paf)
-	  //self.findController.pSetAnnotations(); //!  paf goil
       self.annoViewer.refreshMap();
     });
 
