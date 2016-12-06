@@ -199,8 +199,8 @@ class DainstThemePlugin extends ThemePlugin {
 	function getFooter($params, &$smarty) {
 		$this->_idaic->settings["footer_links"]["contact"] = array(
 			'text' => ' Report bugs to',
-			'label' => 'philipp.franck@dainst.org',
-			'href' => 'mailto:philipp.franck@dainst.org'
+			'label' => 'idai.publications@dainst.de',
+			'href' => 'mailto:idai.publications@dainst.de'
 		);
 		$this->_idaic->settings['version']			= '';
 		return $this->_idaic->footer();
