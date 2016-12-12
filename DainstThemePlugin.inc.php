@@ -197,12 +197,28 @@ class DainstThemePlugin extends ThemePlugin {
 	 * @return string
 	 */
 	function getFooter($params, &$smarty) {
+		$this->_idaic->settings["footer_links"]["termsofuse"] = array(
+			'label' => AppLocale::translate("plugins.themes.dainst.termsOfUse"), //'Terms of use',
+			'moreinfo' => AppLocale::translate("plugins.themes.dainst.termsOfUseText")
+		);
+		
 		$this->_idaic->settings["footer_links"]["contact"] = array(
-			'text' => ' Report bugs to',
+			'text' => AppLocale::translate("plugins.themes.dainst.reportBugsTo"), // report Bugs to
 			'label' => 'idai.publications@dainst.de',
 			'href' => 'mailto:idai.publications@dainst.de'
 		);
+		
+		$this->_idaic->settings["footer_links"]["imprint"] = array(
+			'label' => AppLocale::translate("plugins.themes.dainst.imprint"), // report Bugs to
+			'href' => 'http://www.dainst.org/impressum',
+			'target' => '_blank'
+		);
+		
+		
 		$this->_idaic->settings['version']			= '';
+		
+		unset($this->_idaic->settings["footer_links"]['licence']);
+		
 		return $this->_idaic->footer();
 	}
 	

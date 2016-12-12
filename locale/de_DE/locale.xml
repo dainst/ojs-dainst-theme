@@ -29,4 +29,9 @@
 		<message key="plugins.themes.dainst.archive">Verfügbare digitale Ausgaben</message>
 		<message key="plugins.themes.dainst.search">Suche</message>
 		<message key="plugins.themes.dainst.journals">Zeitschriften</message>
+		
+		<message key="plugins.themes.dainst.termsOfUse">Nutzungsbedingungen</message>		
+		<message key="plugins.themes.dainst.termsOfUseText">Dies sind die Nutzungsbedingungen</message>		
+		<message key="plugins.themes.dainst.reportBugsTo">Fehlermedungen bitte an</message>	
+		<message key="plugins.themes.dainst.imprint">Impressum</message>	
 </locale>

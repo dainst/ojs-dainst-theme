@@ -29,4 +29,9 @@
 		<message key="plugins.themes.dainst.archive">Available digital issues</message>
 		<message key="plugins.themes.dainst.search">Search</message>
 		<message key="plugins.themes.dainst.journals">Journals</message>		
+		
+		<message key="plugins.themes.dainst.termsOfUse">Terms of Use</message>		
+		<message key="plugins.themes.dainst.termsOfUseText">Theese are the terms of use ...</message>		
+		<message key="plugins.themes.dainst.reportBugsTo">Report Bugs To</message>		
+		<message key="plugins.themes.dainst.imprint">Imprint</message>		
 </locale>
