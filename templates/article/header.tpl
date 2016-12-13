@@ -61,7 +61,13 @@
 	{/if}
 
 	{$additionalHeadData}
+
+	<link rel="stylesheet" href="{$baseUrl}/plugins/themes/dainst/small_footer.css" type="text/css" />
+	
+	
+	
 </head>
+
 <body id="pkp-{$pageTitle|replace:'.':'-'}">
 {idai_navbar subtitle="$displayPageHeaderTitle"}
 	{include file="common/navbar.tpl"}

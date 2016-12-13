@@ -1,0 +1,43 @@
+@CHARSET "UTF-8";
+
+/* footer in small */
+
+#idai-footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 0px;
+	background-color: #e2e2e2;
+	margin-left: 0px;
+	margin-right: 0px;
+	height: 20px;
+	overflow:hidden;
+	background-color: white;
+}
+
+#idai-footer p {
+	margin:0px
+}
+
+#idai-footer .idai-footer-institutions {
+	display:none;
+}
+
+body  {
+	margin-bottom:0px
+}
+
+.breadcrumb {
+    padding: 0px 15px 2px;
+    margin-bottom: 2px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+#main {
+    padding: 5px 1.2em 1.2em 1.2em;
+}
+
+#dainstPdfViewer {
+	margin-bottom: 0px;	
+}

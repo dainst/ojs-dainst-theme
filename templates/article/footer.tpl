@@ -1,5 +1,6 @@
 </div><!-- main -->
 </div><!-- body -->
+
 {idai_footer}
 
 {get_debug_info}

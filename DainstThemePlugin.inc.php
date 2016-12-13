@@ -197,6 +197,8 @@ class DainstThemePlugin extends ThemePlugin {
 	 * @return string
 	 */
 	function getFooter($params, &$smarty) {
+		$this->_idaic->settings["footer_classes"] = array($params["mode"]);
+		
 		$this->_idaic->settings["footer_links"]["termsofuse"] = array(
 			'label' => AppLocale::translate("plugins.themes.dainst.termsOfUse"), //'Terms of use',
 			'moreinfo' => AppLocale::translate("plugins.themes.dainst.termsOfUseText")
@@ -293,7 +295,6 @@ class DainstThemePlugin extends ThemePlugin {
 		if($tpl == 'article/article.tpl') {
 			$this->addHeadData($smarty, "<link rel='stylesheet' href='$thePath/inc/leaflet/leaflet.css' type='text/css' />");
 			$this->addHeadData($smarty, "<script src='$thePath/inc/leaflet/leaflet.js'></script>");		
-			$this->addHeadData($smarty, "<script src='$thePath/js/hardcoded.js'></script>"); 
 			$this->addHeadData($smarty, "<script src='$thePath/js/daian.js'></script>");
 		}
 		$this->addHeadData($smarty, "<script src='$thePath/js/jquery-fixDataFn.js'></script>");

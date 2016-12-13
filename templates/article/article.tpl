@@ -120,8 +120,7 @@
 {/if}
 
 {* ATM we don't need meta, but at one point.. we maybe need it again *} 
-
-{include file="article/meta.tpl"}
+{* include file="article/meta.tpl" *}
 
 
 {include file="article/footer.tpl"}
