@@ -14,15 +14,15 @@
 <locale name="en_US" full_name="U.S. English">
 	<message key="plugins.themes.dainst.displayName">User Block</message>
 		<message key="plugins.themes.dainst.description">Das DAI Theme, entwickelt 2016 von Philipp Franck</message>
-	<message key="plugins.themes.dainst.loggedInAs">You are logged in as...</message>
-		<message key="plugins.themes.dainst.myJournals">User Home</message>
+	<message key="plugins.themes.dainst.loggedInAs">Sie sind angemeldet als ...</message>
+		<message key="plugins.themes.dainst.myJournals">Einstellungen</message>
 		<message key="plugins.themes.dainst.myProfile">Profil</message>
 		<message key="plugins.themes.dainst.logout">Abmelden</message>
 		<message key="plugins.themes.dainst.signIn">Anmelden</message>
 		<message key="plugins.themes.dainst.signUp">Registrieren</message>
 		<message key="plugins.themes.dainst.signOutAsUser">Abmelden als...</message>
-	<message key="plugins.themes.dainst.implicitAuthLogin">Journals Login</message>
-		<message key="plugins.themes.dainst.colorsheme">DAInst Theme - Farbe für dieses Journal wählen</message>
+	<message key="plugins.themes.dainst.implicitAuthLogin">Zeitschriften Login</message>
+		<message key="plugins.themes.dainst.colorsheme">DAI Theme – Farbe für dieses Journal wählen</message>
 		<message key="plugins.themes.dainst.otherStuff">Mehr</message>
 		<message key="plugins.themes.dainst.omp">Monographien, Reihen- und Sammelwerke</message>
 		<message key="plugins.themes.dainst.aboutLink">Informationen</message>
@@ -31,7 +31,7 @@
 		<message key="plugins.themes.dainst.journals">Zeitschriften</message>
 		
 		<message key="plugins.themes.dainst.termsOfUse">Nutzungsbedingungen</message>		
-		<message key="plugins.themes.dainst.termsOfUseText">Dies sind die Nutzungsbedingungen</message>		
-		<message key="plugins.themes.dainst.reportBugsTo">Fehlermedungen bitte an</message>	
+		<message key="plugins.themes.dainst.termsOfUseText">Dies sind die Nutzungsbedingungen ... (werden noch ergänzt)</message>		
+		<message key="plugins.themes.dainst.reportBugsTo">Fehlermeldungen bitte an</message>	
 		<message key="plugins.themes.dainst.imprint">Impressum</message>	
 </locale>
