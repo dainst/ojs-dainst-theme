@@ -22,7 +22,7 @@
 		<message key="plugins.themes.dainst.signIn">Login</message>
 		<message key="plugins.themes.dainst.signOutAsUser">Log Out as User</message>
 	<message key="plugins.themes.dainst.implicitAuthLogin">Journals Login</message>
-		<message key="plugins.themes.dainst.colorsheme">DAInst Theme - Select Colorsheme for this Journal</message>
+		<message key="plugins.themes.dainst.colorsheme">DAInst Theme - Select color scheme for this Journal</message>
 		<message key="plugins.themes.dainst.otherStuff">More</message>
 		<message key="plugins.themes.dainst.omp">Monographs</message>
 		<message key="plugins.themes.dainst.aboutLink">About</message>
@@ -31,7 +31,7 @@
 		<message key="plugins.themes.dainst.journals">Journals</message>		
 		
 		<message key="plugins.themes.dainst.termsOfUse">Terms of Use</message>		
-		<message key="plugins.themes.dainst.termsOfUseText">Theese are the terms of use ...</message>		
-		<message key="plugins.themes.dainst.reportBugsTo">Report Bugs To</message>		
+		<message key="plugins.themes.dainst.termsOfUseText">These are the terms of use ...</message>		
+		<message key="plugins.themes.dainst.reportBugsTo">Report bugs to</message>		
 		<message key="plugins.themes.dainst.imprint">Imprint</message>		
 </locale>
