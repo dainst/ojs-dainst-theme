@@ -15,14 +15,14 @@
 	<message key="plugins.themes.dainst.displayName">User Block</message>
 		<message key="plugins.themes.dainst.description">This is the DAI theme developed 2016 by Philipp Franck</message>
 	<message key="plugins.themes.dainst.loggedInAs">You are logged in as...</message>
-		<message key="plugins.themes.dainst.myJournals">User Home</message>
+		<message key="plugins.themes.dainst.myJournals">Settings</message>
 		<message key="plugins.themes.dainst.myProfile">Profile</message>
-		<message key="plugins.themes.dainst.logout">Log Out</message>
+		<message key="plugins.themes.dainst.logout">Log out</message>
 		<message key="plugins.themes.dainst.signUp">Register</message>
 		<message key="plugins.themes.dainst.signIn">Login</message>
-		<message key="plugins.themes.dainst.signOutAsUser">Log Out as User</message>
+		<message key="plugins.themes.dainst.signOutAsUser">Log out as user</message>
 	<message key="plugins.themes.dainst.implicitAuthLogin">Journals Login</message>
-		<message key="plugins.themes.dainst.colorsheme">DAInst Theme - Select color scheme for this Journal</message>
+		<message key="plugins.themes.dainst.colorsheme">DAI theme – Select color scheme for this journal</message>
 		<message key="plugins.themes.dainst.otherStuff">More</message>
 		<message key="plugins.themes.dainst.omp">Monographs</message>
 		<message key="plugins.themes.dainst.aboutLink">About</message>
@@ -30,8 +30,8 @@
 		<message key="plugins.themes.dainst.search">Search</message>
 		<message key="plugins.themes.dainst.journals">Journals</message>		
 		
-		<message key="plugins.themes.dainst.termsOfUse">Terms of Use</message>		
-		<message key="plugins.themes.dainst.termsOfUseText">These are the terms of use ...</message>		
+		<message key="plugins.themes.dainst.termsOfUse">Terms of use</message>		
+		<message key="plugins.themes.dainst.termsOfUseText">These are the terms of use ... (to be continued)</message>		
 		<message key="plugins.themes.dainst.reportBugsTo">Report bugs to</message>		
 		<message key="plugins.themes.dainst.imprint">Imprint</message>		
 </locale>
