@@ -685,4 +685,12 @@ body {
 	}
 }
 
+/* meta */
+
+#article-meta {
+	display: none;
+	position: absolute;
+	right: 1.2em;
+	box-shadow: 0 6px 12px rgba(0,0,0,.176) !important;
+}
 

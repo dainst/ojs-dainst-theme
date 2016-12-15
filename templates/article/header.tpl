@@ -112,6 +112,8 @@
 
 *}
 
+
+
 <div id="main" class='col-md-12'>
 <ol class="breadcrumb">
 	<li><a href="{getOJSDomain}">{translate key="navigation.home"}</a></li>
@@ -122,25 +124,10 @@
 	{if $issue}<li><a href="{url page="issue" op="view" path=$issue->getBestIssueId($currentJournal)}" target="_parent">{$issue->getIssueIdentification(false,true)|escape}</a></li>{/if}
 	<li><a href="{url page="article" op="view" path=$articleId|to_array:$galleyId}" class="current" target="_parent">{$article->getFirstAuthor(true)|escape}</a></li>
 
-	{foreach from=$pubIdPlugins item=pubIdPlugin}
-			{if $issue->getPublished()}
-				{assign var=pubId value=$pubIdPlugin->getPubId($pubObject)}
-			{else}
-				{assign var=pubId value=$pubIdPlugin->getPubId($pubObject, true)}{* Preview rather than assign a pubId *}
-			{/if}
 
-			{if $pubId}
-				<li class="right">
-					{$pubIdPlugin->getPubIdDisplayType()|escape}: 
-					{if $pubIdPlugin->getResolvingURL($currentJournal->getId(), $pubId)|escape}
-						<a id="pub-id::{$pubIdPlugin->getPubIdType()|escape}" href="{$pubIdPlugin->getResolvingURL($currentJournal->getId(), $pubId)|escape}">{$pubId|escape}</a></li>
-					{else}
-						<li class="right">{$pubId|escape}
-					{/if}
-				</li>
-			{/if}
-		{/foreach}
-	</li>
+	<li class="right"><a href='#' id='article-meta-toggler'>{translate key="plugins.themes.dainst.meta"} <b class="caret"></b></a></li>
+
+
 </ol>
 
 {getHtaccessDebug}

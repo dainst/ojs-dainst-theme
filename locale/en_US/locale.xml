@@ -34,4 +34,6 @@
 		<message key="plugins.themes.dainst.termsOfUseText">These are the terms of use ... (to be continued)</message>		
 		<message key="plugins.themes.dainst.reportBugsTo">Report bugs to</message>		
 		<message key="plugins.themes.dainst.imprint">Imprint</message>		
+		
+		<message key="plugins.themes.dainst.meta">Meta</message>		
 </locale>

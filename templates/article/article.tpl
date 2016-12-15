@@ -22,7 +22,7 @@
 	{assign var=galley value=$galleys[0]} {*  added by dainst thme... to see always the pdf.. there will most likely not case with more than one galley *}
 {/if}
 
-
+{include file="article/meta.tpl"}
 
 {if $galley}
 	{if $galley->isHTMLGalley()}
@@ -119,8 +119,7 @@
 	{/if}
 {/if}
 
-{* ATM we don't need meta, but at one point.. we maybe need it again *} 
-{* include file="article/meta.tpl" *}
+
 
 
 {include file="article/footer.tpl"}

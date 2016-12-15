@@ -30,3 +30,56 @@ function setViewerHeight() {
     //document.getElementById('dainstPdfViewer').height = Height + 40;
 }
 
+
+jQuery(document).ready(function() {
+	
+	var openMeta = function(event) {
+		jQuery('#article-meta').toggle(true);
+		event.stopImmediatePropagation();
+		closeMetaDelayStop();
+    }
+	
+	var closeMeta = function(event) {
+		jQuery('#article-meta').toggle(false);
+		if (event) {
+			event.stopImmediatePropagation();
+		}
+		closeMetaDelayStop();
+	}
+	
+	var toggleMeta = function(event) {
+		jQuery('#article-meta').toggle();
+		event.stopImmediatePropagation();
+		closingMeta = false;
+		closeMetaDelayStop();
+    }
+
+	var closingMeta = false;
+	var closingMetaTimeout = false;
+	
+	var closeMetaDelay = function() {
+		closingMeta = true;
+		closingMetaTimeout = setTimeout(closeMeta, 500);
+	}
+	
+	var closeMetaDelayStop = function() {
+		if (closingMeta) {
+			closingMeta = false;
+			clearTimeout(closingMetaTimeout);
+		}
+	}
+
+	
+	jQuery('#article-meta-toggler').mouseenter(openMeta);
+	jQuery('#article-meta-toggler').click(toggleMeta);
+	jQuery('#article-meta').mouseover(openMeta);
+	jQuery('#article-meta-toggler').mouseleave(closeMetaDelay);
+	jQuery('#article-meta').mouseleave(closeMeta);
+	jQuery('body').click(closeMeta);
+	
+
+	/*
+	jQuery('#article-meta-toggler').on('mouseover', function(e){
+		jQuery('#article-meta').toggle();
+	})*/
+})
