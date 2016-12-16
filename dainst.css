@@ -225,6 +225,7 @@ ul.filter li {
 	padding-left: 10% !important;
 }
 
+#article-page-body h4,
 .tocSectionTitle,
 #results tr.heading td {
 	border-bottom: 2px solid silver;
@@ -499,7 +500,7 @@ input.button {
 	min-height: 100px;
 	margin-right: 0%;
 	background: white;
-	padding: 11px 10% 1.2em 0em;
+	padding: 11px 0px 1.2em 0em;
 }
 /*
 * html #rightSidebar { margin-right: 5%; }
@@ -530,7 +531,7 @@ input.button {
 
 #dainstColorbar {
 	width: 100%;
-	height: 168px;
+	height: 177px;
 	border: none;
 	position: absolute;
 	z-index: -10;
@@ -640,7 +641,7 @@ input.button {
 
 
 #dainstPdfViewer {
-	border: 1px solid transparent;
+	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 4px;
 }
 
@@ -686,11 +687,49 @@ body {
 }
 
 /* meta */
+/*
+#article-page {
+	background: #F5F5F5;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	height: 857px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 1em 2em;
+}
+*/
 
 #article-meta {
 	display: none;
 	position: absolute;
 	right: 1.2em;
 	box-shadow: 0 6px 12px rgba(0,0,0,.176) !important;
+}
+
+
+
+#article-page-header {
+	height: 34px
+}
+/*
+#article-page-body {
+	background: white;
+	padding: 0.3em 0.7em
+}
+
+*/
+#articleTitle {
+    margin-top: 0px;
+	font-weight: bold;
+	margin-bottom: 10px
+}
+
+.article-page-section {
+	background-color: #F5F5F5;
+	min-height: 3em;
+	padding: 0.5em;
+}
+
+#article-page-body h4 {
+	margin-top: 2em;
 }
 

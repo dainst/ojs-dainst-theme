@@ -1,4 +1,4 @@
-<div class="panel panel-default" id="article-meta">
+<div class="panel panel-default" {if $pdfViewerpage}id="article-meta"{/if}>
 	<div class="panel-heading">{translate key="plugins.themes.dainst.meta"}</div>
 	<div class="panel-body">
 		{foreach from=$pubIdPlugins item=pubIdPlugin}

@@ -116,26 +116,28 @@
 <div id="container">
 
 <div id="header" class='row'>
-<div id="headerTitle" class='col-md-11 col-md-offset-1'>
-<h1>
-{if $displayPageHeaderLogo && is_array($displayPageHeaderLogo)}
-	<img src="{$publicFilesDir}/{$displayPageHeaderLogo.uploadName|escape:"url"}" width="{$displayPageHeaderLogo.width|escape}" height="{$displayPageHeaderLogo.height|escape}" {if $displayPageHeaderLogoAltText != ''}alt="{$displayPageHeaderLogoAltText|escape}"{else}alt="{translate key="common.pageHeaderLogo.altText"}"{/if} />
-{/if}
-{if $displayPageHeaderTitle && is_array($displayPageHeaderTitle)}
-	<img src="{$publicFilesDir}/{$displayPageHeaderTitle.uploadName|escape:"url"}" width="{$displayPageHeaderTitle.width|escape}" height="{$displayPageHeaderTitle.height|escape}" {if $displayPageHeaderTitleAltText != ''}alt="{$displayPageHeaderTitleAltText|escape}"{else}alt="{translate key="common.pageHeader.altText"}"{/if} />
-{elseif $displayPageHeaderTitle}
-	{$displayPageHeaderTitle}
-{elseif $alternatePageHeader}
-	{$alternatePageHeader}
-{elseif $siteTitle}
-	{$siteTitle}
-{else}
-	{$applicationName}
-{/if}
-</h1>
-</div>
+	<div id="headerTitle" class='col-md-11 col-md-offset-1'>
+		<h1>
+			{if $displayPageHeaderLogo && is_array($displayPageHeaderLogo)}
+				<img src="{$publicFilesDir}/{$displayPageHeaderLogo.uploadName|escape:"url"}" width="{$displayPageHeaderLogo.width|escape}" height="{$displayPageHeaderLogo.height|escape}" {if $displayPageHeaderLogoAltText != ''}alt="{$displayPageHeaderLogoAltText|escape}"{else}alt="{translate key="common.pageHeaderLogo.altText"}"{/if} />
+			{/if}
+			{if $displayPageHeaderTitle && is_array($displayPageHeaderTitle)}
+				<img src="{$publicFilesDir}/{$displayPageHeaderTitle.uploadName|escape:"url"}" width="{$displayPageHeaderTitle.width|escape}" height="{$displayPageHeaderTitle.height|escape}" {if $displayPageHeaderTitleAltText != ''}alt="{$displayPageHeaderTitleAltText|escape}"{else}alt="{translate key="common.pageHeader.altText"}"{/if} />
+			{elseif $displayPageHeaderTitle}
+				{$displayPageHeaderTitle}
+			{elseif $alternatePageHeader}
+				{$alternatePageHeader}
+			{elseif $siteTitle}
+				{$siteTitle}
+			{else}
+				{$applicationName}
+			{/if}
+		</h1>
+	</div>
 </div>
 {getHtaccessDebug}
+
+
 <div id="body" class='row'>
 
 <div class='col-md-1'>

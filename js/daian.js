@@ -75,11 +75,6 @@ jQuery(document).ready(function() {
 	jQuery('#article-meta').mouseover(openMeta);
 	jQuery('#article-meta-toggler').mouseleave(closeMetaDelay);
 	jQuery('#article-meta').mouseleave(closeMeta);
-	jQuery('body').click(closeMeta);
 	
 
-	/*
-	jQuery('#article-meta-toggler').on('mouseover', function(e){
-		jQuery('#article-meta').toggle();
-	})*/
 })

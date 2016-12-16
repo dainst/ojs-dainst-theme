@@ -62,75 +62,65 @@
 
 	{$additionalHeadData}
 
-	<link rel="stylesheet" href="{$baseUrl}/plugins/themes/dainst/small_footer.css" type="text/css" />
-	
+	{if $pdfViewerpage}
+		<link rel="stylesheet" href="{$baseUrl}/plugins/themes/dainst/small_footer.css" type="text/css" />
+	{/if}
 	
 	
 </head>
 
-<body id="pkp-{$pageTitle|replace:'.':'-'}">
+<body id="pkp-{$pageTitle|replace:'.':'-'}" class="{if !$pdfViewerpage}hasDainstColorbar{/if}">
 {idai_navbar subtitle="$displayPageHeaderTitle"}
 	{include file="common/navbar.tpl"}
 {/idai_navbar}
+
+{if !$pdfViewerpage}
+	<div id="dainstColorbar" class="dainstColor {$dainstcicolor}"></div>
+{/if}
+
 <div id="container">
 
-{*
-<div id="header">
-<div id="headerTitle">
-<h1>
-{if $displayPageHeaderLogo && is_array($displayPageHeaderLogo)}
-	<img src="{$publicFilesDir}/{$displayPageHeaderLogo.uploadName|escape:"url"}" width="{$displayPageHeaderLogo.width|escape}" height="{$displayPageHeaderLogo.height|escape}" {if $displayPageHeaderLogoAltText != ''}alt="{$displayPageHeaderLogoAltText|escape}"{else}alt="{translate key="common.pageHeaderLogo.altText"}"{/if} />
-{/if}
-{if $displayPageHeaderTitle && is_array($displayPageHeaderTitle)}
-	<img src="{$publicFilesDir}/{$displayPageHeaderTitle.uploadName|escape:"url"}" width="{$displayPageHeaderTitle.width|escape}" height="{$displayPageHeaderTitle.height|escape}" {if $displayPageHeaderTitleAltText != ''}alt="{$displayPageHeaderTitleAltText|escape}"{else}alt="{translate key="common.pageHeader.altText"}"{/if} />
-{elseif $displayPageHeaderTitle}
-	{$displayPageHeaderTitle}
-{elseif $alternatePageHeader}
-	{$alternatePageHeader}
-{elseif $siteTitle}
-	{$siteTitle}
-{else}
-	{$applicationName}
-{/if}
-</h1>
-</div>
-</div>
-*}
-
-<div id="body" class='row'>
-{*	
-<div class='col-md-1'>
-	{if $leftSidebarCode}
-		<div class="panel panel-default">
-			<div class="panel-body">
-				{$leftSidebarCode}
-			</div>
+{if !$pdfViewerpage}
+	<div id="header" class='row'>
+		<div id="headerTitle" class='col-md-11 col-md-offset-1'>
+			<h1>
+				{if $displayPageHeaderLogo && is_array($displayPageHeaderLogo)}
+					<img src="{$publicFilesDir}/{$displayPageHeaderLogo.uploadName|escape:"url"}" width="{$displayPageHeaderLogo.width|escape}" height="{$displayPageHeaderLogo.height|escape}" {if $displayPageHeaderLogoAltText != ''}alt="{$displayPageHeaderLogoAltText|escape}"{else}alt="{translate key="common.pageHeaderLogo.altText"}"{/if} />
+				{/if}
+				{if $displayPageHeaderTitle && is_array($displayPageHeaderTitle)}
+					<img src="{$publicFilesDir}/{$displayPageHeaderTitle.uploadName|escape:"url"}" width="{$displayPageHeaderTitle.width|escape}" height="{$displayPageHeaderTitle.height|escape}" {if $displayPageHeaderTitleAltText != ''}alt="{$displayPageHeaderTitleAltText|escape}"{else}alt="{translate key="common.pageHeader.altText"}"{/if} />
+				{elseif $displayPageHeaderTitle}
+					{$displayPageHeaderTitle}
+				{elseif $alternatePageHeader}
+					{$alternatePageHeader}
+				{elseif $siteTitle}
+					{$siteTitle}
+				{else}
+					{$applicationName}
+				{/if}
+			</h1>
 		</div>
-	{/if}&nbsp;
-</div>
-	
-
-*}
-
-
-
-<div id="main" class='col-md-12'>
-<ol class="breadcrumb">
-	<li><a href="{getOJSDomain}">{translate key="navigation.home"}</a></li>
-	<li><a href="{getOJSDomain}/{getOJSFolder}">{translate key="plugins.themes.dainst.journals"}</a></li>
-	{if $currentJournal}
-		<li><a href="{$currentJournal->getUrl()|strip_tags|escape}">{$currentJournal->getLocalizedTitle()|strip_tags|escape}</a></li>
-	{/if}
-	{if $issue}<li><a href="{url page="issue" op="view" path=$issue->getBestIssueId($currentJournal)}" target="_parent">{$issue->getIssueIdentification(false,true)|escape}</a></li>{/if}
-	<li><a href="{url page="article" op="view" path=$articleId|to_array:$galleyId}" class="current" target="_parent">{$article->getFirstAuthor(true)|escape}</a></li>
-
-
-	<li class="right"><a href='#' id='article-meta-toggler'>{translate key="plugins.themes.dainst.meta"} <b class="caret"></b></a></li>
-
-
-</ol>
-
+	</div>
+{/if}
 {getHtaccessDebug}
 
-<div id="content">
-
+<div id="body" class='row'>
+	{if !$pdfViewerpage}
+		<div class='col-md-1'>
+			{if $leftSidebarCode}
+				<div class="panel panel-default">
+					<div class="panel-body">
+						{$leftSidebarCode}
+					</div>
+				</div>
+			{/if}&nbsp;
+		</div>
+	{/if}
+	
+	{if $pdfViewerpage}
+		<div id="main" class='col-md-12'>
+	{else}
+		<div id="main" class='col-md-8'>
+	{/if}
+	
+	{include file="article/breadcrumbs.tpl"}

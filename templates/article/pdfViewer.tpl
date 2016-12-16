@@ -8,14 +8,9 @@
  * Embedded PDF viewer.
  *}
 
-{* The target="_parent" is for the sake of iphones, which present scroll problems otherwise. 
-<div id="pdfDownloadLinkContainer">
-	<a class="action pdf" id="pdfDownloadLink" target="_parent" href="{url op="download" path=$articleId|to_array:$galley->getBestGalleyId($currentJournal)}">{translate key="article.pdf.download"}</a>
-</div>*}
+{include file="article/meta.tpl"}
 
 {url|assign:"pdfUrl" op="viewFile" path=$articleId|to_array:$galley->getBestGalleyId($currentJournal) escape=false}
-
-{translate|assign:"noPluginText" key='article.pdf.pluginMissing'}
 
 {pdf_viewer file="$pdfUrl" article="$articleId"}
 
