@@ -1,13 +1,14 @@
 <div class="panel panel-default" {if $pdfViewerpage}id="article-meta"{/if}>
 	<div class="panel-heading">{translate key="plugins.themes.dainst.meta"}</div>
 	<div class="panel-body">
+	
+
 		{foreach from=$pubIdPlugins item=pubIdPlugin}
 			{if $issue->getPublished()}
 				{assign var=pubId value=$pubIdPlugin->getPubId($pubObject)}
 			{else}
 				{assign var=pubId value=$pubIdPlugin->getPubId($pubObject, true)}{* Preview rather than assign a pubId *}
 			{/if}
-
 			{if $pubId}
 				<div>{$pubIdPlugin->getPubIdDisplayType()|escape}: {if $pubIdPlugin->getResolvingURL($currentJournal->getId(), $pubId)|escape}<a id="pub-id::{$pubIdPlugin->getPubIdType()|escape}" href="{$pubIdPlugin->getResolvingURL($currentJournal->getId(), $pubId)|escape}">{$pubIdPlugin->getResolvingURL($currentJournal->getId(), $pubId)|escape}</a>{else}{$pubId|escape}{/if}</div>
 			{/if}

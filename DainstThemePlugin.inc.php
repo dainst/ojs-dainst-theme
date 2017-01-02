@@ -269,14 +269,13 @@ class DainstThemePlugin extends ThemePlugin {
 		$templateMgr =& TemplateManager::getManager();
 				
 		// cache cleansing
-		/*
 		$templateMgr->caching = 0;
 		$templateMgr->cache_lifetime = 0;
 		$templateMgr->clear_all_cache();
 		$templateMgr->clear_compiled_tpl(); //*/
 		
 		//debug
-		$templateMgr->debugging = false;
+		//$templateMgr->debugging = false;
 		
 		//url
 		$thePath = $this->theUrl . '/' . $this->pluginPath;

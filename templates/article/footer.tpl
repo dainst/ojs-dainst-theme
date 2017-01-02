@@ -5,7 +5,6 @@
 		<div id="rightSidebar">
 			
 			{include file="article/meta.tpl"}
-			{daian_article}
 			{if $rightSidebarCode}
 				<div class="panel panel-default">
 					<div class="panel-body">
