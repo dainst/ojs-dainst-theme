@@ -33,6 +33,5 @@
 		{call_hook name="Templates::Article::MoreInfo"}
 		{include file="article/comments.tpl"}
 		
-		{debugPubIDSettings pubObject=$pubObject}
 	</div>
 </div>
