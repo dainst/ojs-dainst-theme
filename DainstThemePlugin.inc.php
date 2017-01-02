@@ -459,6 +459,7 @@ class DainstThemePlugin extends ThemePlugin {
 	 * some debuig stuff...
 	 */
 	function debugPubIDSettings($params) {
+		$templateMgr =& TemplateManager::getManager();
 		ob_start();
 		echo "<h4>Debug</h4>";
 		$puo = $params['pubObject'];
@@ -470,8 +471,14 @@ class DainstThemePlugin extends ThemePlugin {
 				echo "<li>$attr: $val</li>";
 			}
 		}
-		echo "</ul>";
 		
+		echo "<li>";
+		echo "pubIdPlugins:";
+		echo "<pre>", print_r($templateMgr->get_template_vars('pubIdPlugins'),1), '</pre>';
+		
+		
+		echo "</ul>";
+		/*
 		import('classes.issue.Issue');
 		import('classes.article.Article');
 		import('classes.article.ArticleGalley');
@@ -487,7 +494,8 @@ class DainstThemePlugin extends ThemePlugin {
 			'galley' => $testGalley, 
 			'suppfile' => $testSuppFile
 		);
-	
+		*/
+		/*
 		echo "<ul>";
 		$journalDao =& DAORegistry::getDAO('JournalDAO');
 		$journalResults = $journalDao->getJournals();
@@ -508,6 +516,7 @@ class DainstThemePlugin extends ThemePlugin {
 			echo "</ul>";
 			echo "</li>";
 		}
+		echo "</ul>";*/
 		return ob_get_clean();
 	}
 
