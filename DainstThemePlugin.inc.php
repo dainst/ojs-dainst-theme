@@ -458,7 +458,7 @@ class DainstThemePlugin extends ThemePlugin {
 	/**
 	 * some debuig stuff...
 	 */
-	function debugPubIDSettings($params) {
+	function debugPubIDSettings($params, $r) {
 		$templateMgr =& TemplateManager::getManager();
 		ob_start();
 		echo "<h4>Debug</h4>";
@@ -472,13 +472,19 @@ class DainstThemePlugin extends ThemePlugin {
 			}
 		}
 		
-		echo "<li>";
+		echo "</ul>";
 		echo "pubIdPlugins:";
 		echo "<pre>", print_r($templateMgr->get_template_vars('pubIdPlugins'),1), '</pre>';
 		
 		
 		echo "</ul>";
+		echo "from registry";
 
+		$pubIdPlugins = PluginRegistry::loadCategory('pubIds', true);
+		echo "<pre>", print_r($pubIdPlugins,1), '</pre>';
+		
+		
+		
 		echo "<ul>";
 		$journalDao =& DAORegistry::getDAO('JournalDAO');
 		$journalResults = $journalDao->getJournals();
@@ -492,7 +498,7 @@ class DainstThemePlugin extends ThemePlugin {
 				echo '</li>';
 			}
 			echo "</ul>";
-			echo "</li>";
+			
 		}
 		echo "</ul>";
 		return ob_get_clean();
