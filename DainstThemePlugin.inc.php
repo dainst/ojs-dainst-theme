@@ -478,24 +478,7 @@ class DainstThemePlugin extends ThemePlugin {
 		
 		
 		echo "</ul>";
-		/*
-		import('classes.issue.Issue');
-		import('classes.article.Article');
-		import('classes.article.ArticleGalley');
-		import('classes.article.SuppFile');
-		$testIssue = new Issue();
-		$testArticle = new Article();
-		$testGalley = new ArticleGalley();
-		$testSuppFile = new SuppFile();
-		$test = array(
-			'this' => $puo, 
-			'issue' => $testIssue, 
-			'article' => $testArticle, 
-			'galley' => $testGalley, 
-			'suppfile' => $testSuppFile
-		);
-		*/
-		/*
+
 		echo "<ul>";
 		$journalDao =& DAORegistry::getDAO('JournalDAO');
 		$journalResults = $journalDao->getJournals();
@@ -504,19 +487,14 @@ class DainstThemePlugin extends ThemePlugin {
 			$pubIdPlugins =& PluginRegistry::loadCategory('pubIds', false, $result["journal_id"]);
 			echo "<ul>";
 			foreach ($pubIdPlugins as $pubIdPlugin) {
-				echo "<li>" . $pubIdPlugin->getName() . ' -> ' . $pubIdPlugin->getPubIdFullName();
-	
-				echo "<ul>";
-				foreach ($test as $tt =>  $t) {
-					echo "<li>" . $tt . ': ' . ($pubIdPlugin->isEnabled($t, $result["journal_id"]) ? '<b>true</b>' : 'false') . '</li>';
-				}
-				echo "</ul>";
+				echo "<li>" . $pubIdPlugin->getName() . ' -> ' . $pubIdPlugin->getPubIdFullName() . ' -> ' . $pubIdPlugin->getEnabled($result["journal_id"]);
+
 				echo '</li>';
 			}
 			echo "</ul>";
 			echo "</li>";
 		}
-		echo "</ul>";*/
+		echo "</ul>";
 		return ob_get_clean();
 	}
 
