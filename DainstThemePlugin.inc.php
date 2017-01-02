@@ -309,6 +309,7 @@ class DainstThemePlugin extends ThemePlugin {
 		$smarty->register_function("getHtaccessDebug", array($this, "getHtaccessDebug"));
 		$smarty->register_function("getOJSFolder", array($this, "getOJSFolder"));
 		$smarty->register_function("getOJSDomain", array($this, "getOJSDomain"));
+		$smarty->register_function("debugPubIDSettings", array($this, "debugPubIDSettings"));
 		
 		// register function for in-frontpage-archieve
 		$smarty->register_function("journal_archive", array($this, "getArchive"));
@@ -452,6 +453,64 @@ class DainstThemePlugin extends ThemePlugin {
 		}
 		return $smarty->smartyUrl($params, $smarty);
 	}
+	
+	
+	/**
+	 * some debuig stuff...
+	 */
+	function debugPubIDSettings($params) {
+		ob_start();
+		echo "<h4>Debug</h4>";
+		$puo = $params['pubObject'];
+		//echo "<pre>", print_r($puo, 1), "</pre>";
+		echo "<ul>";
+		echo "<li>pupId type: ". get_class($puo) . '</li>';
+		foreach ($puo->_data as $attr => $val) {
+			if (substr($attr, 0 , 6) == 'pub-id') {
+				echo "<li>$attr: $val</li>";
+			}
+		}
+		echo "</ul>";
+		
+		import('classes.issue.Issue');
+		import('classes.article.Article');
+		import('classes.article.ArticleGalley');
+		import('classes.article.SuppFile');
+		$testIssue = new Issue();
+		$testArticle = new Article();
+		$testGalley = new ArticleGalley();
+		$testSuppFile = new SuppFile();
+		$test = array(
+			'this' => $puo, 
+			'issue' => $testIssue, 
+			'article' => $testArticle, 
+			'galley' => $testGalley, 
+			'suppfile' => $testSuppFile
+		);
+	
+		echo "<ul>";
+		$journalDao =& DAORegistry::getDAO('JournalDAO');
+		$journalResults = $journalDao->getJournals();
+		foreach ($journalResults->records as $result) {	
+			echo "<li><b>" . $result["path"] . ' (' . $result["journal_id"] . ")</b>";
+			$pubIdPlugins =& PluginRegistry::loadCategory('pubIds', false, $result["journal_id"]);
+			echo "<ul>";
+			foreach ($pubIdPlugins as $pubIdPlugin) {
+				echo "<li>" . $pubIdPlugin->getName() . ' -> ' . $pubIdPlugin->getPubIdFullName();
+	
+				echo "<ul>";
+				foreach ($test as $tt =>  $t) {
+					echo "<li>" . $tt . ': ' . ($pubIdPlugin->isEnabled($t, $result["journal_id"]) ? '<b>true</b>' : 'false') . '</li>';
+				}
+				echo "</ul>";
+				echo '</li>';
+			}
+			echo "</ul>";
+			echo "</li>";
+		}
+		return ob_get_clean();
+	}
+
 }
 
 ?>
