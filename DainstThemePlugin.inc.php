@@ -126,7 +126,6 @@ class DainstThemePlugin extends ThemePlugin {
 	 * @return string
 	 */
 	function getNavbar($params, $content, &$smarty, &$repeat) {
-		
 		if ($repeat == true) {
 			return;
 		}
@@ -135,7 +134,6 @@ class DainstThemePlugin extends ThemePlugin {
 		$journal =& Request::getJournal();
 
 		// construct the navbar via the settings array
-		$this->_idaic->settings['return']							= true;
 		$this->_idaic->settings['logo']['text'] 					= '';
 		$this->_idaic->settings['logo']['src'] 						= $this->theUrl . '/' . $this->pluginPath . '/img/logo_publications.jpg';
 		$this->_idaic->settings['logo']['href'] 					= $this->theUrl;  
@@ -185,7 +183,7 @@ class DainstThemePlugin extends ThemePlugin {
 		
 		unset($this->_idaic->settings['buttons']['zzzzcontact']);
 		
-		$this->_idaic->navbar($content);
+		return $this->_idaic->navbar($content);
 	}
 	
 	/**
@@ -235,8 +233,16 @@ class DainstThemePlugin extends ThemePlugin {
 	 * @return string
 	 */
 	function getViewer($params, &$smarty) {
-		$viewerSrc = $this->theUrl . '/plugins/themes/dainst/inc/dbv/viewer.html';
-		return "<iframe id='dainstPdfViewer' onload='setViewerHeight()' src='$viewerSrc?file={$params['file']}&pubid={$params['article']}'></iframe>";
+		$viewerSrc = Config::getVar('dainst', 'viewerUrl');
+		if ($viewerSrc) {
+			$url = "$viewerSrc?file={$params['file']}&pubid={$params['article']}";
+		} else {
+			$url = $params['file'];
+		}
+		
+		return "<iframe id='dainstPdfViewer' onload='setViewerHeight()' src='$url'></iframe>";
+		
+		//$viewerSrc = $this->theUrl . '/plugins/themes/dainst/inc/dbv/viewer.html';
 	} 
 	
 	
