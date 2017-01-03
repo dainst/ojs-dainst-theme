@@ -275,7 +275,7 @@ class DainstThemePlugin extends ThemePlugin {
 		$templateMgr->clear_compiled_tpl(); //*/
 		
 		//debug
-		//$templateMgr->debugging = false;
+		//$templateMgr->debugging = true;
 		
 		//url
 		$thePath = $this->theUrl . '/' . $this->pluginPath;
