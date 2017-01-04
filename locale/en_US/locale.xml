@@ -35,5 +35,7 @@
 		<message key="plugins.themes.dainst.reportBugsTo">Report bugs to</message>		
 		<message key="plugins.themes.dainst.imprint">Imprint</message>		
 		
-		<message key="plugins.themes.dainst.meta">Meta</message>		
+		<message key="plugins.themes.dainst.meta">Meta</message>
+		<message key="plugins.themes.dainst.editmeta">Edit Metadata</message>		
+		<message key="plugins.themes.dainst.articleMenu">Article</message>		
 </locale>

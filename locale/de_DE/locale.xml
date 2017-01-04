@@ -36,4 +36,6 @@
 		<message key="plugins.themes.dainst.imprint">Impressum</message>	
 		
 		<message key="plugins.themes.dainst.meta">Meta</message>		
+		<message key="plugins.themes.dainst.editmeta">Metadaten Bearbeiten</message>		
+		<message key="plugins.themes.dainst.articleMenu">Artikel</message>		
 </locale>

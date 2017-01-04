@@ -168,6 +168,42 @@ class DainstThemePlugin extends ThemePlugin {
 				"label"	=>	AppLocale::translate("plugins.themes.dainst.myProfile"),
 				"href"	=>	$smarty->smartyUrl(array("page" => "user", "op" => "profile"))
 		);
+		
+		
+		// admin/editor specicifc
+		$isArticle = Request::getRequestedPage() == 'article';
+		
+		if ($journal and $isArticle) {
+			$journalPath = $journal->getPath();
+			$articleId = Request::getRequestedArgs()[0];
+			$user =& Request::getUser();
+			if ($user) {
+				$roleDao =& DAORegistry::getDAO('RoleDAO');
+				$isEditor = $roleDao->userHasRole($journal->getId(), $user->getId(), ROLE_ID_EDITOR);
+				$isManager = $roleDao->userHasRole($journal->getId(), $user->getId(), ROLE_ID_JOURNAL_MANAGER);
+			} else {
+				$isEditor = false;
+				$isManager = false;
+			}
+
+			if ($isEditor or $isManager) {
+				$this->_idaic->settings['buttons']['article'] = array(
+					'label' => AppLocale::translate("plugins.themes.dainst.articleMenu"),
+					'submenu' => array()
+				);
+				
+				$this->_idaic->settings['buttons']['article']["submenu"]["editmeta"] = array(					
+					"label"	=>	AppLocale::translate("plugins.themes.dainst.editmeta"),
+					"href"	=>	"{$this->theUrl}/index.php/$journalPath/editor/submission/$articleId"
+				);
+			}
+			/*
+			echo "<pre>"; print_r(Request::getRequestedPage()); echo "</pre>";
+			echo "<pre>"; print_r(Request::getRequestedArgs()); echo "</pre>";
+			echo "<pre>"; print_r(Request::getRequestedOp()); echo "</pre>";
+			die();
+			//*/
+		}
 
 		// (username) -> logout
 		$this->_idaic->settings['buttons']['usermenu']["submenu"]["logout"] = array(
