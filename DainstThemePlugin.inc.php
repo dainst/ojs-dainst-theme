@@ -134,8 +134,8 @@ class DainstThemePlugin extends ThemePlugin {
 		$journal =& Request::getJournal();
 
 		// construct the navbar via the settings array
-		$this->_idaic->settings['logo']['text'] 					= '';
-		$this->_idaic->settings['logo']['src'] 						= $this->theUrl . '/' . $this->pluginPath . '/img/logo_publications.jpg';
+		$this->_idaic->settings['logo']['text'] 					= '/ journals';
+		$this->_idaic->settings['logo']['src'] 						= $this->theUrl . '/' . $this->pluginPath . '/img/logo_publications.png';
 		$this->_idaic->settings['logo']['href'] 					= $this->theUrl;  
 		$this->_idaic->settings['logo']['href2'] 					= $smarty->smartyUrl(array('page' => "index"));
 		
@@ -505,7 +505,7 @@ class DainstThemePlugin extends ThemePlugin {
 		ob_start();
 		echo "<h4>Debug</h4>";
 		$puo = $params['pubObject'];
-		//echo "<pre>", print_r($puo, 1), "</pre>";
+		echo "<pre>", print_r($puo, 1), "</pre>";
 		echo "<ul>";
 		echo "<li>pupId type: ". get_class($puo) . '</li>';
 		foreach ($puo->_data as $attr => $val) {
