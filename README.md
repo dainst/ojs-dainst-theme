@@ -31,3 +31,4 @@ OJS Theme for journals.dainst.org
 -	Hier steckt wenig Eigenentwicklung drin, und die beiden Szenarien werden in nächster Zeit auch erstmal nicht eintreffen. Es geht hier eher darum grundsätzlich zu testen ob alle Funktionen die das OJS mitbringt grundsätzlich erreichbar sind.
 
 
+.
