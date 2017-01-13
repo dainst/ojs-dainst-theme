@@ -30,3 +30,4 @@ OJS Theme for journals.dainst.org
 -	User Story: Die neueste Ausgabe des Journals “Archäologien in Timbuktu” soll nur online erscheinen und es soll ein Peer Review gemacht werden.
 -	Hier steckt wenig Eigenentwicklung drin, und die beiden Szenarien werden in nächster Zeit auch erstmal nicht eintreffen. Es geht hier eher darum grundsätzlich zu testen ob alle Funktionen die das OJS mitbringt grundsätzlich erreichbar sind.
 
+
