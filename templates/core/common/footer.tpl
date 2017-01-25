@@ -25,7 +25,6 @@
 
 	<div id="rightSidebar">
 		<div id='dainstLogo'>&nbsp;</div>
-		{daian_article}
 		{if $rightSidebarCode}
 			<div class="panel panel-default">
 				<div class="panel-body">
