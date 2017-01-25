@@ -137,19 +137,19 @@ class DainstThemePlugin extends ThemePlugin {
 		$this->_idaic->settings['logo']['text'] 					= '/ journals';
 		$this->_idaic->settings['logo']['src'] 						= $this->theUrl . '/' . $this->pluginPath . '/img/logo_publications.png';
 		$this->_idaic->settings['logo']['href'] 					= $this->theUrl;  
-		$this->_idaic->settings['logo']['href2'] 					= $smarty->smartyUrl(array('page' => "index"));
+		$this->_idaic->settings['logo']['href2'] 					= $smarty->smartyUrl(array('page' => "index"),$smarty);
 		
-		$this->_idaic->settings['search']['href']					= ($journal != null) ? $smarty->smartyUrl(array("page" => "search", "context" => $journal->getPath(), "op" => 'search')) : 'index.php/index/search/search?';
+		$this->_idaic->settings['search']['href']					= ($journal != null) ? $smarty->smartyUrl(array("page" => "search", "context" => $journal->getPath(), "op" => 'search'),$smarty) : 'index.php/index/search/search?';
 		$this->_idaic->settings['search']['name'] 					= "simpleQuery";
 		$this->_idaic->settings['search']["params"] 				= array('searchField' => 'query');
 		$this->_idaic->settings['search']["label"]					= strtoupper(AppLocale::translate("plugins.themes.dainst.search"));
 		
 		$this->_idaic->settings["user"]["name"] 					= (Validation::isLoggedIn()) ? $session->userName : '';
 		
-		$this->_idaic->settings['buttons']['login']['href'] 		= $smarty->smartyUrl(array("page" => "login", "op" => "signIn"));
+		$this->_idaic->settings['buttons']['login']['href'] 		= $smarty->smartyUrl(array("page" => "login", "op" => "signIn"),$smarty);
 		$this->_idaic->settings['buttons']['login']['label'] 		= AppLocale::translate("plugins.themes.dainst.signIn");
 		unset($this->_idaic->settings['buttons']['login']['glyphicon']);
-		$this->_idaic->settings['buttons']['register']['href'] 		= $smarty->smartyUrl(array("page" => "user", "op" => "register"));
+		$this->_idaic->settings['buttons']['register']['href'] 		= $smarty->smartyUrl(array("page" => "user", "op" => "register"),$smarty);
 		$this->_idaic->settings['buttons']['register']['label'] 	= AppLocale::translate("plugins.themes.dainst.signUp");
 		
 		
@@ -159,14 +159,14 @@ class DainstThemePlugin extends ThemePlugin {
 		if ($session->hasOtherJournals) {
 			$this->_idaic->settings['buttons']['usermenu']["submenu"]["a"] = array(
 				"label"	=>	AppLocale::translate("plugins.themes.dainst.myJournals"),
-				"href"	=>	$smarty->smartyUrl(array('journal' => "index", 'page' => "user"))
+				"href"	=>	$smarty->smartyUrl(array('journal' => "index", 'page' => "user"), $smarty)
 			);
 		}
 		
 		// (username) -> my profile
 		$this->_idaic->settings['buttons']['usermenu']["submenu"]["b"] = array(
 				"label"	=>	AppLocale::translate("plugins.themes.dainst.myProfile"),
-				"href"	=>	$smarty->smartyUrl(array("page" => "user", "op" => "profile"))
+				"href"	=>	$smarty->smartyUrl(array("page" => "user", "op" => "profile"), $smarty)
 		);
 		
 		
@@ -208,12 +208,12 @@ class DainstThemePlugin extends ThemePlugin {
 		// (username) -> logout
 		$this->_idaic->settings['buttons']['usermenu']["submenu"]["logout"] = array(
 				"label"	=>	AppLocale::translate("plugins.themes.dainst.logout"),
-				"href"	=>	$smarty->smartyUrl(array("page" => "login", "op" => "signOut"))
+				"href"	=>	$smarty->smartyUrl(array("page" => "login", "op" => "signOut"),$smarty)
 		);
 		if ($session->signedInAs) {
 			$this->_idaic->settings['buttons']['usermenu']["submenu"]["z"] = array(
 				"label"	=>	AppLocale::translate("plugins.themes.dainst.signOutAsUser"),
-				"href"	=>	$smarty->smartyUrl(array('page' => "login", 'op' => "signOutAsUser"))
+				"href"	=>	$smarty->smartyUrl(array('page' => "login", 'op' => "signOutAsUser"),$smarty)
 			);
 		}
 		
