@@ -572,22 +572,22 @@ input.button {
 }
 
 
-.pkp_form_error,
-.pkp_form_error_list li {
+#formErrors
+ {
     padding: 15px;
     border: 1px solid transparent;
     border-radius: 4px;	
 	color: #a94442;
 	background-color: #f2dede;
 	border-color: #ebccd1;
-	display: inline-block	
+	display: inline-block;
+	margin-bottom: 1em;
 }
 
 .pkp_form_error_list {
 	list-style-position: inside;
-	padding-left: 0px;
-	margin-top: 1em;
-	margin-bottom: 1em;
+	padding-left: 15px;
+
 }
 
 .warningMessage {
@@ -733,3 +733,11 @@ body {
 	margin-top: 2em;
 }
 
+/* register page */
+
+
+#termsOfUseBox .infobox-button {
+	margin-bottom: 2em;
+	margin-right: 5px;
+	float: right;
+}

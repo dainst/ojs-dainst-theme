@@ -27,12 +27,13 @@ function setViewerHeight() {
 	
 	console.log('height: ', height, 'y: ', y);
 
-    //document.getElementById('dainstPdfViewer').height = Height + 40;
 }
 
 
 jQuery(document).ready(function() {
-	
+
+	/* metabox */
+
 	var openMeta = function(event) {
 		jQuery('#article-meta').toggle(true);
 		event.stopImmediatePropagation();
@@ -75,6 +76,7 @@ jQuery(document).ready(function() {
 	jQuery('#article-meta').mouseover(openMeta);
 	jQuery('#article-meta-toggler').mouseleave(closeMetaDelay);
 	jQuery('#article-meta').mouseleave(closeMeta);
-	
+
+
 
 })
