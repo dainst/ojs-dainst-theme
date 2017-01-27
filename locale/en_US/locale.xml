@@ -12,27 +12,25 @@
   -->
  
 <locale name="en_US" full_name="U.S. English">
-	<message key="plugins.themes.dainst.displayName">User Block</message>
-		<message key="plugins.themes.dainst.description">This is the DAI theme developed 2016 by Philipp Franck</message>
-	<message key="plugins.themes.dainst.loggedInAs">You are logged in as...</message>
-		<message key="plugins.themes.dainst.myJournals">Settings</message>
-		<message key="plugins.themes.dainst.myProfile">Profile</message>
-		<message key="plugins.themes.dainst.logout">Log out</message>
-		<message key="plugins.themes.dainst.signUp">Register</message>
-		<message key="plugins.themes.dainst.signIn">Login</message>
-		<message key="plugins.themes.dainst.signOutAsUser">Log out as user</message>
-	<message key="plugins.themes.dainst.implicitAuthLogin">Journals Login</message>
-		<message key="plugins.themes.dainst.colorsheme">DAI theme – Select color scheme for this journal</message>
-		<message key="plugins.themes.dainst.otherStuff">More</message>
-		<message key="plugins.themes.dainst.omp">Monographs</message>
-		<message key="plugins.themes.dainst.aboutLink">About</message>
-		<message key="plugins.themes.dainst.archive">Available digital issues</message>
-		<message key="plugins.themes.dainst.search">Search</message>
-		<message key="plugins.themes.dainst.journals">Journals</message>		
-		
-		<message key="plugins.themes.dainst.termsOfUse">Terms of use</message>
-		<message key="plugins.themes.dainst.termsOfUseRead">Terms of use read and understood!</message>
-		<message key="plugins.themes.dainst.termsOfUseText"><![CDATA[
+	<message key="plugins.themes.dainst.description">This is the DAI theme developed 2016 by Philipp Franck</message>
+	<message key="plugins.themes.dainst.myJournals">Settings</message>
+	<message key="plugins.themes.dainst.myProfile">Profile</message>
+	<message key="plugins.themes.dainst.logout">Log out</message>
+	<message key="plugins.themes.dainst.signUp">Register</message>
+	<message key="plugins.themes.dainst.signIn">Login</message>
+	<message key="plugins.themes.dainst.signOutAsUser">Log out as user</message>
+	<message key="plugins.themes.dainst.colorsheme">DAI theme – Select color scheme for this journal</message>
+	<message key="plugins.themes.dainst.otherStuff">More</message>
+	<message key="plugins.themes.dainst.omp">Monographs</message>
+	<message key="plugins.themes.dainst.aboutLink">About</message>
+	<message key="plugins.themes.dainst.archive">Available digital issues</message>
+	<message key="plugins.themes.dainst.search">Search</message>
+	<message key="plugins.themes.dainst.journals">Journals</message>
+
+	<message key="plugins.themes.dainst.termsOfUse">Terms of use</message>
+	<message key="plugins.themes.dainst.termsOfUseRead">Terms of use read and understood!</message>
+	<message key="plugins.themes.dainst.termsOfUseText">
+		<![CDATA[
 			<b>Terms of use</b><br><br>
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu dignissim augue. Nam consequat aliquet diam eu pharetra. Integer a ante elementum ex rutrum molestie vitae eu orci. Morbi convallis dolor luctus risus pulvinar tempor. In consectetur elit erat, vitae congue massa tincidunt et. Mauris cursus ac odio ut egestas. Vestibulum sit amet rhoncus urna, eget vehicula ex. Sed pretium urna ut lobortis consequat. Praesent consequat eros id mollis imperdiet. Etiam ornare turpis tristique egestas tincidunt. Duis gravida elit accumsan tortor dictum sagittis. Praesent sed pellentesque odio. Phasellus non velit sagittis, imperdiet dui quis, pharetra nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam bibendum dapibus urna. Morbi sed laoreet purus, aliquet porta justo.<br>
 			Mauris in metus quis ipsum placerat pretium rhoncus eget lorem. Aliquam ac vestibulum risus. Vestibulum egestas aliquam dui, eu laoreet quam ultrices vel. Nullam volutpat neque erat, consectetur lobortis ante laoreet a. Etiam ut vulputate dolor. Duis ut bibendum metus. Curabitur maximus nisl quis turpis suscipit, a congue leo lobortis. Duis aliquet vestibulum dapibus. Aliquam maximus, orci eu egestas molestie, risus enim rutrum arcu, vel fermentum augue lectus tempor dui. Aenean iaculis, quam id dignissim lacinia, ex turpis hendrerit dui, vitae volutpat odio ipsum at erat. Vestibulum dignissim velit eget condimentum rutrum. In a nunc sit amet lacus scelerisque porttitor. Mauris nec leo nisi. Morbi lectus lectus, iaculis vitae elit eu, blandit posuere ex.<br>
@@ -59,11 +57,17 @@
 			Nunc ut lacinia leo. Vestibulum ex justo, tincidunt ac placerat ac, dictum ac massa. Donec egestas convallis ex at tempus. Vivamus lacinia justo enim, id molestie dui vulputate sed. Integer ante ipsum, viverra sed nunc eu, tempus rutrum turpis. Maecenas ipsum neque, interdum ut scelerisque eu, euismod vitae nisi. Praesent convallis condimentum nibh vel tempor. Donec fringilla tempor ipsum in efficitur. Phasellus sed convallis ligula, et ullamcorper tortor. Phasellus nec ex ultrices, tincidunt ante sed, aliquet ex. Mauris eget erat placerat, accumsan mi at, volutpat massa. Ut semper vulputate ornare. Vivamus ac nisi sapien. Maecenas mattis mi nunc. Nam dapibus magna ac elit rutrum, in pharetra justo tincidunt. Maecenas vel tortor et massa sollicitudin elementum.<br>
 			Morbi nisl magna, euismod nec ex eu, pulvinar vehicula urna. Phasellus vitae lobortis ex. Etiam faucibus nulla enim, ac suscipit massa varius eget. Aenean quis lorem sed leo molestie suscipit venenatis ac nisl. Nunc elementum, felis a facilisis commodo, velit ipsum fermentum mauris, eu molestie ante diam at odio. Donec vulputate dui sit amet ultricies molestie. Sed porttitor efficitur luctus. Curabitur feugiat nisl nunc, et consectetur turpis scelerisque efficitur. Vivamus sed facilisis odio.<br>
 			Cras feugiat augue ut risus ultrices tempor. Nunc laoreet bibendum posuere. Quisque eget feugiat velit, id auctor justo. Vestibulum ullamcorper est eget sollicitudin eleifend. Phasellus venenatis risus id dictum accumsan. Praesent a consectetur velit. Duis et accumsan orci. Curabitur iaculis nisi velit, ut posuere magna semper pretium. Maecenas scelerisque, tortor non blandit aliquet, eros enim lacinia ex, blandit bibendum ligula risus ac est. Sed dignissim et quam quis gravida. Integer varius finibus metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;<br>
-		]]></message>
-		<message key="plugins.themes.dainst.reportBugsTo">Report bugs to</message>		
-		<message key="plugins.themes.dainst.imprint">Imprint</message>		
-		
-		<message key="plugins.themes.dainst.meta">Meta</message>
-		<message key="plugins.themes.dainst.editmeta">Edit Metadata</message>		
-		<message key="plugins.themes.dainst.articleMenu">Article</message>		
+		]]>
+	</message>
+	<message key="plugins.themes.dainst.reportBugsTo">Report bugs to</message>
+	<message key="plugins.themes.dainst.imprint">Imprint</message>
+	<message key="plugins.themes.dainst.imprintText">
+		<![CDATA[
+			<b>Terms of use</b><br><br>
+			Lorem ipsum
+		]]>
+	</message>
+	<message key="plugins.themes.dainst.meta">Meta</message>
+	<message key="plugins.themes.dainst.editmeta">Edit Metadata</message>
+	<message key="plugins.themes.dainst.articleMenu">Article</message>
 </locale>
