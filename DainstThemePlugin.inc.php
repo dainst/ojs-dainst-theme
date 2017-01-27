@@ -270,7 +270,7 @@ class DainstThemePlugin extends ThemePlugin {
 	function getViewer($params, &$smarty) {
 		$viewerSrc = Config::getVar('dainst', 'viewerUrl');
 		if ($viewerSrc) {
-			$url = "$viewerSrc?file={$params['file']}&pubid={$params['article']}";
+			$url = "$viewerSrc?file={$params['file']}" . (Config::getVar('dainst', 'viewerAppendId') ? "&pubid={$params['article']}" : '');
 		} else {
 			$url = $params['file'];
 		}
