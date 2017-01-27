@@ -12,13 +12,13 @@
 
 {assign var=pdfViewerpage value=false}
 
+{assign var=pubObject value=$article}
+
 {if $galley}
-	{assign var=pubObject value=$galley}
+	{assign var=pubObject2 value=$galley}
 	{if $galley->isPdfGalley()}
 		{assign var=pdfViewerpage value=true}
 	{/if}
-{else}
-	{assign var=pubObject value=$article}
 {/if}
 
 {include file="article/header.tpl"}
