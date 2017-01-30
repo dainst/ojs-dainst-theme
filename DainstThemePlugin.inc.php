@@ -139,7 +139,7 @@ class DainstThemePlugin extends ThemePlugin {
 		$this->_idaic->settings['logo']['href'] 					= $this->theUrl;  
 		$this->_idaic->settings['logo']['href2'] 					= $smarty->smartyUrl(array('page' => "index"),$smarty);
 		
-		$this->_idaic->settings['search']['href']					= ($journal != null) ? $smarty->smartyUrl(array("page" => "search", "context" => $journal->getPath(), "op" => 'search'),$smarty) : 'index.php/index/search/search?';
+		$this->_idaic->settings['search']['href']					= ($journal != null) ? $smarty->smartyUrl(array("page" => "search", "context" => $journal->getPath(), "op" => 'search'),$smarty) : $this->theUrl . '/index.php/index/search/search?';
 		$this->_idaic->settings['search']['name'] 					= "simpleQuery";
 		$this->_idaic->settings['search']["params"] 				= array('searchField' => 'query');
 		$this->_idaic->settings['search']["label"]					= strtoupper(AppLocale::translate("plugins.themes.dainst.search"));
