@@ -269,8 +269,8 @@ class DainstThemePlugin extends ThemePlugin {
 	 */
 	function getViewer($params, &$smarty) {
 		$viewerSrc = Config::getVar('dainst', 'viewerUrl');
-		if ($viewerSrc or isset($_GET['ann'])) {
-			$url = "$viewerSrc?file={$params['file']}" . (Config::getVar('dainst', 'viewerAppendId') ? "&pubid={$params['article']}" : '');
+		if ($viewerSrc) {
+			$url = "$viewerSrc?file={$params['file']}" . ((Config::getVar('dainst', 'viewerAppendId') or isset($_GET['ann'])) ? "&pubid={$params['article']}" : '');
 		} else {
 			$url = $params['file'];
 		}
