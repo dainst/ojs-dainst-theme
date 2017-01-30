@@ -31,21 +31,43 @@
 	<message key="plugins.themes.dainst.termsOfUseRead">Terms of use read and understood!</message>
 	<message key="plugins.themes.dainst.termsOfUseText">
 		<![CDATA[
+			<b>Terms of use:</b><br><br>
+			<b>Copyright</b><br>
+			If you make use of the iDAI.publications archive, the following conditions apply:
 			All materials including texts, articles, images, digital book editions and other content contained on this online portal of electronic publications of the Deutsches Archäologisches Institut (“iDAI.publications”) are subject to the German copyright. All rights are reserved. The contents are for personal use only and may only be reproduced or made accessible to third parties if you have gained permission from the copyright owner. 
 			Photomechanical reproduction, duplication or distribution by use of special processes (for example data processing, data carriers and data networks), even of excerpts, is not permitted without the express authorization of the Deutsches Archäologisches Institut.
 			Any form of commercial use is expressly prohibited.
 
+			When seeking the granting of licenses of use or permission to reproduce any kind of material please contact the responsible editors of the publications or contact the Deutsches Archäologisches Institut (<a style=\"color:black;text-decoration:none\" href=\"mailto:info@dainst.de\">info@dainst.de</a>).
 
+			<b>Disclaimer</b><br>
+			The German Archaeological Institute makes every effort to ensure that its web content is always up to date, correct and complete. Nevertheless errors may occur. The German Archaeological Institute accepts no liability for the information posted on its website being up to date, correct and complete, unless the errors were the result of a deliberate act or gross negligence. The same applies to any material or non-material loss or damage incurred by third parties and ensuing from the use of this website. All offers are subject to change and non-binding. The German Archaeological Institute expressly reserves the right to alter, supplement or delete sections of web pages or the entire Internet presence without advance notice, or to temporarily suspend or definitively discontinue publication thereof.
 
+			<b>External links</b><br>
+			The German Archaeological Institute hereby expressly declares that in the case of direct or indirect links to external web sites ("hyperlinks") that are outside the German Archaeological Institute's scope of responsibility no illegal content was detectable on the hyperlinked web pages at the time the links were placed. The German Archaeological Institute undertakes all reasonable and technically possible efforts to check this, but has no influence whatever upon the current and future design, content or authorship of the hyperlinked web pages. For this reason the German Archaeological Institute distances itself explicitly from all content on all hyperlinked web pages that are modified after linking. This applies to all links on the German Archaeological Institute's own website as well as to external entries in its visitor books, discussion forums, link registers, mailing lists and all other forms of databases whose content can be modified externally. Liability for illegal, erroneous or incomplete content and in particular for damage or loss that results from the use or non-use of any such information provided shall lie solely with the publisher of the web page to which the link refers, and not with the party that merely provides a link to the publication in question.
 
+			<b>Legal validity</b><br>
+			This exclusion of liability is part of the website of the German Archaeological Institute. If individual formulations or parts of this text no longer comply, or fully comply, with applicable law, the remaining parts of this declaration shall remain effective.
+			If the German Archaeological Institute provides links to web pages whose content may be deemed objectionable, please notify the website's editorial office. Please also inform us if any of our own content is not up to date, complete or free of error.
 		]]>
 	</message>
 	<message key="plugins.themes.dainst.reportBugsTo">Report bugs to</message>
 	<message key="plugins.themes.dainst.imprint">Imprint</message>
 	<message key="plugins.themes.dainst.imprintText">
 		<![CDATA[
-			<b>Terms of use</b><br><br>
-			Lorem ipsum
+			<b>Imprint</b><br><br>
+			Deutsches Archäologisches Institut<br>
+			Podbielskiallee 69–71, 14195 Berlin<br>
+			Tel: +49 30 187711-0<br>
+			Fax: +49 30 187711-191<br>
+			email: (<a style=\"color:black;text-decoration:none\" href=\"mailto:info@dainst.de\">info@dainst.de</a>) www.dainst.org<br><br>
+			
+			The DAI is a federal agency operating within the area of responsibility of the Foreign Office.
+			It is represented by its President Prof. Dr. Dr. h. c. Friederike Fless.<br><br>
+
+			Responsible editorial department<br>
+			Editorial office at the Head Office<br>
+			(<a style=\"color:black;text-decoration:none\" href=\"mailto:redaktion.zentrale@dainst.de\">redaktion.zentrale@dainst.de</a>)
 		]]>
 	</message>
 	<message key="plugins.themes.dainst.meta">Meta</message>
