@@ -31,7 +31,7 @@
 {/if}
 </div>
 
-<h3>{translate key="plugins.themes.dainst.registerWhy"}</h3>
+<h3>{translate key="plugins.themes.dainst.registerInformation"}</h3>
 <div class="well">{translate key="plugins.themes.dainst.registerInformationText"}</div>
 
 
