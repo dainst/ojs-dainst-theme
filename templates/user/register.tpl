@@ -18,7 +18,7 @@
 {else}
 <form id="registerForm" method="post" action="{url op="registerUser"}">
 
-	<div class="well">
+	<div class="alert alert-info">
 		<div><a href="#why">{translate key="plugins.themes.dainst.registerWhy"}</a></div>
 
 		{if !$implicitAuth || ($implicitAuth === $smarty.const.IMPLICIT_AUTH_OPTIONAL && !Validation::isLoggedIn())}

@@ -807,3 +807,7 @@ table.data input {
 table.data h4 {
 	text-align: left
 }
+
+.alert {
+	padding: 15px;
+}
