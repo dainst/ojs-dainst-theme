@@ -72,7 +72,7 @@
 	<message key="plugins.themes.dainst.meta">Meta</message>
 	<message key="plugins.themes.dainst.editmeta">Edit Metadata</message>
 	<message key="plugins.themes.dainst.articleMenu">Article</message>
-	<message key="plugins.themes.dainst.registerInformation">Information for Registration</message>
+	<message key="plugins.themes.dainst.registerInformation">Questions and answers regarding registration and log in</message>
 	<message key="plugins.themes.dainst.registerInformationText">
 	<![CDATA[
 		<h3>Why do I have to register?</h3>
@@ -82,5 +82,5 @@
 		<p>After you have registered yourself you need to log in into iDAI.publications online portal to get access to the content of the articles for displaying them in a PDF-viewer or downloading.</p>
 		]]>
 	</message>
-	<message key="plugins.themes.dainst.registerWhy">Questions and answers regarding registration and log in</message>
+	<message key="plugins.themes.dainst.registerWhy">Why register and log in?</message>
 </locale>

@@ -73,7 +73,7 @@
 	<message key="plugins.themes.dainst.meta">Meta</message>
 	<message key="plugins.themes.dainst.editmeta">Metadaten Bearbeiten</message>
 	<message key="plugins.themes.dainst.articleMenu">Artikel</message>
-	<message key="plugins.themes.dainst.registerInformation">Informationen zur Registrierung</message>
+	<message key="plugins.themes.dainst.registerInformation">Fragen und Antworten zu Registrierung und Anmeldung</message>
 	<message key="plugins.themes.dainst.registerInformationText">
 		<![CDATA[
 		<h3>Warum muss ich mich registrieren?</h3>
@@ -82,5 +82,5 @@
 		<h3>Warum muss ich mich anmelden?</h3>
 		<p>Nach der erfolgten Registrierung ist die Anmeldung (Einloggen) im iDAI.publications-Publikationsportal dann notwendig, wenn Sie die Inhalte der Zeitschriftenartikel (PDF) einsehen wollen und beispielsweise herunterladen möchten.</p>		]]>
 	</message>
-	<message key="plugins.themes.dainst.registerWhy">Fragen und Antworten zu Registrierung und Anmeldung</message>
+	<message key="plugins.themes.dainst.registerWhy">Warum registrieren und anmelden?</message>
 </locale>
