@@ -82,5 +82,5 @@
 		<p>After you have registered yourself you need to log in into iDAI.publications online portal to get access to the content of the articles for displaying them in a PDF-viewer or downloading.</p>
 		]]>
 	</message>
-	<message key="plugins.themes.dainst.registerWhy">Why should I register?</message>
+	<message key="plugins.themes.dainst.registerWhy">Questions and answers regarding registration and log in</message>
 </locale>
