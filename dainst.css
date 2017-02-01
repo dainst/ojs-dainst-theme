@@ -811,3 +811,7 @@ table.data h4 {
 .alert {
 	padding: 15px;
 }
+
+.alert-info a {
+	font-weight: bold;
+}
