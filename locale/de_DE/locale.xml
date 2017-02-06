@@ -34,7 +34,7 @@
 			<b>Nutzungsbedingungen</b>
 			
 			<br><br><b>Urheberrecht</b><br> 
-			Die auf den WWW-Seiten des Publikationsarchivs „iDAI.publications“ des Deutschen Archäologischen Instituts veröffentlichten Inhalte (Texte, Bilder, Grafiken) und Aufarbeitung/Darstellung des Inhalts (Layout, Metadaten usw.) unterliegen dem Schutz des Urheberrechts gemäß des Urheberrechtsgesetzes der Bundesrepublik Deutschland.
+			Die auf den WWW-Seiten des Publikationsarchivs „iDAI.publications“ des Deutschen Archäologischen Instituts veröffentlichten Inhalte (Texte, Bilder, Grafiken) und Aufarbeitung/Darstellung des Inhalts (Layout, Metadaten usw.) unterliegen dem Schutz des Urheberrechts gemäß dem Urheberrechtsgesetz der Bundesrepublik Deutschland.
 			Die Nutzung der Inhalte ist ausschließlich privaten Nutzern für den eigenen wissenschaftlichen und sonstigen privaten Gebrauch gestattet. Zu diesem Zweck ist neben dem Recherchieren und Betrachten am Bildschirm auch das Herunterladen und Ausdrucken kleiner Teile erlaubt. Nicht gestattet ist das systematische oder automatisierte Herunterladen von Daten. Jede Art der Nutzung zu gewerblichen Zwecken ist untersagt. Jede weitere, vom Urheberrechtsgesetz nicht zugelassene Verwertung der Inhalte bedarf der vorherigen ausdrücklichen Zustimmung des Deutschen Archäologischen Instituts. Dies gilt insbesondere für die Vervielfältigung, Bearbeitung, Übersetzung, Einspeicherung, Verarbeitung bzw. Wiedergabe von Inhalten in Datenbanken oder anderen elektronischen Medien und Systemen.
 			Mit dem Herunterladen von Inhalten erkennen Sie diese Nutzungsbedingungen an.<br>
 			Zu den Möglichkeiten einer Lizensierung von Nutzungsrechten wenden Sie sich bitte an die verantwortlichen Herausgeber der Publikationsorgane oder an das Deutsche Archäologische Institut (<a style=\"color:black;text-decoration:none\" href=\"mailto:info@dainst.de\">info@dainst.de</a>).
@@ -77,10 +77,16 @@
 	<message key="plugins.themes.dainst.registerInformationText">
 		<![CDATA[
 		<h3>Warum muss ich mich registrieren?</h3>
-			<p>Die <b>einmalige</b> Registrierung im iDAI.publications-Publikationsportal ist Voraussetzung, um Zugang zu den Inhalten der Zeitschriftenartikel (PDF) zu erlangen.
-			Sie registrieren sich zunächst für den Zugang zu einer Zeitschrift. Möchten Sie Inhalte anderer Zeitschrift einsehen, müssen Sie sich nicht erneut für diese Zeitschrift registrieren, sondern können diese Zeitschrift zu Ihrem Benutzerkonto hinzufügen.</p>
-		<h3>Warum muss ich mich anmelden?</h3>
-		<p>Nach der erfolgten Registrierung ist die Anmeldung (Einloggen) im iDAI.publications-Publikationsportal dann notwendig, wenn Sie die Inhalte der Zeitschriftenartikel (PDF) einsehen wollen und beispielsweise herunterladen möchten.</p>		]]>
+			<p>Die Registrierung im iDAI.publications-Publikationsportal ist notwendig, damit sichergestellt wird, dass alle Nutzerinnen und Nutzer die Nutzungsbedingungen anerkennen. 
+			Nach dieser einmaligen Registrierung erlangen Sie Zugang zu den freigeschalteten Inhalten der Zeitschriftenartikel (PDF).
+			Sie registrieren sich zunächst für den Zugang zu einer Zeitschrift. Möchten Sie Inhalte einer anderen Zeitschrift einsehen, können Sie diese Zeitschrift auf Ihrer persönlichen Startseite zu Ihrem Benutzerkonto hinzufügen oder klicken <a style=\"color:black;text-decoration:none\" href="https://publications.dainst.org/journals/index.php/chiron/user/register?existingUser=1"> hier </a> wenn Sie bereits registriert sind.
+
+			Die Nutzung der Inhalte gemäß den Nutzungsbedingungen ist kostenfrei.</p>
+<h3>Warum muss ich mich anmelden?</h3>
+		<p>Die Anmeldung ist notwendig, um sicherzustellen, dass nur registrierte Nutzerinnen und Nutzer Zugang zu den freigeschalteten Inhalten haben.
+
+Darüber hinaus können Sie über Ihre persönliche Startseite zusätzliche Funktionen freischalten (z. B. automatische e-mail-Benachrichtigungen, wenn neue Beiträge online gestellt werden usw.).
+Auf Ihrer persönlichen Startseite können Sie auch zusätzliche Zeitschriften Ihrem eigenen Benutzerkonto hinzufügen (siehe oben).</p>		]]>
 	</message>
 	<message key="plugins.themes.dainst.registerWhy">Warum registrieren und anmelden?</message>
 </locale>
