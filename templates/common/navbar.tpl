@@ -46,13 +46,15 @@
 			<span class='nav-label'>{translate key="plugins.themes.dainst.otherStuff"}</span>
 			<b class="caret"></b>
 		</a>
-		<ul class="dropdown-menu">
-			{if $currentJournal && $hasOtherJournals}
+
+		{if $currentJournal && $hasOtherJournals}
+			<ul class="dropdown-menu">
 				<li><a href="{url journal="index"}">{translate key="navigation.otherJournals"}</a></li>
 				{if $siteCategoriesEnabled}<li><a href="{url journal="index" page="search" op="categories"}">{translate key="navigation.categories"}</a></li>{/if}
-			{/if}
-			<!--<li><a href="https://journals.dainst.org/monographs">{translate key="plugins.themes.dainst.omp"}</a></li>-->
-		</ul>
+			</ul>
+		{/if}
+		<!--<li><a href="https://journals.dainst.org/monographs">{translate key="plugins.themes.dainst.omp"}</a></li>-->
+		
 	</li>
 
 	{if $siteCategoriesEnabled}
