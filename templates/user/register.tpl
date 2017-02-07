@@ -319,9 +319,6 @@
 		jQuery('#toggleRegisterFields').click(function() {
 			jQuery('.toggleableRegisterField').toggle();
 		});
-		jQuery('#toggleRegisterFields').click(function() {
-			jQuery('.toggleableRegisterField').toggle();
-		});
 	});
 	{/literal}
 </script>

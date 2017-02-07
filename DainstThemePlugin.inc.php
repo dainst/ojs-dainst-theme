@@ -310,7 +310,7 @@ class DainstThemePlugin extends ThemePlugin {
 		$templateMgr =& TemplateManager::getManager();
 				
 		// cache cleansing
-
+		/*
 		$templateMgr->caching = 0;
 		$templateMgr->cache_lifetime = 0;
 		$templateMgr->clear_all_cache();
