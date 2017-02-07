@@ -41,19 +41,23 @@
 		</li>
 	{/if}
 	
-	<li class="navItem" id="sidebarNavigationOther">
-		<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-			<span class='nav-label'>{translate key="plugins.themes.dainst.otherStuff"}</span>
-			<b class="caret"></b>
-		</a>
-		<ul class="dropdown-menu">
-			{if $currentJournal && $hasOtherJournals}
-				<li><a href="{url journal="index"}">{translate key="navigation.otherJournals"}</a></li>
-				{if $siteCategoriesEnabled}<li><a href="{url journal="index" page="search" op="categories"}">{translate key="navigation.categories"}</a></li>{/if}
-			{/if}
-			<li><a href="https://journals.dainst.org/monographs">{translate key="plugins.themes.dainst.omp"}</a></li>
-		</ul>
-	</li>
+	{if $currentJournal && $hasOtherJournals}
+		<li class="navItem" id="sidebarNavigationOther">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+				<span class='nav-label'>{translate key="plugins.themes.dainst.otherStuff"}</span>
+				<b class="caret"></b>
+			</a>
+
+
+				<ul class="dropdown-menu">
+					<li><a href="{url journal="index"}">{translate key="navigation.otherJournals"}</a></li>
+					{if $siteCategoriesEnabled}<li><a href="{url journal="index" page="search" op="categories"}">{translate key="navigation.categories"}</a></li>{/if}
+				</ul>
+
+			<!--<li><a href="https://journals.dainst.org/monographs">{translate key="plugins.themes.dainst.omp"}</a></li>-->
+
+		</li>
+	{/if}
 
 	{if $siteCategoriesEnabled}
 		<li id="categories"><a href="{url journal="index" page="search" op="categories"}">{translate key="navigation.categories"}</a></li>
@@ -126,7 +130,7 @@
 	{/if}
 
 	<li class="navItem" id="sidebarDainstAbout">
-		<a href="http://www.dainst.org/publikationen/e-publikationen">{translate key="plugins.themes.dainst.aboutLink"}</a>
+		<a href="http://www.dainst.org/publikationen/e-publikationen/e-publi">{translate key="plugins.themes.dainst.aboutLink"}</a>
 	</li>
 
 </ul>
