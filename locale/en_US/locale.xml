@@ -83,4 +83,5 @@
 		]]>
 	</message>
 	<message key="plugins.themes.dainst.registerWhy">Why register and log in?</message>
+	<message key="plugins.themes.dainst.showAllFields">Show additional fields</message>
 </locale>

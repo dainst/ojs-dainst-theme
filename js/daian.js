@@ -77,6 +77,4 @@ jQuery(document).ready(function() {
 	jQuery('#article-meta-toggler').mouseleave(closeMetaDelay);
 	jQuery('#article-meta').mouseleave(closeMeta);
 
-
-
 })

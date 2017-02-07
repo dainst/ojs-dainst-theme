@@ -16,40 +16,40 @@
 {if $implicitAuth === true && !Validation::isLoggedIn()}
 	<div class="well"><a href="{url page="login" op="implicitAuthLogin"}">{translate key="user.register.implicitAuth"}</a></div>
 {else}
-<form id="registerForm" method="post" action="{url op="registerUser"}">
+	<form id="registerForm" method="post" action="{url op="registerUser"}">
 
-	<div class="alert alert-info">
-		<div><a href="#why">{translate key="plugins.themes.dainst.registerWhy"}</a></div>
+		<div class="alert alert-info">
+			<div><a href="#why">{translate key="plugins.themes.dainst.registerWhy"}</a></div>
+
+			{if !$implicitAuth || ($implicitAuth === $smarty.const.IMPLICIT_AUTH_OPTIONAL && !Validation::isLoggedIn())}
+				{if !$existingUser}
+					{url|assign:"url" page="user" op="register" existingUser=1}
+					<div>{translate key="user.register.alreadyRegisteredOtherJournal" registerUrl=$url}</div>
+				{else}
+					{url|assign:"url" page="user" op="register"}
+					<div>{translate key="user.register.notAlreadyRegisteredOtherJournal" registerUrl=$url}</div>
+					<input type="hidden" name="existingUser" value="1"/>
+				{/if}
+
+				{if $implicitAuth === $smarty.const.IMPLICIT_AUTH_OPTIONAL}
+					<div><a href="{url page="login" op="implicitAuthLogin"}">{translate key="user.register.implicitAuth"}</a></div>
+				{/if}
+			{/if}
+		</div>
 
 		{if !$implicitAuth || ($implicitAuth === $smarty.const.IMPLICIT_AUTH_OPTIONAL && !Validation::isLoggedIn())}
-			{if !$existingUser}
-				{url|assign:"url" page="user" op="register" existingUser=1}
-				<div>{translate key="user.register.alreadyRegisteredOtherJournal" registerUrl=$url}</div>
-			{else}
-				{url|assign:"url" page="user" op="register"}
-				<div>{translate key="user.register.notAlreadyRegisteredOtherJournal" registerUrl=$url}</div>
-				<input type="hidden" name="existingUser" value="1"/>
+			<h3>{translate key="user.profile"}</h3>
+
+			{include file="common/formErrors.tpl"}
+
+			{if $existingUser}
+				<div class="well">{translate key="user.register.loginToRegister"}</div>
 			{/if}
+		{/if}{* !$implicitAuth || ($implicitAuth === $smarty.const.IMPLICIT_AUTH_OPTIONAL && !Validation::isLoggedIn()) *}
 
-			{if $implicitAuth === $smarty.const.IMPLICIT_AUTH_OPTIONAL}
-				<div><a href="{url page="login" op="implicitAuthLogin"}">{translate key="user.register.implicitAuth"}</a></div>
-			{/if}
+		{if $source}
+			<input type="hidden" name="source" value="{$source|escape}" />
 		{/if}
-	</div>
-
-	{if !$implicitAuth || ($implicitAuth === $smarty.const.IMPLICIT_AUTH_OPTIONAL && !Validation::isLoggedIn())}
-		<h3>{translate key="user.profile"}</h3>
-
-		{include file="common/formErrors.tpl"}
-
-		{if $existingUser}
-			<div class="well">{translate key="user.register.loginToRegister"}</div>
-		{/if}
-	{/if}{* !$implicitAuth || ($implicitAuth === $smarty.const.IMPLICIT_AUTH_OPTIONAL && !Validation::isLoggedIn()) *}
-
-	{if $source}
-		<input type="hidden" name="source" value="{$source|escape}" />
-	{/if}
 	{/if}{* $implicitAuth === true && !Validation::isLoggedIn() *}
 
 	<div class="well">
@@ -65,7 +65,34 @@
 				</tr>
 			{/if}{* count($formLocales) > 1 && !$existingUser *}
 
+			{if !$implicitAuth || $implicitAuth === $smarty.const.IMPLICIT_AUTH_OPTIONAL || ($implicitAuth === true && Validation::isLoggedIn())}
+				{if $allowRegReader || $allowRegReader === null || $allowRegAuthor || $allowRegAuthor === null || $allowRegReviewer || $allowRegReviewer === null || ($currentJournal && $currentJournal->getSetting('publishingMode') == $smarty.const.PUBLISHING_MODE_SUBSCRIPTION && $enableOpenAccessNotification)}
+					<tr>
+						<td>{fieldLabel suppressId="true" name="registerAs" key="user.register.registerAs"}</td>
+						<td>
+							{if $allowRegReader || $allowRegReader === null}
+								<input type="checkbox" name="registerAsReader" id="registerAsReader" value="1"{if $registerAsReader} checked="checked"{/if} />
+								<label for="registerAsReader">{translate key="user.role.reader"}</label>: {translate key="user.register.readerDescription"}<br />
+							{/if}
+							{if $currentJournal && $currentJournal->getSetting('publishingMode') == $smarty.const.PUBLISHING_MODE_SUBSCRIPTION && $enableOpenAccessNotification}
+								<input type="checkbox" name="openAccessNotification" id="openAccessNotification" value="1"{if $openAccessNotification} checked="checked"{/if} />
+								<label for="openAccessNotification">{translate key="user.role.reader"}</label>: {translate key="user.register.openAccessNotificationDescription"}<br />
+							{/if}
+							{if $allowRegAuthor || $allowRegAuthor === null}
+								<input type="checkbox" name="registerAsAuthor" id="registerAsAuthor" value="1"{if $registerAsAuthor} checked="checked"{/if} />
+								<label for="registerAsAuthor">{translate key="user.role.author"}</label>: {translate key="user.register.authorDescription"}<br />
+							{/if}
+							{if $allowRegReviewer || $allowRegReviewer === null}
+								<input type="checkbox" name="registerAsReviewer" id="registerAsReviewer" value="1"{if $registerAsReviewer} checked="checked"{/if} />
+								<label for="registerAsReviewer">{translate key="user.role.reviewer"}</label>: {if $existingUser}{translate key="user.register.reviewerDescriptionNoInterests"}{else}{translate key="user.register.reviewerDescription"}{/if}
+							{/if}
+						</td>
+					</tr>
+				{/if}
+			{/if}
+
 			{if !$implicitAuth || ($implicitAuth === $smarty.const.IMPLICIT_AUTH_OPTIONAL && !Validation::isLoggedIn())}
+
 				<tr>
 					<td width="20%">{fieldLabel name="username" required="true" key="user.username"}</td>
 					<td width="80%">
@@ -75,7 +102,6 @@
 						{/if}{* !$existingUser *}
 					</td>
 				</tr>
-
 
 				<tr>
 					<td>{fieldLabel name="password" required="true" key="user.password"}</td>
@@ -112,16 +138,17 @@
 						</tr>
 					{/if}{* $captchaEnabled *}
 
-					<tr>
+					<tr class="toggleableRegisterField">
 						<td>{fieldLabel name="salutation" key="user.salutation"}</td>
 						<td><input type="text" name="salutation" id="salutation" value="{$salutation|escape}" size="20" maxlength="40" class="textField" /></td>
 					</tr>
+
 					<tr>
 						<td>{fieldLabel name="firstName" required="true" key="user.firstName"}</td>
 						<td><input type="text" id="firstName" name="firstName" value="{$firstName|escape}" size="20" maxlength="40" class="textField" /></td>
 					</tr>
 
-					<tr>
+					<tr class="toggleableRegisterField">
 						<td>{fieldLabel name="middleName" key="user.middleName"}</td>
 						<td><input type="text" id="middleName" name="middleName" value="{$middleName|escape}" size="20" maxlength="40" class="textField" /></td>
 					</tr>
@@ -131,7 +158,7 @@
 						<td><input type="text" id="lastName" name="lastName" value="{$lastName|escape}" size="20" maxlength="90" class="textField" /></td>
 					</tr>
 
-					<tr>
+					<tr class="toggleableRegisterField">
 						<td>{fieldLabel name="initials" key="user.initials"}</td>
 						<td>
 							<input type="text" id="initials" name="initials" value="{$initials|escape}" size="5" maxlength="5" class="textField" />
@@ -139,7 +166,7 @@
 						</td>
 					</tr>
 
-					<tr>
+					<tr class="toggleableRegisterField">
 						<td>{fieldLabel name="gender-m" key="user.gender"}</td>
 						<td>
 							<select name="gender" id="gender" size="1" class="selectMenu form-control">
@@ -148,7 +175,7 @@
 						</td>
 					</tr>
 
-					<tr>
+					<tr class="toggleableRegisterField">
 						<td>{fieldLabel name="affiliation" key="user.affiliation"}</td>
 						<td>
 							<textarea id="affiliation" class="form-control textArea" name="affiliation[{$formLocale|escape}]" rows="5" cols="40">{$affiliation[$formLocale]|escape}</textarea>
@@ -156,7 +183,7 @@
 						</td>
 					</tr>
 
-					<tr>
+					<tr class="toggleableRegisterField">
 						<td>{fieldLabel name="signature" key="user.signature"}</td>
 						<td><textarea name="signature[{$formLocale|escape}]" id="signature" rows="5" cols="40" class="form-control textArea">{$signature[$formLocale]|escape}</textarea></td>
 					</tr>
@@ -173,34 +200,34 @@
 						<td><input type="text" id="confirmEmail" name="confirmEmail" value="{$confirmEmail|escape}" size="30" maxlength="90" class="textField" /></td>
 					</tr>
 
-					<tr>
+					<tr class="toggleableRegisterField">
 						<td>{fieldLabel name="orcid" key="user.orcid"}</td>
 						<td><input type="text" id="orcid" name="orcid" value="{$orcid|escape}" size="40" maxlength="255" class="textField" />
 							<div class="instruct">{translate key="user.orcid.description"}</div>
 						</td>
 					</tr>
 
-					<tr>
+					<tr class="toggleableRegisterField">
 						<td>{fieldLabel name="userUrl" key="user.url"}</td>
 						<td><input type="text" id="userUrl" name="userUrl" value="{$userUrl|escape}" size="30" maxlength="255" class="textField" /></td>
 					</tr>
 
-					<tr>
+					<tr class="toggleableRegisterField">
 						<td>{fieldLabel name="phone" key="user.phone"}</td>
 						<td><input type="text" name="phone" id="phone" value="{$phone|escape}" size="15" maxlength="24" class="textField" /></td>
 					</tr>
 
-					<tr>
+					<tr class="toggleableRegisterField">
 						<td>{fieldLabel name="fax" key="user.fax"}</td>
 						<td><input type="text" name="fax" id="fax" value="{$fax|escape}" size="15" maxlength="24" class="textField" /></td>
 					</tr>
 
-					<tr>
+					<tr class="toggleableRegisterField">
 						<td>{fieldLabel name="mailingAddress" key="common.mailingAddress"}</td>
 						<td><textarea name="mailingAddress" id="mailingAddress" rows="3" cols="40" class="form-control textArea">{$mailingAddress|escape}</textarea></td>
 					</tr>
 
-					<tr>
+					<tr class="toggleableRegisterField">
 						<td>{fieldLabel name="country" key="common.country"}</td>
 						<td>
 							<select name="country" id="country" class="selectMenu form-control">
@@ -210,7 +237,7 @@
 						</td>
 					</tr>
 
-					<tr>
+					<tr class="toggleableRegisterField">
 						<td>{fieldLabel name="biography" key="user.biography"}<br />{translate key="user.biography.description"}</td>
 						<td><textarea name="biography[{$formLocale|escape}]" id="biography" rows="5" cols="40" class="form-control textArea">{$biography[$formLocale]|escape}</textarea></td>
 					</tr>
@@ -227,32 +254,23 @@
 							<td>{translate key="user.workingLanguages"}</td>
 							<td>{foreach from=$availableLocales key=localeKey item=localeName}
 									<input type="checkbox" name="userLocales[]" id="userLocales-{$localeKey|escape}" value="{$localeKey|escape}"{if in_array($localeKey, $userLocales)} checked="checked"{/if} /> <label for="userLocales-{$localeKey|escape}">{$localeName|escape}</label><br />
-								{/foreach}</td>
+								{/foreach}
+							</td>
 						</tr>
 					{/if}{* count($availableLocales) > 1 *}
 				{/if}{* !$existingUser *}
 			{/if}{* !$implicitAuth || ($implicitAuth === $smarty.const.IMPLICIT_AUTH_OPTIONAL && !Validation::isLoggedIn()) *}
 
 
-			{if !$implicitAuth || $implicitAuth === $smarty.const.IMPLICIT_AUTH_OPTIONAL || ($implicitAuth === true && Validation::isLoggedIn())}
-			{if $allowRegReader || $allowRegReader === null || $allowRegAuthor || $allowRegAuthor === null || $allowRegReviewer || $allowRegReviewer === null || ($currentJournal && $currentJournal->getSetting('publishingMode') == $smarty.const.PUBLISHING_MODE_SUBSCRIPTION && $enableOpenAccessNotification)}
-				<tr>
-					<td>{fieldLabel suppressId="true" name="registerAs" key="user.register.registerAs"}</td>
-					<td>{if $allowRegReader || $allowRegReader === null}<input type="checkbox" name="registerAsReader" id="registerAsReader" value="1"{if $registerAsReader} checked="checked"{/if} /> <label for="registerAsReader">{translate key="user.role.reader"}</label>: {translate key="user.register.readerDescription"}<br />{/if}
-						{if $currentJournal && $currentJournal->getSetting('publishingMode') == $smarty.const.PUBLISHING_MODE_SUBSCRIPTION && $enableOpenAccessNotification}<input type="checkbox" name="openAccessNotification" id="openAccessNotification" value="1"{if $openAccessNotification} checked="checked"{/if} /> <label for="openAccessNotification">{translate key="user.role.reader"}</label>: {translate key="user.register.openAccessNotificationDescription"}<br />{/if}
-						{if $allowRegAuthor || $allowRegAuthor === null}<input type="checkbox" name="registerAsAuthor" id="registerAsAuthor" value="1"{if $registerAsAuthor} checked="checked"{/if} /> <label for="registerAsAuthor">{translate key="user.role.author"}</label>: {translate key="user.register.authorDescription"}<br />{/if}
-						{if $allowRegReviewer || $allowRegReviewer === null}<input type="checkbox" name="registerAsReviewer" id="registerAsReviewer" value="1"{if $registerAsReviewer} checked="checked"{/if} /> <label for="registerAsReviewer">{translate key="user.role.reviewer"}</label>: {if $existingUser}{translate key="user.register.reviewerDescriptionNoInterests"}{else}{translate key="user.register.reviewerDescription"}{/if}
+{if !$implicitAuth || $implicitAuth === $smarty.const.IMPLICIT_AUTH_OPTIONAL || ($implicitAuth === true && Validation::isLoggedIn())}
 
-					</td>
-					{/if}
-				</tr>
-			{/if}
 
 			<tr>
 				<td></td>
 				<td>
 					{if !$implicitAuth || $implicitAuth === $smarty.const.IMPLICIT_AUTH_OPTIONAL}
 						<div class="instruct">{translate key="common.requiredField"}</div>
+						<div class="instruct"><a id='toggleRegisterFields' href="#">{translate key="plugins.themes.dainst.showAllFields"}</a></div>
 					{/if}{* !$implicitAuth || $implicitAuth === $smarty.const.IMPLICIT_AUTH_OPTIONAL *}
 				</td>
 			</tr>
@@ -282,19 +300,31 @@
 
 </form>
 
-
-<h3>{translate key="user.register.privacyStatement"}</h3>
+<h3 id="why">{translate key="plugins.themes.dainst.registerInformation"}</h3>
+<div class="well registerInformation">
+	{translate key="plugins.themes.dainst.registerInformationText"}
+</div>
 
 {if $privacyStatement}
+	<h3>{translate key="user.register.privacyStatement"}</h3>
 	<div id="privacyStatement" class="well registerInformation">
 		{$privacyStatement|nl2br}
 	</div>
 {/if}
 
-<h3 id="why">{translate key="plugins.themes.dainst.registerInformation"}</h3>
-<div class="well registerInformation">
-	{translate key="plugins.themes.dainst.registerInformationText"}
-</div>
+
+<script>
+	{literal}
+	jQuery(document).ready(function() {
+		jQuery('#toggleRegisterFields').click(function() {
+			jQuery('.toggleableRegisterField').toggle();
+		});
+		jQuery('#toggleRegisterFields').click(function() {
+			jQuery('.toggleableRegisterField').toggle();
+		});
+	});
+	{/literal}
+</script>
 
 {include file="common/footer.tpl"}
 

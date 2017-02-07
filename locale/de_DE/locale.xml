@@ -83,4 +83,5 @@
 		<p>Nach der erfolgten Registrierung ist die Anmeldung (Einloggen) im iDAI.publications-Publikationsportal dann notwendig, wenn Sie die Inhalte der Zeitschriftenartikel (PDF) einsehen wollen und beispielsweise herunterladen möchten.</p>		]]>
 	</message>
 	<message key="plugins.themes.dainst.registerWhy">Warum registrieren und anmelden?</message>
+	<message key="plugins.themes.dainst.showAllFields">Alle Felder anzeigen</message>
 </locale>

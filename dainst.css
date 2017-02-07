@@ -755,6 +755,10 @@ table.data,
 	max-width: 800px
 }
 
+#registerForm  .toggleableRegisterField {
+	display:none
+}
+
 table.data .textField,
 table.data .textArea {
 	width: 100%
