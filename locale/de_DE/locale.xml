@@ -76,17 +76,17 @@
 	<message key="plugins.themes.dainst.registerInformation">Fragen und Antworten zu Registrierung und Anmeldung</message>
 	<message key="plugins.themes.dainst.registerInformationText">
 		<![CDATA[
-		<h3>Warum muss ich mich registrieren?</h3>
-			<p>Die Registrierung im iDAI.publications-Publikationsportal ist notwendig, damit sichergestellt wird, dass alle Nutzerinnen und Nutzer die Nutzungsbedingungen anerkennen. 
-			Nach dieser einmaligen Registrierung erlangen Sie Zugang zu den freigeschalteten Inhalten der Zeitschriftenartikel (PDF).
-			Sie registrieren sich zunächst für den Zugang zu einer Zeitschrift. Möchten Sie Inhalte einer anderen Zeitschrift einsehen, können Sie diese Zeitschrift auf Ihrer persönlichen Startseite zu Ihrem Benutzerkonto hinzufügen oder klicken <a style=\"color:black;text-decoration:none\" href="https://publications.dainst.org/journals/index.php/chiron/user/register?existingUser=1"> hier </a> wenn Sie bereits registriert sind.
-
-			Die Nutzung der Inhalte gemäß den Nutzungsbedingungen ist kostenfrei.</p>
-<h3>Warum muss ich mich anmelden?</h3>
-		<p>Die Anmeldung ist notwendig, um sicherzustellen, dass nur registrierte Nutzerinnen und Nutzer Zugang zu den freigeschalteten Inhalten haben.
-
-Darüber hinaus können Sie über Ihre persönliche Startseite zusätzliche Funktionen freischalten (z. B. automatische e-mail-Benachrichtigungen, wenn neue Beiträge online gestellt werden usw.).
-Auf Ihrer persönlichen Startseite können Sie auch zusätzliche Zeitschriften Ihrem eigenen Benutzerkonto hinzufügen (siehe oben).</p>		]]>
+			<h3>Warum muss ich mich registrieren?</h3>
+				<p>Die Registrierung im iDAI.publications-Publikationsportal ist notwendig, damit sichergestellt wird, dass alle Nutzerinnen und Nutzer die Nutzungsbedingungen anerkennen. 
+				Nach dieser einmaligen Registrierung erlangen Sie Zugang zu den freigeschalteten Inhalten der Zeitschriftenartikel (PDF).<br>
+				Sie registrieren sich zunächst für den Zugang zu einer Zeitschrift. 
+				Möchten Sie Inhalte einer anderen Zeitschrift einsehen, können Sie diese Zeitschrift auf Ihrer persönlichen Startseite zu Ihrem Benutzerkonto hinzufügen oder klicken <a style=\"color:black;text-decoration:none\" href="https://publications.dainst.org/journals/index.php/chiron/user/register?existingUser=1"> hier </a> wenn Sie bereits registriert sind.<br>
+				Die Nutzung der Inhalte gemäß den Nutzungsbedingungen ist kostenfrei.</p>
+			<h3>Warum muss ich mich anmelden?</h3>
+				<p>Die Anmeldung ist notwendig, um sicherzustellen, dass nur registrierte Nutzerinnen und Nutzer Zugang zu den freigeschalteten Inhalten haben.
+				Darüber hinaus können Sie über Ihre persönliche Startseite zusätzliche Funktionen freischalten (z. B. automatische e-mail-Benachrichtigungen, wenn neue Beiträge online gestellt werden usw.).<br>
+				Auf Ihrer persönlichen Startseite können Sie auch zusätzliche Zeitschriften Ihrem eigenen Benutzerkonto hinzufügen (siehe oben).</p>		
+		]]>
 	</message>
 	<message key="plugins.themes.dainst.registerWhy">Warum registrieren und anmelden?</message>
 </locale>
