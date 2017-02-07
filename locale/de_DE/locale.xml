@@ -70,7 +70,7 @@
 			(<a style=\"color:black;text-decoration:none\" href=\"mailto:redaktion.zentrale@dainst.de\">redaktion.zentrale@dainst.de</a>)
 		]]>
 	</message>
-	<message key="plugins.themes.dainst.meta">Meta</message>
+	<message key="plugins.themes.dainst.meta">Zusatzinformationen (Zenon/URN)</message>
 	<message key="plugins.themes.dainst.editmeta">Metadaten Bearbeiten</message>
 	<message key="plugins.themes.dainst.articleMenu">Artikel</message>
 	<message key="plugins.themes.dainst.registerInformation">Fragen und Antworten zu Registrierung und Anmeldung</message>
