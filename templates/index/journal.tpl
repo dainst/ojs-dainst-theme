@@ -25,11 +25,12 @@
 	
 	{call_hook name="Templates::Index::journal"}
 	
-	
-	
+
 	{if $additionalHomeContent}
-	<br />
-	<div id="additionalHomeContent">{$additionalHomeContent}</div>
+		<p>
+			<a id="showAdditionalHomeContent">{translate key="plugins.themes.dainst.showAdditionalHomeContent"}</a>
+			<div id="additionalHomeContent">{$additionalHomeContent}</div>
+		</p>
 	{/if}
 	
 	{if $enableAnnouncementsHomepage}
@@ -57,5 +58,15 @@
 <h3>{translate key="plugins.themes.dainst.archive"}</h3>
 {journal_archive}
 
+<script>
+	{literal}
+		jQuery(document).ready(function() {
+			jQuery('#showAdditionalHomeContent').click(function() {
+				jQuery('#showAdditionalHomeContent').toggle();
+				jQuery('#additionalHomeContent').toggle();
+			})
+		})
+	{/literal}
+</script>
 
 {include file="common/footer.tpl"}

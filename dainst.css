@@ -244,6 +244,10 @@ ul.filter li {
 
 /* archive */
 
+#additionalHomeContent {
+	display: none
+}
+
 #issues > div > div {
 	padding: 0.5em;
 }
@@ -818,4 +822,8 @@ table.data h4 {
 
 .alert-info a {
 	font-weight: bold;
+}
+
+a {
+	cursor: pointer
 }

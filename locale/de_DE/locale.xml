@@ -92,4 +92,6 @@
 	</message>
 	<message key="plugins.themes.dainst.registerWhy">Warum registrieren und anmelden?</message>
 	<message key="plugins.themes.dainst.showAllFields">Zusätzliche Profilfelder anzeigen/verstecken</message>
+	<message key="plugins.themes.dainst.showAdditionalHomeContent">Mehr Informationen</message>
+
 </locale>
