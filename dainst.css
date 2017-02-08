@@ -300,10 +300,8 @@ ul.filter li {
 }
 
 #homepageImage > img {
-	max-width: 15%;
 	height: auto;
-	margin-left: 1em;
-	float:right
+	width: 100%;
 }
 
 #intro {

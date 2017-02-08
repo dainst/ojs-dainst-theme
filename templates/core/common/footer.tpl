@@ -24,7 +24,19 @@
 	
 
 	<div id="rightSidebar">
-		<div id='dainstLogo'>&nbsp;</div>
+		{if $homepageImage}
+			<div id="homepageImage">
+				<img src="{$publicFilesDir}/{$homepageImage.uploadName|escape:"url"}"
+					 width="{$homepageImage.width|escape}"
+					 height="{$homepageImage.height|escape}"
+					 {if $homepageImageAltText != ''}alt="{$homepageImageAltText|escape}"{else}alt="{translate key="common.journalHomepageImage.altText"}"{/if} />
+			</div>
+		{else}
+			<div id='dainstLogo'>&nbsp;</div>
+		{/if}
+
+
+
 		{if $rightSidebarCode}
 			<div class="panel panel-default">
 				<div class="panel-body">

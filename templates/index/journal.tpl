@@ -15,9 +15,7 @@
 
 <div>
 
-	{if $homepageImage}
-		<div id="homepageImage"><img src="{$publicFilesDir}/{$homepageImage.uploadName|escape:"url"}" width="{$homepageImage.width|escape}" height="{$homepageImage.height|escape}" {if $homepageImageAltText != ''}alt="{$homepageImageAltText|escape}"{else}alt="{translate key="common.journalHomepageImage.altText"}"{/if} /></div>
-	{/if}
+
 	
 	{if $journalDescription}
 		<div id="journalDescription">{$journalDescription}</div>
