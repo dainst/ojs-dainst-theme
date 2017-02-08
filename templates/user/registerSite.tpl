@@ -33,7 +33,14 @@
 
 <h3>{translate key="plugins.themes.dainst.registerInformation"}</h3>
 <div class="well">{translate key="plugins.themes.dainst.registerInformationText"}</div>
+<script>
+	{literal}
+	function showTermsOfUse() {
+		jQuery('#idai-footer-termsOfUse').click();
+	}
 
+	{/literal}
+</script>
 
 {include file="common/footer.tpl"}
 
