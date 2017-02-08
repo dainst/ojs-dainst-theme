@@ -327,6 +327,10 @@ ul.filter li {
 	padding-bottom: 2em;
 }
 
+.journalDescriptionBox {
+	margin-right: 220px
+}
+
 /*#issues .issueDescription {
 	margin-bottom: 2em
 }
