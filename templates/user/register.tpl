@@ -320,6 +320,11 @@
 			jQuery('.toggleableRegisterField').toggle();
 		});
 	});
+
+	function showTermsOfUse() {
+		jQuery('#idai-footer-termsOfUse').click();
+	}
+
 	{/literal}
 </script>
 

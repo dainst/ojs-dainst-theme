@@ -235,7 +235,8 @@ class DainstThemePlugin extends ThemePlugin {
 		
 		$this->_idaic->settings["footer_links"]["termsofuse"] = array(
 			'label' => AppLocale::translate("plugins.themes.dainst.termsOfUse"),
-			'moreinfo' => AppLocale::translate("plugins.themes.dainst.termsOfUseText") //'Terms of use',
+			'moreinfo' => AppLocale::translate("plugins.themes.dainst.termsOfUseText"), //'Terms of use',
+			'id' =>  'idai-footer-termsOfUse' // important
 		);
 
 		$this->_idaic->settings["footer_links"]["contact"] = array(

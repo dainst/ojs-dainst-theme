@@ -75,19 +75,22 @@
 	<message key="plugins.themes.dainst.registerInformation">Questions and answers regarding registration and log in</message>
 	<message key="plugins.themes.dainst.registerInformationText">
 		<![CDATA[
-			<h3>Why do I have to register?</h3>
-				<p>The registration for the iDAI.publications online portal is mandatory to make sure that all users acknowledge the terms of use.
-				After the once-only registration you get access to the available content of articles (PDF).<br>
-				Initially you register to get access to one journal.
-				If you like to see content of other journals, too, you can add these journals to your starting page in your personal account or click <a style=\"color:black;text-decoration:none\" href="https://publications.dainst.org/journals/index.php/chiron/user/register?existingUser=1"> here </a> if you are registered already.<br>
-				Using the content according to the terms of use is free of charge.</p>
-			<h3>Why do I have to log in?</h3>
-				<p>Logging in is necessary to make sure only registered users have access to the available content.
-				Furthermore you can enable various features in your personal account (e.g. automatically sent emails when new content is online etc.)<br>
-				On your personal page you can add more journals to your user profile (see above).
-				</p>
+			<h4>Why do I have to register?</h4>
+			<p>The registration for the iDAI.publications online portal is mandatory to make sure that all users acknowledge
+			the <a onclick='showTermsOfUse()'>terms of use</a>.
+			After the once-only registration you get access to the available content of articles (PDF).<br>
+			Initially you register to get access to one journal.
+			If you like to see content of other journals, too, you can add these journals to your starting page in your personal account or click
+			<a style=\"color:black;text-decoration:none\" href="https://publications.dainst.org/journals/index.php/chiron/user/register?existingUser=1"> here </a>
+			if you are registered already.<br>
+			Using the content according to the terms of use is free of charge.</p>
+			<h4>Why do I have to log in?</h4>
+			<p>Logging in is necessary to make sure only registered users have access to the available content.
+			Furthermore you can enable various features in your personal account (e.g. automatically sent emails when new content is online etc.)<br>
+			On your personal page you can add more journals to your user profile (see above).
+			</p>
 		]]>
 	</message>
 	<message key="plugins.themes.dainst.registerWhy">Why register and log in?</message>
-	<message key="plugins.themes.dainst.showAllFields">Show additional fields</message>
+	<message key="plugins.themes.dainst.showAllFields">Show/Hide additional profile fields</message>
 </locale>
