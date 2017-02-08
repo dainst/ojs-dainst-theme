@@ -40,9 +40,8 @@
 {/if}
 
 
-{if $error}
+{if $error && $smarty.post.username}
 	<div class="alert alert-danger">{translate key="$error" reason=$reason}</div>
-
 {/if}
 
 
