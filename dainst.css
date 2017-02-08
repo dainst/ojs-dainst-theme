@@ -299,9 +299,17 @@ ul.filter li {
 	margin-right: 1em;
 }
 
+#homepageImage {
+	position: absolute;
+	top: 1em;
+	right: 1em;
+	text-align: right;
+	min-height: 400px;
+}
+
 #homepageImage > img {
 	height: auto;
-	width: 100%;
+	width: 200px;
 }
 
 #intro {
