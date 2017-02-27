@@ -132,13 +132,21 @@ class DainstThemePlugin extends ThemePlugin {
 
 		$session = $this->getUser($smarty);
 		$journal =& Request::getJournal();
+		$server = $this->getServerType();
 
 		// construct the navbar via the settings array
 		$this->_idaic->settings['logo']['text'] 					= '/ journals';
 		$this->_idaic->settings['logo']['src'] 						= $this->theUrl . '/' . $this->pluginPath . '/img/logo_publications.png';
 		$this->_idaic->settings['logo']['href'] 					= $this->theUrl;  
 		$this->_idaic->settings['logo']['href2'] 					= $smarty->smartyUrl(array('page' => "index"),$smarty);
-		
+
+		if ($server != "production") {
+			$this->_idaic->settings['buttons']["aaa-warning"]		= array(
+				"label" => "$server server",
+				"class" => "$server-server-warning"
+			);
+		}
+
 		$this->_idaic->settings['search']['href']					= ($journal != null) ? $smarty->smartyUrl(array("page" => "search", "context" => $journal->getPath(), "op" => 'search'),$smarty) : $this->theUrl . '/index.php/index/search/search?';
 		$this->_idaic->settings['search']['name'] 					= "simpleQuery";
 		$this->_idaic->settings['search']["params"] 				= array('searchField' => 'query');
@@ -151,8 +159,7 @@ class DainstThemePlugin extends ThemePlugin {
 		unset($this->_idaic->settings['buttons']['login']['glyphicon']);
 		$this->_idaic->settings['buttons']['register']['href'] 		= $smarty->smartyUrl(array("page" => "user", "op" => "register"),$smarty);
 		$this->_idaic->settings['buttons']['register']['label'] 	= AppLocale::translate("plugins.themes.dainst.signUp");
-		
-		
+
 		$this->_idaic->settings['buttons']['usermenu']["glyphicon"]	= 'user';
 		
 		// (username) -> my journals
@@ -249,8 +256,7 @@ class DainstThemePlugin extends ThemePlugin {
 			'label' => AppLocale::translate("plugins.themes.dainst.imprint"), // report Bugs to
 			'moreinfo' => AppLocale::translate("plugins.themes.dainst.imprintText")
 		);
-		
-		
+
 		$this->_idaic->settings['version']			= '';
 		
 		unset($this->_idaic->settings["footer_links"]['licence']);
@@ -296,6 +302,23 @@ class DainstThemePlugin extends ThemePlugin {
 	function getOJSDomain() {
 		echo Config::getVar('dainst', 'ojsDomain');
 	}
+
+	function getServerType() {
+
+		$testservers = array(
+			'test.publications.dainst.org'
+		);
+		$devservers = array(
+			'195.37.232.186'
+		);
+		if (in_array($_SERVER['SERVER_NAME'], $testservers)) {
+			return "test";
+		}
+		if (in_array($_SERVER['SERVER_NAME'], $devservers)) {
+			return "dev";
+		}
+		return "production";
+	}
 	
 	/**
 	 * 
@@ -304,18 +327,18 @@ class DainstThemePlugin extends ThemePlugin {
 	 * @return boolean
 	 */
 	function dainstTemplate($hookName, $params) {
-
 		$tpl 	= $params[1];
 		$smarty = $params[0];
 		$journal =& Request::getJournal();
 		$templateMgr =& TemplateManager::getManager();
 				
 		// cache cleansing
-		/*
-		$templateMgr->caching = 0;
-		$templateMgr->cache_lifetime = 0;
-		$templateMgr->clear_all_cache();
-		$templateMgr->clear_compiled_tpl(); //*/
+		if ($this->getServerType() != "production") {
+			$templateMgr->caching = 0;
+			$templateMgr->cache_lifetime = 0;
+			$templateMgr->clear_all_cache();
+			$templateMgr->clear_compiled_tpl();
+		}
 		
 		//debug
 		//$templateMgr->debugging = true;
@@ -356,20 +379,13 @@ class DainstThemePlugin extends ThemePlugin {
 		
 		// register function for in-frontpage-archieve
 		$smarty->register_function("journal_archive", array($this, "getArchive"));
-			
+
 		// override the default templates 
 		array_unshift($smarty->template_dir, $this->getTemplatePath());
-		
-		//}
+
 
 		return false;
 
-
-		/*
-		 * so könnte man den output selber filtern 
-		 * $smarty->register_outputfilter(array(&$this, 'xxx'));
-		 */
-		//
 		
 
 	}
