@@ -82,8 +82,9 @@
 			Nach dieser einmaligen Registrierung erlangen Sie Zugang zu den freigeschalteten Inhalten der Zeitschriftenartikel (PDF).<br>
 			Sie registrieren sich zunächst für den Zugang zu einer Zeitschrift.
 			Möchten Sie Inhalte einer anderen Zeitschrift einsehen, können Sie diese Zeitschrift auf Ihrer persönlichen Startseite zu Ihrem
-			Benutzerkonto hinzufügen oder klicken <a style=\"color:black;text-decoration:none\" href="https://publications.dainst.org/journals/index.php/chiron/user/register?existingUser=1"> hier </a> wenn Sie bereits registriert sind.<br>
-			Die Nutzung der Inhalte gemäß den Nutzungsbedingungen ist kostenfrei.</p>
+			Benutzerkonto hinzufügen. 
+			Sollten Sie bereits registriert sein, klicken Sie <a style=\"color:black;text-decoration:none\" href="https://publications.dainst.org/journals/index.php/chiron/user/register?existingUser=1"> hier </a>.<br>
+			Die Nutzung der Inhalte gemäß den <a onclick='showTermsOfUse()'>Nutzungsbedingungen</a> ist kostenfrei.</p>
 			<h4>Warum muss ich mich anmelden?</h4>
 			<p>Die Anmeldung ist notwendig, um sicherzustellen, dass nur registrierte Nutzerinnen und Nutzer Zugang zu den freigeschalteten Inhalten haben.
 			Darüber hinaus können Sie über Ihre persönliche Startseite zusätzliche Funktionen freischalten (z. B. automatische e-mail-Benachrichtigungen, wenn neue Beiträge online gestellt werden usw.).<br>
