@@ -32,24 +32,42 @@
 	<message key="plugins.themes.dainst.termsOfUseText">
 		<![CDATA[
 			<b>Nutzungsbedingungen</b>
+			Mit der Registrierung als Nutzer/in akzeptieren Sie die nachfolgenden Allgemeinen Geschäftsbedingungen für die Nutzung von „iDAI.publications“.
 			
-			<br><br><b>Urheberrecht</b><br> 
-			Die auf den WWW-Seiten des Publikationsarchivs „iDAI.publications“ des Deutschen Archäologischen Instituts veröffentlichten Inhalte (Texte, Bilder, Grafiken) und Aufarbeitung/Darstellung des Inhalts (Layout, Metadaten usw.) unterliegen dem Schutz des Urheberrechts gemäß dem Urheberrechtsgesetz der Bundesrepublik Deutschland.
-			Die Nutzung der Inhalte ist ausschließlich privaten Nutzern für den eigenen wissenschaftlichen und sonstigen privaten Gebrauch gestattet. Zu diesem Zweck ist neben dem Recherchieren und Betrachten am Bildschirm auch das Herunterladen und Ausdrucken kleiner Teile erlaubt. Nicht gestattet ist das systematische oder automatisierte Herunterladen von Daten. Jede Art der Nutzung zu gewerblichen Zwecken ist untersagt. Jede weitere, vom Urheberrechtsgesetz nicht zugelassene Verwertung der Inhalte bedarf der vorherigen ausdrücklichen Zustimmung des Deutschen Archäologischen Instituts. Dies gilt insbesondere für die Vervielfältigung, Bearbeitung, Übersetzung, Einspeicherung, Verarbeitung bzw. Wiedergabe von Inhalten in Datenbanken oder anderen elektronischen Medien und Systemen.
-			Mit dem Herunterladen von Inhalten erkennen Sie diese Nutzungsbedingungen an.<br>
-			Zu den Möglichkeiten einer Lizensierung von Nutzungsrechten wenden Sie sich bitte an die verantwortlichen Herausgeber der Publikationsorgane oder an das Deutsche Archäologische Institut (<a style=\"color:black;text-decoration:none\" href=\"mailto:info@dainst.de\">info@dainst.de</a>).
+			<br><br><b>Anmeldung</b><br> 
+			1. Im Rahmen der Registrierung muss der/die Nutzer/in seine Kontaktdaten angeben. Der/Die Nutzer/in ist verpflichtet, ausschließlich wahre und nicht irreführende Angaben bei der Registrierung zu machen.
+			<br><br>
+			2. Der/Die Nutzer/in ist verpflichtet, seine Zugangsdaten geheim zu halten und vor dem Zugriff Dritter zu schützen. Die Nutzung der Zugangsdaten ist ausschließlich dem/der registrierten Nutzer/in gestattet. Die Haftung des/der Nutzer/in für eine Fremdnutzung richtet sich nach den gesetzlichen Vorschriften.
+			
+			<br><br><b>Datenschutz</b><br>
+			1. Das Deutsche Archäologische Institut erhebt, verarbeitet und nutzt personenbezogene Daten der Nutzer unter Einhaltung der Datenschutzgesetze der Bundesrepublik Deutschland und der Datenschutzbestimmungen der Europäischen Union.
+			<br><br>
+			2. Das Deutsche Archäologische Institut nutzt die personenbezogenen Daten der Nutzer ausschließlich, um der/dem Nutzer/in die Inanspruchnahme des Portals "iDAI.publications" zu ermöglichen. In keinem Fall wird das DAI personenbezogene Daten von Nutzern Dritten zu Werbe- oder Marketingzwecken zur Verfügung stellen und/oder unbefugt zu anderen Zwecken übermitteln.
+			<br><br>
+			3. Nutzer haben jederzeit ein Recht auf kostenlose Auskunft, Berichtigung, Sperrung und Löschung von gespeicherten personenbezogenen Daten. Nutzer wenden sich dazu an die Internetredaktion (idai.publications@dainst.de) oder an die/den Datenschutzbeauftragte(n) des Deutschen Archäologischen Instituts, Podbielskiallee 69-71, 14195 Berlin, E-Mail: <a style=\"color:black;text-decoration:none\" href=\"mailto:datenschutz@dainst.de\">datenschutz@dainst.de</a>
+			
+			<br><br><b>Nutzungsausschluss</b><br>
+			Bei Vorliegen eines wichtigen Grundes kann das DAI den Zugang zum Portal „iDAI.publications“ vorübergehend oder dauerhaft sperren. Ein wichtiger Grund liegt vor, wenn die persönlichen Daten nicht wahrheitsgemäß eingetragen werden, fremde Zugangsdaten zur Nutzung verwendet werden oder der/die Nutzer/in gegen die geltenden Nutzungsbedingungen verstößt.
+			
+			<br><br><b>Urheberrecht</b><br>
+			Die auf den WWW-Seiten des Publikationsarchivs „iDAI.publications“ des Deutschen Archäologischen Instituts veröffentlichten Inhalte (Texte, Bilder, Grafiken) und Aufarbeitung/Darstellung des Inhalts (Layout, Metadaten usw.) unterliegen dem Schutz des Urheberrechts gemäß dem Urheberrechtsgesetz der Bundesrepublik Deutschland. Die Nutzung der Inhalte ist ausschließlich privaten Nutzerinnen/Nutzern für den eigenen wissenschaftlichen und sonstigen privaten Gebrauch gestattet. Zu diesem Zweck ist neben dem Recherchieren und Betrachten am Bildschirm auch das Herunterladen und Ausdrucken kleiner Teile erlaubt. Nicht gestattet ist das systematische oder automatisierte Herunterladen von Daten. Jede Art der Nutzung zu gewerblichen Zwecken ist untersagt. Jede weitere, vom Urheberrechtsgesetz nicht zugelassene Verwertung der Inhalte bedarf der vorherigen ausdrücklichen Zustimmung des Deutschen Archäologischen Instituts. Dies gilt insbesondere für die Vervielfältigung, Bearbeitung, Übersetzung, Einspeicherung, Verarbeitung bzw. Wiedergabe von Inhalten in Datenbanken oder anderen elektronischen Medien und Systemen. Mit dem Herunterladen von Inhalten erkennen Sie diese Nutzungsbedingungen an.
+Zu den Möglichkeiten einer Lizensierung von Nutzungsrechten wenden Sie sich bitte direkt an die verantwortlichen Herausgeberinnen/Herausgeber der entsprechenden Publikationsorgane, deren Kontaktdaten Sie den Deckblättern entnehmen können, oder an das Deutsche Archäologische Institut (<a style=\"color:black;text-decoration:none\" href=\"mailto:idai.publications@dainst.de\">idai.publications@dainst.de</a>). 
 
 			<br><br><b>Haftungsausschluss</b><br>
-			Das Deutsche Archäologische Institut ist bemüht, sein Webangebot stets aktuell, inhaltlich richtig und vollständig anzubieten. Dennoch ist das Auftreten von Fehlern nicht völlig auszuschließen. Das Deutsche Archäologische Institut übernimmt keine Haftung für die Aktualität, die inhaltliche Richtigkeit sowie für die Vollständigkeit der in ihrem Webangebot eingestellten Informationen, es sei denn, die Fehler wurden vorsätzlich oder grob fahrlässig aufgenommen. Dies bezieht sich auf eventuelle Schäden materieller oder ideeller Art Dritter, die durch die Nutzung dieses Webangebotes verursacht wurden. Alle Angebote sind freibleibend und unverbindlich. Das Deutsche Archäologische Institut behält es sich ausdrücklich vor, Teile der Seiten oder das gesamte Angebot ohne gesonderte Ankündigung zu verändern, zu ergänzen, zu löschen oder die Veröffentlichung zeitweise oder endgültig einzustellen.
-
+			Das Deutsche Archäologische Institut ist bemüht, sein Webangebot stets aktuell, inhaltlich richtig und vollständig anzubieten. Dennoch ist das Auftreten von Fehlern nicht völlig auszuschließen. Das Deutsche Archäologische Institut übernimmt keine Haftung für die Aktualität, die inhaltliche Richtigkeit sowie für die Vollständigkeit der in ihrem Webangebot eingestellten Informationen, es sei denn, die Fehler wurden vorsätzlich oder grob fahrlässig aufgenommen. Dies bezieht sich auf eventuelle Schäden materieller oder ideeller Art Dritter, die durch die Nutzung dieses Webangebotes verursacht wurden. Alle Angebote sind freibleibend und unverbindlich. Das Deutsche Archäologische Institut behält es sich ausdrücklich vor, Teile der Seiten oder das gesamte Angebot ohne gesonderte Ankündigung zu verändern, zu ergänzen, zu löschen oder die Veröffentlichung zeitweise oder endgültig einzustellen. 
+			
 			<br><br><b>Externe Verweise und Links</b><br>
-			Das Deutsche Archäologische Institut erklärt hiermit ausdrücklich, dass bei direkten oder indirekten Verweisen auf fremde Webseiten ("Hyperlinks"), die außerhalb des Verantwortungsbereiches des Deutschen Archäologischen Instituts liegen zum Zeitpunkt der Linksetzung keine illegalen Inhalte auf den zu verlinkenden Seiten erkennbar waren. Das DAI hat für diese Prüfung die ihm technisch möglichen und zumutbaren Anstrengungen unternommen. Auf die aktuelle und zukünftige Gestaltung, die Inhalte oder die Urheberschaft der verlinkten/verknüpften Seiten hat das Deutsche Archäologische Institut keinerlei Einfluss. Deshalb distanziert es sich hiermit ausdrücklich von allen Inhalten aller verlinkten/verknüpften Seiten, die nach der Linksetzung verändert wurden. Diese Feststellung gilt für alle innerhalb des eigenen Internetangebotes gesetzten Links und Verweise sowie für Fremdeinträge in vom Deutschen Archäologischen Institut eingerichteten Gästebüchern, Diskussionsforen, Linkverzeichnissen, Mailinglisten und in allen anderen Formen von Datenbanken, auf deren Inhalt externe Schreibzugriffe möglich sind. Für illegale, fehlerhafte oder unvollständige Inhalte und insbesondere für Schäden, die aus der Nutzung oder Nichtnutzung solcherart dargebotener Informationen entstehen, haftet allein der Anbieter der Seite, auf welche verwiesen wurde, nicht derjenige, der über Links auf die jeweilige Veröffentlichung lediglich verweist.
+			Das Deutsche Archäologische Institut erklärt hiermit ausdrücklich, dass bei direkten oder indirekten Verweisen auf fremde Webseiten ("Hyperlinks"), die außerhalb des Verantwortungsbereiches des Deutschen Archäologischen Instituts liegen zum Zeitpunkt der Linksetzung keine illegalen Inhalte auf den zu verlinkenden Seiten erkennbar waren. Das DAI hat für diese Prüfung die ihm technisch möglichen und zumutbaren Anstrengungen unternommen. Auf die aktuelle und zukünftige Gestaltung, die Inhalte oder die Urheberschaft der verlinkten/verknüpften Seiten hat das Deutsche Archäologische Institut keinerlei Einfluss. Deshalb distanziert es sich hiermit ausdrücklich von allen Inhalten aller verlinkten/verknüpften Seiten, die nach der Linksetzung verändert wurden. Diese Feststellung gilt für alle innerhalb des eigenen Internetangebotes gesetzten Links und Verweise sowie für Fremdeinträge in vom Deutschen Archäologischen Institut eingerichteten Gästebüchern, Diskussionsforen, Linkverzeichnissen, Mailinglisten und in allen anderen Formen von Datenbanken, auf deren Inhalt externe Schreibzugriffe möglich sind. Für illegale, fehlerhafte oder unvollständige Inhalte und insbesondere für Schäden, die aus der Nutzung oder Nichtnutzung solcherart dargebotener Informationen entstehen, haftet allein der Anbieter der Seite, auf welche verwiesen wurde, nicht derjenige, der über Links auf die jeweilige Veröffentlichung lediglich verweist. 
+Falls das Deutsche Archäologische Institut auf Seiten verweist, deren Inhalt Anlass zur Beanstandung gibt, bittet die Internet-Redaktion um Mitteilung. Teilen Sie uns bitte ebenso mit, wenn eigene Inhalte nicht fehlerfrei, aktuell, vollständig oder verständlich geschrieben sind.
+			
+			<br><br><b>Schlussbestimmungen</b><br>
+			1. Sollten einzelne Regelungen dieser Allgemeinen Geschäftsbedingungen unwirksam sein oder werden, wird dadurch die Wirksamkeit der übrigen Regelungen nicht berührt. 
+			2. Gerichtsstand ist Berlin.
+			3. Es gilt deutsches Recht unter Ausschluss des Internationalen Privatrechts. 
+			4. Der/die Nutzer/in kann diese Allgemeinen Geschäftsbedingungen unter dem auf https://publications.dainst.org/nutzungsbedingungen erreichbaren Link abrufen, ausdrucken sowie herunterladen.
 
-			<br><br><b>Rechtswirksamkeit</b><br>
-			Dieser Haftungsausschluss ist Teil des Internetangebotes des Deutschen Archäologischen Instituts. Sofern einzelne Formulierungen oder Teile dieses Textes der geltenden Rechtslage nicht mehr oder nicht mehr vollständig entsprechen, bleiben die übrigen Teile dieser Erklärung davon unberührt.<br>
-
-			Falls das Deutsche Archäologische Institut auf Seiten verweist, deren Inhalt Anlass zur Beanstandung gibt, bittet die Internet-Redaktion um Mitteilung. Teilen Sie uns bitte ebenso mit, wenn eigene Inhalte nicht fehlerfrei, aktuell, vollständig oder verständlich geschrieben sind.
-		]]>
+			
+			]]>
 	</message>
 	<message key="plugins.themes.dainst.reportBugsTo">Fehlermeldungen bitte an</message>
 	<message key="plugins.themes.dainst.imprint">Impressum</message>
@@ -60,7 +78,7 @@
 			Podbielskiallee 69–71, 14195 Berlin<br>
 			Tel: +49 30 187711-0<br>
 			Fax: +49 30 187711-191<br>
-			email: <a style=\"color:black;text-decoration:none\" href=\"mailto:info@dainst.de\">info@dainst.de</a> www.dainst.org<br><br>
+			email: <a style=\"color:black;text-decoration:none\" href=\"mailto:idai.publications@dainst.de\">idai.publications@dainst.de</a> www.dainst.org<br><br>
 
 			Das Deutsche Archäologische Institut ist eine Forschungsanstalt des Bundes im Geschäftsbereich des Auswärtigen Amtes.<br> 
 			Es wird vertreten durch die Präsidentin Prof. Dr. Dr. h. c. Friederike Fless.<br><br>
