@@ -42,8 +42,12 @@ class DainstThemeSettingsForm extends Form {
 	function getDainstColors() {
 		$colorsfile = realpath($this->plugin->getTemplatePath() . '../') . '/dainstColors.css';
 		$css = file_get_contents($colorsfile);
+		$result = array();
+		if($css === FALSE) {
+			return $result;
+		}
         preg_match_all( '/(?ims)([a-z0-9\s\.\:#_\-@,]+)\{([^\}]*)\}/', $css, $arr);
-        $result = array();
+
         foreach ($arr[0] as $i => $x){
             $selector = trim($arr[1][$i]);
             $rules = explode(';', trim($arr[2][$i]));
@@ -64,7 +68,7 @@ class DainstThemeSettingsForm extends Form {
                 }
             }
         }
-        return $result;
+		return $result;
 	}
 	
 	
