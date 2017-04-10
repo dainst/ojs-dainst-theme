@@ -212,7 +212,7 @@ class DainstThemePlugin extends ThemePlugin {
 				if ($galleyId > -1) {
 					$this->_idaic->settings['buttons']['article']["submenu"]["editmetagalley"] = array(
 						"label"	=>	AppLocale::translate("plugins.themes.dainst.editmetaGalley"),
-						"href"	=>	"{$this->theUrl}/index.php/$journalPath/editor/editGalley/$articleId/$GalleyId"
+						"href"	=>	"{$this->theUrl}/index.php/$journalPath/editor/editGalley/$articleId/$galleyId"
 					);
 				}
 
