@@ -34,13 +34,13 @@ class DainstThemeSettingsForm extends Form {
 		$templateMgr =& TemplateManager::getManager();
 		$templateMgr->assign('colorz', $this->getDainstColors());
 		$templateMgr->assign('colorsel',$plugin->getSetting($journalId, 'dainstcicolor'));
-		parent::Form($plugin->getTemplatePath() . 'dainstThemeForm.tpl');
+		parent::Form($plugin->getFilePath() . '/templates/dainstThemeForm.tpl');
 
 	}
 
 	
 	function getDainstColors() {
-		$colorsfile = realpath($this->plugin->getTemplatePath() . '../') . '/dainstColors.css';
+		$colorsfile = $this->plugin->getFilePath() . '/dainstColors.css';
 		$css = file_get_contents($colorsfile);
 		$result = array();
 		if($css === FALSE) {
