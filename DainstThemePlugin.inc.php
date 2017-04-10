@@ -44,13 +44,16 @@ class DainstThemePlugin extends ThemePlugin {
 	 * @see PKPPlugin::register($category, $path)
 	 */
 	function register($category, $path) {
+
 		if (parent::register($category, $path)) {		
-			$this->addLocaleData();			
+			$this->addLocaleData();
+
 			HookRegistry::register('TemplateManager::display', array($this, 'dainstTemplate'));
 			return true;
 		}
 		return false;
 	}
+
 
 	/**
 	 * (non-PHPdoc)
@@ -327,6 +330,7 @@ class DainstThemePlugin extends ThemePlugin {
 	 * @return boolean
 	 */
 	function dainstTemplate($hookName, $params) {
+
 		$tpl 	= $params[1];
 		$smarty = $params[0];
 		$journal =& Request::getJournal();

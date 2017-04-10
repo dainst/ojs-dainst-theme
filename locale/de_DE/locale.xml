@@ -39,7 +39,7 @@
 			2. Der/Die Nutzer/in ist verpflichtet, seine Zugangsdaten geheim zu halten und vor dem Zugriff Dritter zu schützen. Die Nutzung der Zugangsdaten ist ausschließlich dem/der registrierten Nutzer/in gestattet. Die Haftung des/der Nutzer/in für eine Fremdnutzung richtet sich nach den gesetzlichen Vorschriften. 
 			
 			<br><br><b>Urheberrecht</b><br>
-			Die auf den WWW-Seiten des Publikationsarchivs „iDAI.publications“ des Deutschen Archäologischen Instituts veröffentlichten Inhalte (Texte, Bilder, Grafiken) und Aufarbeitung/Darstellung des Inhalts (Layout, Metadaten usw.) unterliegen dem Schutz des Urheberrechts gemäß dem Urheberrechtsgesetz der Bundesrepublik Deutschland. Die Nutzung der Inhalte ist ausschließlich privaten Nutzerinnen/Nutzern für den eigenen wissenschaftlichen und sonstigen privaten Gebrauch gestattet. Zu diesem Zweck ist neben dem Recherchieren und Betrachten am Bildschirm auch das Herunterladen und Ausdrucken kleiner Teile erlaubt. Nicht gestattet ist das systematische oder automatisierte Herunterladen von Daten. Jede Art der Nutzung zu gewerblichen Zwecken ist untersagt. Jede weitere, vom Urheberrechtsgesetz nicht zugelassene Verwertung der Inhalte bedarf der vorherigen ausdrücklichen Zustimmung des Deutschen Archäologischen Instituts. Dies gilt insbesondere für die Vervielfältigung, Bearbeitung, Übersetzung, Einspeicherung, Verarbeitung bzw. Wiedergabe von Inhalten in Datenbanken oder anderen elektronischen Medien und Systemen. Mit dem Herunterladen von Inhalten erkennen Sie diese Nutzungsbedingungen an. Zu den Möglichkeiten einer Lizensierung von Nutzungsrechten wenden Sie sich bitte direkt an die verantwortlichen Herausgeberinnen/Herausgeber der entsprechenden Publikationsorgane, deren Kontaktdaten Sie den Deckblättern entnehmen können, oder an das Deutsche Archäologische Institut  (<a style=\"color:black;text-decoration:none\" href=\"mailto:idai.publications@dainst.de\">idai.publications@dainst.de</a>). 
+			Die auf den WWW-Seiten des Publikationsarchivs „iDAI.publications“ des Deutschen Archäologischen Instituts veröffentlichten Inhalte (Texte, Bilder, Grafiken) und Aufarbeitung/Darstellung des Inhalts (Layout, Metadaten usw.) unterliegen dem Schutz des Urheberrechts gemäß dem Urheberrechtsgesetz der Bundesrepublik Deutschland. Die Nutzung der Inhalte ist ausschließlich privaten Nutzerinnen/Nutzern für den eigenen wissenschaftlichen und sonstigen privaten Gebrauch gestattet. Zu diesem Zweck ist neben dem Recherchieren und Betrachten am Bildschirm auch das Herunterladen und Ausdrucken kleiner Teile erlaubt. Nicht gestattet ist das systematische oder automatisierte Herunterladen von Daten. Jede Art der Nutzung zu gewerblichen Zwecken ist untersagt. Jede weitere, vom Urheberrechtsgesetz nicht zugelassene Verwertung der Inhalte bedarf der vorherigen ausdrücklichen Zustimmung des Deutschen Archäologischen Instituts. Dies gilt insbesondere für die Vervielfältigung, Bearbeitung, Übersetzung, Einspeicherung, Verarbeitung bzw. Wiedergabe von Inhalten in Datenbanken oder anderen elektronischen Medien und Systemen. Mit dem Herunterladen von Inhalten erkennen Sie diese Nutzungsbedingungen an. Zu den Möglichkeiten einer Lizensierung von Nutzungsrechten wenden Sie sich bitte direkt an die verantwortlichen Herausgeberinnen/Herausgeber der entsprechenden Publikationsorgane, deren Kontaktdaten Sie den Deckblättern entnehmen können, oder an das Deutsche Archäologische Institut  (<a style="color:black;text-decoration:none" href="mailto:idai.publications@dainst.de">idai.publications@dainst.de</a>). 
 
 			
 			<br><br><b>Nutzungsausschluss</b><br>
@@ -56,32 +56,32 @@ Falls das Deutsche Archäologische Institut auf Seiten verweist, deren Inhalt An
 			1. Sollten einzelne Regelungen dieser Allgemeinen Geschäftsbedingungen unwirksam sein oder werden, wird dadurch die Wirksamkeit der übrigen Regelungen nicht berührt.<br>
 			2. Gerichtsstand ist Berlin.<br>
 			3. Es gilt deutsches Recht unter Ausschluss des Internationalen Privatrechts.<br>
-			4. Der/die Nutzer/in kann diese Allgemeinen Geschäftsbedingungen unter dem auf <a style=\"color:black;text-decoration:none\" href=\"https://publications.dainst.org/journals/terms-of-use">https://publications.dainst.org/journals/terms-of-use</a> erreichbaren Link abrufen, ausdrucken sowie herunterladen.<br>
+			4. Der/die Nutzer/in kann diese Allgemeinen Geschäftsbedingungen unter dem auf <a style="color:black;text-decoration:none" href="https://publications.dainst.org/journals/terms-of-use">https://publications.dainst.org/journals/terms-of-use</a> erreichbaren Link abrufen, ausdrucken sowie herunterladen.<br>
 			]]>
 	</message>
 	<message key="plugins.themes.dainst.reportBugsTo">Fehlermeldungen bitte an</message>
 	<message key="plugins.themes.dainst.imprint">Impressum und Datenschutz</message>
 	<message key="plugins.themes.dainst.imprintText">
 		<![CDATA[
-			<b>Impressum</b><br><br>
+			<b>Impressumse</b><br><br>
 			Deutsches Archäologisches Institut<br>
 			Podbielskiallee 69–71, 14195 Berlin<br>
 			Tel: +49 30 187711-0<br>
 			Fax: +49 30 187711-191<br>
-			email: <a style=\"color:black;text-decoration:none\" href=\"mailto:info@dainst.de\">info@dainst.de</a> 
-			<br><a style=\"color:black;text-decoration:none\" href=\"http://www.dainst.org\">www.dainst.org</a><br><br>
+			email: <a style="color:black;text-decoration:none" href="mailto:info@dainst.de">info@dainst.de</a> 
+			<br><a style="color:black;text-decoration:none" href="http://www.dainst.org">www.dainst.org</a><br><br>
 
 			Das Deutsche Archäologische Institut ist eine Forschungsanstalt des Bundes im Geschäftsbereich des Auswärtigen Amtes.<br> 
 			Es wird vertreten durch die Präsidentin Prof. Dr. Dr. h. c. Friederike Fless.<br><br>
 
 			Verantwortliche Redaktion<br>
 			Redaktion der Zentrale<br>
-			(<a style=\"color:black;text-decoration:none\" href=\"mailto:idai.publications@dainst.de\">idai.publications@dainst.de</a>)
+			(<a style="color:black;text-decoration:none" href="mailto:idai.publications@dainst.de">idai.publications@dainst.de</a>)
 			<br><br>
 			
 			<b>Datenschutzerklärung</b><br><br>
 			Geltungsbereich:<br>
-			Diese Datenschutzerklärung klärt Nutzer über die Art, den Umfang und Zwecke der Erhebung und Verwendung personenbezogener Daten durch den verantwortlichen Anbieter, das Deutsche Archäologische Institut, Podbielskiallee 69–71, 14195 Berlin, Tel: +49 30 187711-0, <a style=\"color:black;text-decoration:none\" href=\"mailto:info@dainst.de\">info@dainst.de</a>, auf dieser Website (im folgenden „Angebot”) auf.
+			Diese Datenschutzerklärung klärt Nutzer über die Art, den Umfang und Zwecke der Erhebung und Verwendung personenbezogener Daten durch den verantwortlichen Anbieter, das Deutsche Archäologische Institut, Podbielskiallee 69–71, 14195 Berlin, Tel: +49 30 187711-0, <a style="color:black;text-decoration:none" href="mailto:info@dainst.de">info@dainst.de</a>, auf dieser Website (im folgenden „Angebot”) auf.
 			<br>
 			Das Deutsche Archäologische Institut erhebt, verarbeitet und nutzt personenbezogene Daten der Nutzer unter Einhaltung der Datenschutzgesetze der Bundesrepublik Deutschland und der Datenschutzbestimmungen der Europäischen Union. Die rechtlichen Grundlagen des Datenschutzes finden sich im Bundesdatenschutzgesetz (BDSG) und dem Telemediengesetz (TMG).
 			<br><br>
@@ -105,7 +105,7 @@ Falls das Deutsche Archäologische Institut auf Seiten verweist, deren Inhalt An
 			<br><br>
 			Cookies:<br>
 			Cookies sind kleine Dateien, die es ermöglichen, auf dem Zugriffsgerät der Nutzer (PC, Smartphone o. ä.) spezifische, auf das Gerät bezogene Informationen zu speichern. Sie dienen zum einem der Benutzerfreundlichkeit von Webseiten und damit den Nutzern (zum Beispiel Speicherung von Logindaten). Zum anderen dienen sie dazu, um die statistische Daten der Webseitennutzung zu erfassen und sie zwecks Verbesserung des Angebotes analysieren zu können. Die Nutzer können auf den Einsatz der Cookies Einfluss nehmen. Die meisten Browser verfügen eine Option mit der das Speichern von Cookies eingeschränkt oder komplett verhindert wird. Allerdings wird darauf hingewiesen, dass die Nutzung und insbesondere der Nutzungskomfort ohne Cookies eingeschränkt werden.
-			Sie können viele Online-Anzeigen-Cookies von Unternehmen über die US-amerikanische Seite <a style=\"color:black;text-decoration:none\" href=\"http://www.aboutads.info/choices/\">www.aboutads.info/choices</a> oder die EU-Seite <a style=\"color:black;text-decoration:none\" href=\"http://www.youronlinechoices.com/uk/your-ad-choices/\">www.youronlinechoices.com/uk/your-ad-choices</a> verwalten.
+			Sie können viele Online-Anzeigen-Cookies von Unternehmen über die US-amerikanische Seite <a style="color:black;text-decoration:none" href="http://www.aboutads.info/choices/">www.aboutads.info/choices</a> oder die EU-Seite <a style="color:black;text-decoration:none" href="http://www.youronlinechoices.com/uk/your-ad-choices/">www.youronlinechoices.com/uk/your-ad-choices</a> verwalten.
 			<br><br>
 			Registrierfunktion:<br>
 			Das Deutsche Archäologische Institut nutzt die personenbezogenen Daten der Nutzer ausschließlich, um der/dem Nutzer/in die Inanspruchnahme des Portals „iDAI.publications“ zu ermöglichen. In keinem Fall wird das Deutsche Archäologische Institut personenbezogene Daten von Nutzern Dritten zu Werbe- oder Marketingzwecken zur Verfügung stellen und/oder unbefugt zu anderen Zwecken übermitteln.
@@ -115,9 +115,9 @@ Falls das Deutsche Archäologische Institut auf Seiten verweist, deren Inhalt An
 			Widerruf, Änderungen, Berichtigungen und Aktualisierungen:<br>
 			Der Nutzer hat das Recht, auf Antrag unentgeltlich Auskunft zu erhalten über die personenbezogenen Daten, die über ihn gespeichert wurden. Zusätzlich hat der Nutzer das Recht auf Berichtigung unrichtiger Daten, Sperrung und Löschung seiner personenbezogenen Daten, soweit dem keine gesetzliche Aufbewahrungspflicht entgegensteht.
 			<br>
-			Nutzer wenden sich dazu an die Online-Redaktion des Deutschen Archäologischen Instituts (<a style=\"color:black;text-decoration:none\" href=\"mailto:idai.publications@dainst.de\">idai.publications@dainst.de</a>) oder an die/den Datenschutzbeauftragte(n) des Deutschen Archäologischen Instituts, Podbielskiallee 69–71, 14195 Berlin, E-Mail: <a style=\"color:black;text-decoration:none\" href=\"mailto:datenschutz@dainst.de\">datenschutz@dainst.de</a>.
+			Nutzer wenden sich dazu an die Online-Redaktion des Deutschen Archäologischen Instituts (<a style="color:black;text-decoration:none" href="mailto:idai.publications@dainst.de">idai.publications@dainst.de</a>) oder an die/den Datenschutzbeauftragte(n) des Deutschen Archäologischen Instituts, Podbielskiallee 69–71, 14195 Berlin, E-Mail: <a style="color:black;text-decoration:none" href="mailto:datenschutz@dainst.de">datenschutz@dainst.de</a>.
 			<br><br>
-			Datenschutz-Muster von Rechtsanwalt Thomas Schwenke (<a style=\"color:black;text-decoration:none\" href=\"http://rechtsanwalt-schwenke.de/smmr-buch/datenschutz-muster-generator-fuer-webseiten-blogs-und-social-media/\">I LAW it</a>) 
+			Datenschutz-Muster von Rechtsanwalt Thomas Schwenke (<a style="color:black;text-decoration:none" href="http://rechtsanwalt-schwenke.de/smmr-buch/datenschutz-muster-generator-fuer-webseiten-blogs-und-social-media/">I LAW it</a>) 
 			vom Deutschen Archäologischen Institut angepasst.
 		]]>
 	</message>
@@ -134,7 +134,7 @@ Falls das Deutsche Archäologische Institut auf Seiten verweist, deren Inhalt An
 			Sie registrieren sich zunächst für den Zugang zu einer Zeitschrift.
 			Möchten Sie Inhalte einer anderen Zeitschrift einsehen, können Sie diese Zeitschrift auf Ihrer persönlichen Startseite zu Ihrem
 			Benutzerkonto hinzufügen. 
-			Sollten Sie bereits registriert sein, klicken Sie <a style=\"color:black;text-decoration:none\" href="https://publications.dainst.org/journals/index.php/chiron/user/register?existingUser=1"> hier </a>.<br>
+			Sollten Sie bereits registriert sein, klicken Sie <a style="color:black;text-decoration:none" href="https://publications.dainst.org/journals/index.php/chiron/user/register?existingUser=1"> hier </a>.<br>
 			Die Nutzung der Inhalte gemäß den <a onclick='showTermsOfUse()'>Nutzungsbedingungen</a> ist kostenfrei.</p>
 			<h4>Warum muss ich mich anmelden?</h4>
 			<p>Die Anmeldung ist notwendig, um sicherzustellen, dass nur registrierte Nutzerinnen und Nutzer Zugang zu den freigeschalteten Inhalten haben.
