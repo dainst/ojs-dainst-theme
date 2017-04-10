@@ -556,6 +556,7 @@ input.button {
 	border: none;
 	position: absolute;
 	z-index: -10;
+	background-color: #6580aa
 }
 
 .hasDainstColorbar .navbar {
