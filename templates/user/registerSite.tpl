@@ -38,6 +38,9 @@
 	function showTermsOfUse() {
 		jQuery('#idai-footer-termsOfUse').click();
 	}
+	function showImprint() {
+		jQuery('#idai-footer-imprint').click();
+	}
 
 	{/literal}
 </script>

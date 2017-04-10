@@ -257,7 +257,8 @@ class DainstThemePlugin extends ThemePlugin {
 		
 		$this->_idaic->settings["footer_links"]["imprint"] = array(
 			'label' => AppLocale::translate("plugins.themes.dainst.imprint"), // report Bugs to
-			'moreinfo' => AppLocale::translate("plugins.themes.dainst.imprintText")
+			'moreinfo' => AppLocale::translate("plugins.themes.dainst.imprintText"),
+			'id' =>  'idai-footer-imprint' // important
 		);
 
 		$this->_idaic->settings['version']			= '';
