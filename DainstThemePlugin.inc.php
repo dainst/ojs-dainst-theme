@@ -185,7 +185,9 @@ class DainstThemePlugin extends ThemePlugin {
 		
 		if ($journal and $isArticle) {
 			$journalPath = $journal->getPath();
-			$articleId = Request::getRequestedArgs()[0];
+			$args = Request::getRequestedArgs();
+			$articleId = $args[0];
+			$galleyId = (count($args) > 1) ? $args[1] : -1;
 			$user =& Request::getUser();
 			if ($user) {
 				$roleDao =& DAORegistry::getDAO('RoleDAO');
@@ -206,6 +208,14 @@ class DainstThemePlugin extends ThemePlugin {
 					"label"	=>	AppLocale::translate("plugins.themes.dainst.editmeta"),
 					"href"	=>	"{$this->theUrl}/index.php/$journalPath/editor/submission/$articleId"
 				);
+
+				if ($galleyId > -1) {
+					$this->_idaic->settings['buttons']['article']["submenu"]["editmetagalley"] = array(
+						"label"	=>	AppLocale::translate("plugins.themes.dainst.editmetaGalley"),
+						"href"	=>	"{$this->theUrl}/index.php/$journalPath/editor/editGalley/$articleId/$GalleyId"
+					);
+				}
+
 			}
 			/*
 			echo "<pre>"; print_r(Request::getRequestedPage()); echo "</pre>";
