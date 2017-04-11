@@ -8,3 +8,7 @@
 *.fls
 
 *.log
+*.aux
+ltx-terms-of-use/ojs_omp-terms-of-use.log
+*.gz
+ltx-terms-of-use/ojs_omp-terms-of-use.aux

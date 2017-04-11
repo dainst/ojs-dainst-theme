@@ -5,7 +5,7 @@
   DIV=1]
 {scrartcl}
 \usepackage{fontspec}
-\usepackage[ngerman,english,
+\usepackage[ngerman,english,ngerman
 ]{babel}
 \setmainfont[
   Path = ./calibri/,
@@ -48,9 +48,9 @@
 \clearscrheadfoot
 \addtokomafont{pageheadfoot}{\normalfont\footnotesize\sffamily\CalibriLight}
 \rofoot{\normalsize\thepage}
-\lofoot{Stand: 2017-03-28}
+\lofoot{Stand: 2017-04-11 / Version: 1.0}
 \lohead{\copyright\,\the\year{} \DAI}
-\rohead{\geren{\fmimprintengtag}{\fmimprintgertag} \fmsep \geren{\fmtermsengtag}{\fmtermsgertag} \fmsep \geren{\fmdataengtag}{\fmdatagertag} }
+\rohead{\geren{\fmimprintengtag}{\fmimprintgertag} \fmsep \geren{\fmtermsengtag}{\fmtermsgertag} \fmsep \geren{\fmdataengtag}{\fmdatagertag}}
 \usepackage{hyperxmp}
 \usepackage{hyperref}
 \usepackage{bookmark}
@@ -86,8 +86,6 @@
 \providecommand\fmdata{\iflanguage{english}{%
 	\pdfbookmark[1]{\fmdataengtag}{5}\textbf{\LARGE\fmdataengtag}\\ \fmdataeng}{%
 	\pdfbookmark[1]{\fmdatagertag}{6}\textbf{\LARGE\fmdatagertag}\\ \fmdatager}}
-
-\usepackage{typehtml}
 %----------------hypersetup
 \hypersetup{          			% setup the hyperref-package options
   unicode,          			% allow all unicodes (lualatex)
@@ -116,15 +114,13 @@
 %-------header-----------
 \begin{flushright}
 \fmlogo\\
-{\CalibriLight\copyright\,\the\year{} \DAI}
+{\CalibriLight
+  \copyright\,\the\year{} \DAI}
 \end{flushright}
 \vspace*{5em}
-\iffalse
 \fmimprint\\
 \vspace*{2em}\\
 \fmterms\\
 \vspace*{2em}\\
 \fmdata
-\fi\dohtml
-\input{ojs_omp-terms-of-use-html}
 \end{document}
