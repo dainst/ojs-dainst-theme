@@ -199,23 +199,32 @@ class DainstThemePlugin extends ThemePlugin {
 			}
 
 			if ($isEditor or $isManager) {
-				$this->_idaic->settings['buttons']['article'] = array(
-					'label' => AppLocale::translate("plugins.themes.dainst.articleMenu"),
+				$this->_idaic->settings['buttons']['edit'] = array(
+					'label' => AppLocale::translate("plugins.themes.dainst.edit"),
 					'submenu' => array()
 				);
 				
-				$this->_idaic->settings['buttons']['article']["submenu"]["editmeta"] = array(					
-					"label"	=>	AppLocale::translate("plugins.themes.dainst.editmeta"),
+				$this->_idaic->settings['buttons']['edit']["submenu"]["editarticle"] = array(					
+					"label"	=>	AppLocale::translate("plugins.themes.dainst.editarticle"),
 					"href"	=>	"{$this->theUrl}/index.php/$journalPath/editor/submission/$articleId"
 				);
 
 				if ($galleyId > -1) {
-					$this->_idaic->settings['buttons']['article']["submenu"]["editmetagalley"] = array(
-						"label"	=>	AppLocale::translate("plugins.themes.dainst.editmetaGalley"),
+					$this->_idaic->settings['buttons']['edit']["submenu"]["editarticlemeta"] = array(
+						"label"	=>	AppLocale::translate("plugins.themes.dainst.editarticlemeta"),
+						"href"	=>	"{$this->theUrl}/index.php/$journalPath/editor/viewMetadata/$articleId"
+					);
+
+				if ($galleyId > -1) {
+					$this->_idaic->settings['buttons']['edit']["submenu"]["editgalley"] = array(
+						"label"	=>	AppLocale::translate("plugins.themes.dainst.editgalley"),
 						"href"	=>	"{$this->theUrl}/index.php/$journalPath/editor/editGalley/$articleId/$galleyId"
 					);
 				}
 
+				}
+
+			
 			}
 			/*
 			echo "<pre>"; print_r(Request::getRequestedPage()); echo "</pre>";

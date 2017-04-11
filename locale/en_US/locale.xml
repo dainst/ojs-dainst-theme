@@ -122,9 +122,10 @@ Falls das Deutsche Archäologische Institut auf Seiten verweist, deren Inhalt An
 		]]>
 	</message>
 	<message key="plugins.themes.dainst.meta">Additional Information (Zenon/URN)</message>
-	<message key="plugins.themes.dainst.editmeta">Edit Article Metadata</message>
-	<message key="plugins.themes.dainst.articleMenu">Article</message>
-	<message key="plugins.themes.dainst.editmetaGalley">Edit Galley Metadata</message>
+		<message key="plugins.themes.dainst.edit">Edit</message>
+	<message key="plugins.themes.dainst.editarticle">Article</message>
+	<message key="plugins.themes.dainst.editarticlemeta">Metadata</message>
+	<message key="plugins.themes.dainst.editgalley">Galley</message>
 	<message key="plugins.themes.dainst.registerInformation">Questions and answers regarding registration and log in</message>
 	<message key="plugins.themes.dainst.registerInformationText">
 		<![CDATA[
