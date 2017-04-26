@@ -130,7 +130,7 @@
 	{/if}
 
 	<li class="navItem" id="sidebarDainstAbout">
-		<a href="http://www.dainst.org/publikationen/e-publikationen/e-publi">{translate key="plugins.themes.dainst.aboutLink"}</a>
+		<a href="http://www.dainst.org/publikationen/e-publikationen">{translate key="plugins.themes.dainst.aboutLink"}</a>
 	</li>
 
 </ul>
