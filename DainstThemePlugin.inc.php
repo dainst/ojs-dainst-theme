@@ -209,8 +209,7 @@ class DainstThemePlugin extends ThemePlugin {
 					"href"	=>	"{$this->theUrl}/index.php/$journalPath/editor/submission/$articleId"
 				);
 
-				if ($galleyId > -1) {
-					$this->_idaic->settings['buttons']['edit']["submenu"]["editarticlemeta"] = array(
+				$this->_idaic->settings['buttons']['edit']["submenu"]["editarticlemeta"] = array(
 						"label"	=>	AppLocale::translate("plugins.themes.dainst.editarticlemeta"),
 						"href"	=>	"{$this->theUrl}/index.php/$journalPath/editor/viewMetadata/$articleId"
 					);
@@ -221,9 +220,6 @@ class DainstThemePlugin extends ThemePlugin {
 						"href"	=>	"{$this->theUrl}/index.php/$journalPath/editor/editGalley/$articleId/$galleyId"
 					);
 				}
-
-				}
-
 			
 			}
 			/*
