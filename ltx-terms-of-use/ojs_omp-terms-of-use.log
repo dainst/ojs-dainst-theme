@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016/W32TeX)  (format=lualatex 2017.4.10)  11 APR 2017 13:25
+This is LuaTeX, Version 0.95.0 (TeX Live 2016/W32TeX)  (format=lualatex 2017.4.10)  8 MAY 2017 16:13
  restricted system commands enabled.
 **ojs_omp-terms-of-use.tex
 (./ojs_omp-terms-of-use.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.173 seconds
+luaotfload | main : initialization completed in 0.993 seconds
 Babel <3.9r> and hyphenation patterns for 1 language(s) loaded.
 (c:/texlive/2016/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2017/01/03 v3.22 KOMA-Script document class (article)
@@ -565,12 +565,19 @@ Language: ngerman 2016/11/02 v2.9 German support for babel (new orthography)
 (c:/texlive/2016/texmf-dist/tex/generic/babel-german/ngermanb.ldf
 Language: ngermanb 2016/11/02 v2.9 German support for babel (new orthography)
 )))(load luc: C:/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/calibri.l
-uc)
+uc)(save: C:/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/calibri.lua)(
+save: C:/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/calibri.luc)
 \g__fontspec_family_Calibri_int=\count138
 (load luc: C:/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/calibri-bold
-.luc)(load luc: C:/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/calibri
--italic.luc)(load luc: C:/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/
-calibri-bold-italic.luc)
+.luc)(save: C:/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/calibri-bol
+d.lua)(save: C:/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/calibri-bo
+ld.luc)(load luc: C:/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/calib
+ri-italic.luc)(save: C:/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/ca
+libri-italic.lua)(save: C:/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl
+/calibri-italic.luc)(load luc: C:/texlive/2016/texmf-var/luatex-cache/generic/fo
+nts/otl/calibri-bold-italic.luc)(save: C:/texlive/2016/texmf-var/luatex-cache/ge
+neric/fonts/otl/calibri-bold-italic.lua)(save: C:/texlive/2016/texmf-var/luatex-
+cache/generic/fonts/otl/calibri-bold-italic.luc)
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -605,10 +612,14 @@ lig;+smcp;"
 .................................................
 LaTeX Info: Redefining \rmfamily on input line 17.
 (load luc: C:/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/calibri-ligh
-t.luc)
+t.luc)(save: C:/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/calibri-li
+ght.lua)(save: C:/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/calibri-
+light.luc)
 \g__fontspec_family_Calibri_Light_int=\count139
 (load luc: C:/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/calibri-ligh
-t-italic.luc)
+t-italic.luc)(save: C:/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/cal
+ibri-light-italic.lua)(save: C:/texlive/2016/texmf-var/luatex-cache/generic/font
+s/otl/calibri-light-italic.luc)
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -635,8 +646,7 @@ tlig;"
 . <->"[./calibri/Calibri_Light_Italic.ttf]:mode=node;script=latn;language=DFLT;+
 tlig;+smcp;"
 .................................................
-
-(c:/texlive/2016/texmf-dist/tex/latex/hyphenat/hyphenat.sty
+ (c:/texlive/2016/texmf-dist/tex/latex/hyphenat/hyphenat.sty
 Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
 \langwohyphens=\language83
 LaTeX Info: Redefining \_ on input line 43.
@@ -1214,11 +1224,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 123.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 123.
-
-
-LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 123.
-
-[1
+ [1
 
 {c:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}<./dailogo.png>]
 Package babel Info: Redefining ngerman shorthand "|
@@ -1240,28 +1246,18 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 125.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 125.
- [2]
+[2]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 126.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 126.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 126.
+Package atenddvi Info: Last page = 3.
  [3]
 Package atveryend Info: Executing hook `AfterLastShipout' on input line 126.
- (./ojs_omp-terms-of-use.aux
-
-Package atenddvi Warning: Rerun LaTeX, last page not yet found.
-
-)
+ (./ojs_omp-terms-of-use.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 126.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 126.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 126.
 )
 
@@ -1271,17 +1267,17 @@ Here is how much of LuaTeX's memory you used:
  692 words of node memory still in use:
    4 hlist, 1 vlist, 1 rule, 37 glue, 17 attribute, 49 glue_spec, 17 attribute_l
 ist, 1 write nodes
-   avail lists: 1:1,2:329,3:90,4:48,5:1213,6:6976,7:1095,8:46,9:203,10:18,11:101
+   avail lists: 1:1,2:329,3:91,4:67,5:1213,6:6976,7:1095,8:46,9:203,10:31,11:101
 1
  29096 multiletter control sequences out of 65536+600000
  50 fonts using 6888463 bytes
  63i,19n,79p,8851b,533s stack positions out of 5000i,500n,10000p,200000b,100000s
 <c:/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmmono9-regular.otf><./cali
 bri/Calibri_Bold.ttf><./calibri/Calibri_Light.ttf><./calibri/Calibri.ttf>
-Output written on ojs_omp-terms-of-use.pdf (3 pages, 120066 bytes).
+Output written on ojs_omp-terms-of-use.pdf (3 pages, 125180 bytes).
 
-PDF statistics: 78 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 79 PDF objects out of 1000 (max. 8388607)
  58 compressed objects within 1 object stream
  7 named destinations out of 1000 (max. 131072)
- 25 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 30 words of extra memory for PDF output out of 10000 (max. 10000000)
 
