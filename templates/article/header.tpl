@@ -117,7 +117,7 @@
 		</div>
 	{/if}
 	
-	{if $pdfViewerpage}
+	{if (isset($pdfViewerpage) and $pdfViewerpage)}
 		<div id="main" class='col-md-12'>
 	{else}
 		<div id="main" class='col-md-8'>

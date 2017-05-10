@@ -104,62 +104,76 @@
 	{/if}{* hasSystemNotifications *}
 
 	{$additionalHeadData}
+
+	{if $pdfViewerpage}
+		<link rel="stylesheet" href="{$baseUrl}/plugins/themes/dainst/small_footer.css" type="text/css" />
+	{/if}
+
 </head>
-<body id="pkp-{$pageTitle|replace:'.':'-'}"  class="hasDainstColorbar">
 
-
+<body id="pkp-{$pageTitle|replace:'.':'-'}" class="{if !$pdfViewerpage}hasDainstColorbar{/if}">
 {idai_navbar subtitle="$displayPageHeaderTitle"}
-	{include file="common/navbar.tpl}
+	{include file="common/navbar.tpl"}
 {/idai_navbar}
-<div id="dainstColorbar" class="dainstColor {$dainstcicolor}"></div>
+
+{if !$pdfViewerpage}
+	<div id="dainstColorbar" class="dainstColor {$dainstcicolor}"></div>
+{/if}
 
 <div id="container">
 
-<div id="header" class='row'>
-	<div id="headerTitle" class='col-md-11 col-md-offset-1'>
-		<h1>
-			{if $displayPageHeaderLogo && is_array($displayPageHeaderLogo)}
-				<img src="{$publicFilesDir}/{$displayPageHeaderLogo.uploadName|escape:"url"}" width="{$displayPageHeaderLogo.width|escape}" height="{$displayPageHeaderLogo.height|escape}" {if $displayPageHeaderLogoAltText != ''}alt="{$displayPageHeaderLogoAltText|escape}"{else}alt="{translate key="common.pageHeaderLogo.altText"}"{/if} />
-			{/if}
-			{if $displayPageHeaderTitle && is_array($displayPageHeaderTitle)}
-				<img src="{$publicFilesDir}/{$displayPageHeaderTitle.uploadName|escape:"url"}" width="{$displayPageHeaderTitle.width|escape}" height="{$displayPageHeaderTitle.height|escape}" {if $displayPageHeaderTitleAltText != ''}alt="{$displayPageHeaderTitleAltText|escape}"{else}alt="{translate key="common.pageHeader.altText"}"{/if} />
-			{elseif $displayPageHeaderTitle}
-				{$displayPageHeaderTitle}
-			{elseif $alternatePageHeader}
-				{$alternatePageHeader}
-			{elseif $siteTitle}
-				{$siteTitle}
-			{else}
-				{$applicationName}
-			{/if}
-		</h1>
+{if !$pdfViewerpage}
+	<div id="header" class='row'>
+		<div id="headerTitle" class='col-md-11 col-md-offset-1'>
+			<h1>
+				{if $displayPageHeaderLogo && is_array($displayPageHeaderLogo)}
+					<img src="{$publicFilesDir}/{$displayPageHeaderLogo.uploadName|escape:"url"}" width="{$displayPageHeaderLogo.width|escape}" height="{$displayPageHeaderLogo.height|escape}" {if $displayPageHeaderLogoAltText != ''}alt="{$displayPageHeaderLogoAltText|escape}"{else}alt="{translate key="common.pageHeaderLogo.altText"}"{/if} />
+				{/if}
+				{if $displayPageHeaderTitle && is_array($displayPageHeaderTitle)}
+					<img src="{$publicFilesDir}/{$displayPageHeaderTitle.uploadName|escape:"url"}" width="{$displayPageHeaderTitle.width|escape}" height="{$displayPageHeaderTitle.height|escape}" {if $displayPageHeaderTitleAltText != ''}alt="{$displayPageHeaderTitleAltText|escape}"{else}alt="{translate key="common.pageHeader.altText"}"{/if} />
+				{elseif $displayPageHeaderTitle}
+					{$displayPageHeaderTitle}
+				{elseif $alternatePageHeader}
+					{$alternatePageHeader}
+				{elseif $siteTitle}
+					{$siteTitle}
+				{else}
+					{$applicationName}
+				{/if}
+			</h1>
+		</div>
 	</div>
-</div>
+{/if}
 {getHtaccessDebug}
-
 
 <div id="body" class='row'>
 
-<div class='col-md-1'>
-	{if $leftSidebarCode}
-		<div class="panel panel-default">
-			<div class="panel-body">
-				{$leftSidebarCode}
+	{if ($pdfViewerpage)}
+		<div id="main" class='col-md-12'>
+			{include file="common/breadcrumbs.tpl"}
+	{else}
+		<div class='col-md-1'>
+			{if $leftSidebarCode}
+			<div class="panel panel-default">
+				<div class="panel-body">
+					{$leftSidebarCode}
+				</div>
 			</div>
+			{/if}&nbsp;
 		</div>
-	{/if}&nbsp;
-</div>
+		<div id="main" class='col-md-8'>
 
-<div id="main"  class='col-md-8'>
+			{include file="common/breadcrumbs.tpl"}
 
-{include file="common/breadcrumbs.tpl"}
+			<h2>{$pageTitleTranslated}</h2>
 
-<h2>{$pageTitleTranslated}</h2>
+				{if $pageSubtitle && !$pageSubtitleTranslated}{translate|assign:"pageSubtitleTranslated" key=$pageSubtitle}{/if}
+				{if $pageSubtitleTranslated}
+				<h3>{$pageSubtitleTranslated}</h3>
+				{/if}
 
-{if $pageSubtitle && !$pageSubtitleTranslated}{translate|assign:"pageSubtitleTranslated" key=$pageSubtitle}{/if}
-{if $pageSubtitleTranslated}
-	<h3>{$pageSubtitleTranslated}</h3>
-{/if}
+			<div id="content">
 
-<div id="content">
+	{/if}
+
 

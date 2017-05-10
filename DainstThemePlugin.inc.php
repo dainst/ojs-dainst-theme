@@ -335,6 +335,7 @@ class DainstThemePlugin extends ThemePlugin {
 		}
 		if (in_array($_SERVER['SERVER_NAME'], $devservers)) {
 			return "dev";
+			return "dev";
 		}
 		return "production";
 	}
@@ -377,9 +378,7 @@ class DainstThemePlugin extends ThemePlugin {
 		$this->addHeadData($smarty, $this->_idaic->header("$thePath/idai-components-php/"));
 		$this->addHeadData($smarty, "<link rel='stylesheet' href='$thePath/dainst.css' type='text/css' />");
 		$this->addHeadData($smarty, "<link rel='stylesheet' href='$thePath/dainstColors.css' type='text/css' />");
-		if($tpl == 'article/article.tpl') {
-			$this->addHeadData($smarty, "<link rel='stylesheet' href='$thePath/inc/leaflet/leaflet.css' type='text/css' />");
-			$this->addHeadData($smarty, "<script src='$thePath/inc/leaflet/leaflet.js'></script>");		
+		if (($tpl == 'article/article.tpl') or ($tpl == 'issue/issueGalley.tpl')) {
 			$this->addHeadData($smarty, "<script src='$thePath/js/daian.js'></script>");
 		}
 		$this->addHeadData($smarty, "<script src='$thePath/js/jquery-fixDataFn.js'></script>");
