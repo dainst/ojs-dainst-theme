@@ -386,7 +386,7 @@ class DainstThemePlugin extends ThemePlugin {
 		// the colorsheme color
 		$dainstcicolor = ($journal) ? $this->getSetting($journal->getId(), 'dainstcicolor') : 'components'; 
 		$templateMgr->assign('dainstcicolor', $dainstcicolor);
-		$templateMgr->assign('languageToggleLocales', array('de_DE', 'en_US'));
+		$templateMgr->assign('languageToggleLocalesHacked', array('de_DE' => 'Deutsch', 'en_US' => 'English'));
 
 		// register functions for idai-components-php
 		$smarty->register_block("idai_navbar", array($this, "getNavbar"));

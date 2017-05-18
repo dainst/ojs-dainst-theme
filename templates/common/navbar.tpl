@@ -121,7 +121,7 @@
 			<a class="dropdown-toggle" data-toggle="dropdown" href="#">{translate key="common.language"}<b class="caret"></b></a>
 			
 			<ul class="dropdown-menu">
-				{foreach from=$languageToggleLocales item=lang key=langKey}
+				{foreach from=$languageToggleLocalesHacked item=lang key=langKey}
 					<li><a href='#' onclick="changeLanguageD('{$langKey}'); return false;">{$lang}</a></li>
 				{/foreach}
 			</ul>
