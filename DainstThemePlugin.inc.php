@@ -292,14 +292,13 @@ class DainstThemePlugin extends ThemePlugin {
 	 * @return string
 	 */
 	function getPiwik() {
-
 		if ($this->getServerType() != "production") {
 			return '<!-- no piwik since no production -->';
 		}
 		$journalPath = ($this->_journal) ? $this->_journal->getPath() : '';
 		ob_start();
 		include($this->getFilePath() . '/piwik.inc.php');
-		return ob_get_flush();
+		return ob_get_clean();
 	}
 
 
