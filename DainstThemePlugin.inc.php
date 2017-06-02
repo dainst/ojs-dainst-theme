@@ -111,6 +111,8 @@ class DainstThemePlugin extends ThemePlugin {
 	
 	
 	private $_idaic;
+
+	private $_journal;
 	
 	/**
 	 * constructor
@@ -118,6 +120,8 @@ class DainstThemePlugin extends ThemePlugin {
 	function __construct() {		
 		$this->theUrl = Request::getBaseUrl();
 	}
+
+
 	
 	/**
 	 * show the idai-navbar!
@@ -246,7 +250,7 @@ class DainstThemePlugin extends ThemePlugin {
 		
 		return $this->_idaic->navbar($content);
 	}
-	
+
 	/**
 	 * show the idai-footer
 	 *
@@ -280,9 +284,25 @@ class DainstThemePlugin extends ThemePlugin {
 		
 		unset($this->_idaic->settings["footer_links"]['licence']);
 		
-		return $this->_idaic->footer();
+		return $this->_idaic->footer() . $this->getPiwik();
 	}
-	
+
+	/**
+	 * the piwik
+	 * @return string
+	 */
+	function getPiwik() {
+
+		if ($this->getServerType() != "production") {
+			return '<!-- no piwik since no production -->';
+		}
+		$journalPath = ($this->_journal) ? $this->_journal->getPath() : '';
+		ob_start();
+		include($this->getFilePath() . '/piwik.inc.php');
+		return ob_get_flush();
+	}
+
+
 	/**
 	 * show the pdf reader
 	 * 
@@ -335,7 +355,6 @@ class DainstThemePlugin extends ThemePlugin {
 		}
 		if (in_array($_SERVER['SERVER_NAME'], $devservers)) {
 			return "dev";
-			return "dev";
 		}
 		return "production";
 	}
@@ -351,6 +370,7 @@ class DainstThemePlugin extends ThemePlugin {
 		$tpl 	= $params[1];
 		$smarty = $params[0];
 		$journal =& Request::getJournal();
+		$this->_journal = $journal;
 		$templateMgr =& TemplateManager::getManager();
 				
 		// cache cleansing
