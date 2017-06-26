@@ -327,6 +327,10 @@ ul.filter li {
 	padding-bottom: 2em;
 }
 
+.journalDescription + p:last-of-type {
+	border: 0px
+}
+
 .journalDescriptionBox {
 	margin-right: 220px
 }
