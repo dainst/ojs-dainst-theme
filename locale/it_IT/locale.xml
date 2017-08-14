@@ -13,22 +13,22 @@
  
 <locale name="en_US" full_name="U.S. English">
 	<message key="plugins.themes.dainst.description">This is the DAI theme developed 2016 by Philipp Franck</message>
-	<message key="plugins.themes.dainst.myJournals">Settings</message>
-	<message key="plugins.themes.dainst.myProfile">Profile</message>
-	<message key="plugins.themes.dainst.logout">Log out</message>
-	<message key="plugins.themes.dainst.signUp">Register</message>
+	<message key="plugins.themes.dainst.myJournals">Impostazioni</message>
+	<message key="plugins.themes.dainst.myProfile">Profilo</message>
+	<message key="plugins.themes.dainst.logout">Esci</message>
+	<message key="plugins.themes.dainst.signUp">Registrarsi</message>
 	<message key="plugins.themes.dainst.signIn">Login</message>
 	<message key="plugins.themes.dainst.signOutAsUser">Log out as user</message>
 	<message key="plugins.themes.dainst.colorsheme">DAI theme – Select color scheme for this journal</message>
-	<message key="plugins.themes.dainst.otherStuff">More</message>
-	<message key="plugins.themes.dainst.omp">Monographs</message>
-	<message key="plugins.themes.dainst.aboutLink">About</message>
-	<message key="plugins.themes.dainst.archive">Digital issues</message>
-	<message key="plugins.themes.dainst.search">Search</message>
-	<message key="plugins.themes.dainst.journals">Journals</message>
+	<message key="plugins.themes.dainst.otherStuff">Altro</message>
+	<message key="plugins.themes.dainst.omp">Monografie, collane</message>
+	<message key="plugins.themes.dainst.aboutLink">Informazioni</message>
+	<message key="plugins.themes.dainst.archive">Edizioni digitali</message>
+	<message key="plugins.themes.dainst.search">Cerca</message>
+	<message key="plugins.themes.dainst.journals">Giornali</message>
 
-	<message key="plugins.themes.dainst.termsOfUse">Terms of use</message>
-	<message key="plugins.themes.dainst.termsOfUseRead">Terms of use read and understood!</message>
+	<message key="plugins.themes.dainst.termsOfUse">Condizioni d’uso</message>
+	<message key="plugins.themes.dainst.termsOfUseRead">Condizioni d’uso lette e comprese!</message>
 	<message key="plugins.themes.dainst.termsOfUseText">
 		<![CDATA[
 			<b>Nutzungsbedingungen</b>
@@ -60,8 +60,8 @@ Falls das Deutsche Archäologische Institut auf Seiten verweist, deren Inhalt An
 			4. Der/die Nutzer/in kann diese Allgemeinen Geschäftsbedingungen unter dem auf <a href="https://publications.dainst.org/terms-of-use">https://publications.dainst.org/terms-of-use</a> erreichbaren Link abrufen, ausdrucken sowie herunterladen.<br>
 			]]>
 	</message>
-	<message key="plugins.themes.dainst.reportBugsTo">Report bugs to</message>
-	<message key="plugins.themes.dainst.imprint">Imprint</message>
+	<message key="plugins.themes.dainst.reportBugsTo">Segnalazione d’errore per favore indirizzare a</message>
+	<message key="plugins.themes.dainst.imprint">Informazioni legali e protezione dati</message>
 	<message key="plugins.themes.dainst.imprintText">
 		<![CDATA[
 			<b>Impressum</b><br><br>
@@ -122,31 +122,27 @@ Falls das Deutsche Archäologische Institut auf Seiten verweist, deren Inhalt An
 			vom Deutschen Archäologischen Institut angepasst.
 		]]>
 	</message>
-	<message key="plugins.themes.dainst.meta">Additional Information (Zenon/URN)</message>
-		<message key="plugins.themes.dainst.edit">Edit</message>
-	<message key="plugins.themes.dainst.editarticle">Article</message>
-	<message key="plugins.themes.dainst.editarticlemeta">Metadata</message>
+	<message key="plugins.themes.dainst.meta">Informazioni addizionali (Zenon/URN)</message>
+		<message key="plugins.themes.dainst.edit">Modifica</message>
+	<message key="plugins.themes.dainst.editarticle">Articolo</message>
+	<message key="plugins.themes.dainst.editarticlemeta">Metadati</message>
 	<message key="plugins.themes.dainst.editgalley">Galley</message>
-	<message key="plugins.themes.dainst.registerInformation">Questions and answers regarding registration and log in</message>
+	<message key="plugins.themes.dainst.registerInformation">Domande e risposte riguardanti registrazione e login</message>
 	<message key="plugins.themes.dainst.registerInformationText">
 		<![CDATA[
-			<h4>Why do I have to register?</h4>
-			<p>The registration for the iDAI.publications online portal is mandatory to make sure that all users acknowledge
-			the <a onclick='showTermsOfUse()'>terms of use</a>.
-			After the once-only registration you get access to the available content of articles (PDF).<br>
-			Initially you register to get access to one journal.
-			If you like to see content of other journals, too, you can add these journals to your starting page in your personal account or click
-			<a href="https://publications.dainst.org/journals/index.php/chiron/user/register?existingUser=1"> here </a>
-			if you are registered already.<br>
-			Using the content according to the <a onclick='showTermsOfUse()'>terms of use</a> is free of charge.</p>
-			<h4>Why do I have to log in?</h4>
-			<p>Logging in is necessary to make sure only registered users have access to the available content.
-			Furthermore you can enable various features in your personal account (e.g. automatically sent emails when new content is online etc.)<br>
-			On your personal page you can add more journals to your user profile (see above).
+			<h4>Perchè devo registrarmi?</h4>
+			<p>La registrazione nel portale di pubblicazione iDAI.publications è necessaria al fine di garantire che tutti gli utenti accettino le <a onclick='showTermsOfUse()'>condizioni d’uso</a>.
+			Dopo l’iniziale iscrizione si otterrà l’accesso ai contenuti sbloccati degli articoli delle riviste (PDF). <br>
+			In primo luogo Lei si registra per l’accesso ad una singola rivista. Se desidera vedere i contenuti di un'altre altra rivista può aggiungerla sulla pagina iniziale personale al proprio account. Se dovesse essere già registrato, clicchi
+			<a href="https://publications.dainst.org/journals/index.php/chiron/user/register?existingUser=1"> qui</a>.<br>
+			In conformità alle <a onclick='showTermsOfUse()'>condizioni d’uso</a> l’utilizzo dei contenuti è gratuito.</p>
+			<h4>Perchè devo effettuare il login?</h4>
+			<p>Il login è neccesario per garantire che i solo utenti registrati abbiano accesso ai contenuti sbloccati. Oltra a ciò si può possono attivare alla pagina iniziale personale ulteriori funzioni (es. notificazioni automatiche via e-mail quando vengono messi online contributi nuovi ecc.).<br>
+			Sulla Sua pagina iniziale personale può anche aggiungere ulteriori riviste al proprio account (vedi sopra).
 			</p>
 		]]>
 	</message>
-	<message key="plugins.themes.dainst.registerWhy">Why register and log in?</message>
-	<message key="plugins.themes.dainst.showAllFields">Show/Hide additional profile fields</message>
-	<message key="plugins.themes.dainst.showAdditionalHomeContent">More Info</message>
+	<message key="plugins.themes.dainst.registerWhy">Perchè registrarsi e fare il login?</message>
+	<message key="plugins.themes.dainst.showAllFields">Mostrare/nascondere ulteriori campi profilo</message>
+	<message key="plugins.themes.dainst.showAdditionalHomeContent">Informazioni ulteriori</message>
 </locale>
