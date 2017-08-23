@@ -1,24 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
- 
+
 <locale name="en_US" full_name="U.S. English">
+<!--
+  actually written in .../locale/es_ES/locale.xml
+  -->
+	<message key="about.subscriptions">PDF todavía no disponible</message>
+	<message key="about.subscriptionsContact"></message>
+	<message key="article.details">PDF todavía no disponible (más informaciones)</message>
+	<message key="reader.subscribersOnly">PDF todavía no disponible (más informaciones)</message>
+	<message key="user.register.readerDescription">Como lectores pueden consultar los PDF online.</message>
+	<message key="site.journalCurrent">Edición digital más reciente.</message>
+	<message key="navigation.current">Edición digital más reciente.</message>
+	<message key="journal.currentIssue">Edición digital más reciente.</message>
+	<message key="user.register.selectJournal">Seleccione la revista para la que se quiere registrar; más tarde puede añadir revistas adicionales en su cuenta de usuario.</message>
+	
+<!--
+  actually written in .../locale/es_ES/editor.xml
+  -->
+	<message key="editor.issues.default">Denegado</message>
+	<message key="editor.issues.subscription">Acceso individual</message>
+	
+<!--
+  * plugins/themes/dainst/locale/en_US/locale.xml
+  *
+  * Copyright (c) 2013-2016 Simon Fraser University Library
+  * Copyright (c) 2003-2016 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings.
+  -->
+ 
+
 	<message key="plugins.themes.dainst.description">This is the DAI theme developed 2016 by Philipp Franck</message>
-	<message key="plugins.themes.dainst.myJournals">Settings</message>
-	<message key="plugins.themes.dainst.myProfile">Profile</message>
-	<message key="plugins.themes.dainst.logout">Log out</message>
-	<message key="plugins.themes.dainst.signUp">Register</message>
-	<message key="plugins.themes.dainst.signIn">Login</message>
+	<message key="plugins.themes.dainst.myJournals">Ajustes</message>
+	<message key="plugins.themes.dainst.myProfile">Perfil</message>
+	<message key="plugins.themes.dainst.logout">Desconectar</message>
+	<message key="plugins.themes.dainst.signUp">Registrar</message>
+	<message key="plugins.themes.dainst.signIn">Conectar</message>
 	<message key="plugins.themes.dainst.signOutAsUser">Log out as user</message>
 	<message key="plugins.themes.dainst.colorsheme">DAI theme – Select color scheme for this journal</message>
-	<message key="plugins.themes.dainst.otherStuff">More</message>
-	<message key="plugins.themes.dainst.omp">Monographs</message>
-	<message key="plugins.themes.dainst.aboutLink">About</message>
-	<message key="plugins.themes.dainst.archive">Digital issues</message>
-	<message key="plugins.themes.dainst.search">Search</message>
-	<message key="plugins.themes.dainst.journals">Journals</message>
+	<message key="plugins.themes.dainst.otherStuff">Más</message>
+	<message key="plugins.themes.dainst.omp">Monografías, series y obras colectivas</message>
+	<message key="plugins.themes.dainst.aboutLink">Informaciones</message>
+	<message key="plugins.themes.dainst.archive">Edición digital</message>
+	<message key="plugins.themes.dainst.search">Búsqueda</message>
+	<message key="plugins.themes.dainst.journals">Revistas</message>
 
-	<message key="plugins.themes.dainst.termsOfUse">Terms of use</message>
-	<message key="plugins.themes.dainst.termsOfUseRead">Terms of use read and understood!</message>
+	<message key="plugins.themes.dainst.termsOfUse">Condiciones de uso</message>
+	<message key="plugins.themes.dainst.termsOfUseRead">Condiciones de uso leídos y entendidos!</message>
 	<message key="plugins.themes.dainst.termsOfUseText">
 		<![CDATA[
 			<b>Nutzungsbedingungen</b>
@@ -50,8 +80,8 @@ Falls das Deutsche Archäologische Institut auf Seiten verweist, deren Inhalt An
 			4. Der/die Nutzer/in kann diese Allgemeinen Geschäftsbedingungen unter dem auf <a href="https://publications.dainst.org/terms-of-use">https://publications.dainst.org/terms-of-use</a> erreichbaren Link abrufen, ausdrucken sowie herunterladen.<br>
 			]]>
 	</message>
-	<message key="plugins.themes.dainst.reportBugsTo">Report bugs to</message>
-	<message key="plugins.themes.dainst.imprint">Imprint</message>
+	<message key="plugins.themes.dainst.reportBugsTo">Mensajes de error dirigir a</message>
+	<message key="plugins.themes.dainst.imprint">Créditos y proteción de datos</message>
 	<message key="plugins.themes.dainst.imprintText">
 		<![CDATA[
 			<b>Impressum</b><br><br>
@@ -112,31 +142,27 @@ Falls das Deutsche Archäologische Institut auf Seiten verweist, deren Inhalt An
 			vom Deutschen Archäologischen Institut angepasst.
 		]]>
 	</message>
-	<message key="plugins.themes.dainst.meta">Additional Information (Zenon/URN)</message>
-		<message key="plugins.themes.dainst.edit">Edit</message>
-	<message key="plugins.themes.dainst.editarticle">Article</message>
-	<message key="plugins.themes.dainst.editarticlemeta">Metadata</message>
-	<message key="plugins.themes.dainst.editgalley">Galley</message>
-	<message key="plugins.themes.dainst.registerInformation">Questions and answers regarding registration and log in</message>
+	<message key="plugins.themes.dainst.meta">Informaciones adicionales (Zenon/URN)</message>
+		<message key="plugins.themes.dainst.edit">Modificar</message>
+	<message key="plugins.themes.dainst.editarticle">Artículo</message>
+	<message key="plugins.themes.dainst.editarticlemeta">Metadatos</message>
+	<message key="plugins.themes.dainst.editgalley">Prueba</message>
+	<message key="plugins.themes.dainst.registerInformation">Preguntas y respuestas acerca del registro e inscripción</message>
 	<message key="plugins.themes.dainst.registerInformationText">
 		<![CDATA[
-			<h4>Why do I have to register?</h4>
-			<p>The registration for the iDAI.publications online portal is mandatory to make sure that all users acknowledge
-			the <a onclick='showTermsOfUse()'>terms of use</a>.
-			After the once-only registration you get access to the available content of articles (PDF).<br>
-			Initially you register to get access to one journal.
-			If you like to see content of other journals, too, you can add these journals to your starting page in your personal account or click
-			<a href="https://publications.dainst.org/journals/index.php/chiron/user/register?existingUser=1"> here </a>
-			if you are registered already.<br>
-			Using the content according to the <a onclick='showTermsOfUse()'>terms of use</a> is free of charge.</p>
-			<h4>Why do I have to log in?</h4>
-			<p>Logging in is necessary to make sure only registered users have access to the available content.
-			Furthermore you can enable various features in your personal account (e.g. automatically sent emails when new content is online etc.)<br>
-			On your personal page you can add more journals to your user profile (see above).
+			<h4>¿Por qué me tengo que registrar?</h4>
+			<p>El registro en el portal de publicaciones de iDAI.publications es obligatorio, para asegurar que todos los usuarios acepten todos los <a onclick='showTermsOfUse()'>condiciones de uso</a>.
+			Mediante un único proceso de registro Ud. obtendrá acceso a los contenidos activados de los artículos de las revistas (PDF).<br>
+			En primer lugar se registrará para el acceso a una de las revistas. Si le gustaría ver contenidos de otras revistas, puede añadir esta revista a su cuenta de usuario en su página personal. Si usted ya está registrado, por favor haga clic 
+			<a href="https://publications.dainst.org/journals/index.php/chiron/user/register?existingUser=1"> aquí</a>.<br>
+			La utilización de los contenidos según las <a onclick='showTermsOfUse()'>condiciones de uso</a> es gratuito.</p>
+			<h4>¿Por qué es obligatorio iniciar session?</h4>
+			<p>La inscripción es obligatoria para asegurar que solo usuarios registrados tengan acceso a los contenidos activados. Ademas Ud. puede activar funciones adicionales en su página de inicio personal (p. ej. notificaciones automatizadas por correo electrónico para que se le notifique la publicación online de nuevos artículos). <br>
+			En su página de inicio personal puede añadir revistas adicionales a su cuenta (véase más arriba).
 			</p>
 		]]>
 	</message>
-	<message key="plugins.themes.dainst.registerWhy">Why register and log in?</message>
-	<message key="plugins.themes.dainst.showAllFields">Show/Hide additional profile fields</message>
-	<message key="plugins.themes.dainst.showAdditionalHomeContent">More Info</message>
+	<message key="plugins.themes.dainst.registerWhy">¿Por qué registrarse y inscribirse?</message>
+	<message key="plugins.themes.dainst.showAllFields">Campos de perfil adicionales mostrar/ocultar</message>
+	<message key="plugins.themes.dainst.showAdditionalHomeContent">Más informaciones</message>
 </locale>

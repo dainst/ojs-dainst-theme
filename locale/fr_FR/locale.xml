@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
 
+<locale name="en_US" full_name="U.S. English">
+<!--
+  actually written in .../locale/fr_FR/locale.xml
+  -->
+	<message key="about.subscriptions">PDF not available yet</message>
+	<message key="about.subscriptionsContact"></message>
+	<message key="article.details">PDF not available yet (more information)</message>
+	<message key="reader.subscribersOnly">PDF not available yet (more information)</message>
+	<message key="user.register.readerDescription">As reader you can view PDFs.</message>
+	<message key="site.journalCurrent">Newest digital issue available</message>
+	<message key="navigation.current">Newest digital issue available</message>
+	<message key="journal.currentIssue">Newest digital issue available</message>
+	<message key="user.register.selectJournal">Select a journal to register with; on your personal starting page you can select further journals and connect them to your account later.</message>
+	
+<!--
+  actually written in .../locale/fr_FR/editor.xml
+  -->
+	<message key="editor.issues.default">Denied</message>
+	<message key="editor.issues.subscription">Individual access</message>
+	
 <!--
   * plugins/themes/dainst/locale/en_US/locale.xml
   *
@@ -11,7 +31,7 @@
   * Localization strings.
   -->
  
-<locale name="en_US" full_name="U.S. English">
+
 	<message key="plugins.themes.dainst.description">This is the DAI theme developed 2016 by Philipp Franck</message>
 	<message key="plugins.themes.dainst.myJournals">Settings</message>
 	<message key="plugins.themes.dainst.myProfile">Profile</message>
