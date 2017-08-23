@@ -12,6 +12,10 @@
   -->
  
 <locale name="en_US" full_name="U.S. English">
+	<message key="about.subscriptions">PDF noch nicht verfügbar</message>
+	<message key="about.subscriptionsContact"></message>
+
+
 	<message key="plugins.themes.dainst.description">Das DAI Theme, entwickelt 2016–2017 von Philipp Franck</message>
 	<message key="plugins.themes.dainst.myJournals">Einstellungen</message>
 	<message key="plugins.themes.dainst.myProfile">Profil</message>
