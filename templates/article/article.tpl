@@ -53,70 +53,82 @@
 				</div>
 			{/if}
 		</div>
-		
-		<div id="article-page-body">
-		
-			{if $coverPagePath}
-				<div id="articleCoverImage"><img src="{$coverPagePath|escape}{$coverPageFileName|escape}"{if $coverPageAltText != ''} alt="{$coverPageAltText|escape}"{else} alt="{translate key="article.coverPage.altText"}"{/if}{if $width} width="{$width|escape}"{/if}{if $height} height="{$height|escape}"{/if}/>
-				</div>
-			{/if}
-			{call_hook name="Templates::Article::Article::ArticleCoverImage"}
-			
-			<h2 id="authorString">{$article->getAuthorString()|escape}</h2>
-			<h2 id="articleTitle">{$article->getLocalizedTitle()|strip_unsafe_html}</h2>
 
-			{if $article->getLocalizedAbstract()}
-				<h4>{translate key="article.abstract"}</h4>
-				<div id="article-abstract" class="article-page-section">{$article->getLocalizedAbstract()|strip_unsafe_html|nl2br}</div>
-			{/if}
-		
-			{if $article->getLocalizedSubject()}
-				<h4>{translate key="article.subject"}</h4>
-				<div id="article-subject" class="article-page-section">{$article->getLocalizedSubject()|escape}</div>
-			{/if}
-		
-			{if (!$subscriptionRequired || $article->getAccessStatus() == $smarty.const.ARTICLE_ACCESS_OPEN || $subscribedUser || $subscribedDomain)}
-				{assign var=hasAccess value=1}
-			{else}
-				{assign var=hasAccess value=0}
-			{/if}
-			{if $galleys}
-				<h4>{translate key="reader.fullText"}</h4>
-					<div id="articleFullText" class="article-page-section">
-					{if $hasAccess || ($subscriptionRequired && $showGalleyLinks)}
-						{foreach from=$article->getGalleys() item=galley name=galleyList}
-							<a href="{url page="article" op="view" path=$article->getBestArticleId($currentJournal)|to_array:$galley->getBestGalleyId($currentJournal)}" class="file" {if $galley->getRemoteURL()}target="_blank"{else}target="_parent"{/if}>{$galley->getGalleyLabel()|escape}</a>
-							{if $subscriptionRequired && $showGalleyLinks && $restrictOnlyPdf}
-								{if $article->getAccessStatus() == $smarty.const.ARTICLE_ACCESS_OPEN || !$galley->isPdfGalley()}
-									<img class="accessLogo" src="{$baseUrl}/lib/pkp/templates/images/icons/fulltext_open_medium.gif" alt="{translate key="article.accessLogoOpen.altText"}" />
-								{else}
-									<img class="accessLogo" src="{$baseUrl}/lib/pkp/templates/images/icons/fulltext_restricted_medium.gif" alt="{translate key="article.accessLogoRestricted.altText"}" />
-								{/if}
-							{/if}
-						{/foreach}
-						{if $subscriptionRequired && $showGalleyLinks && !$restrictOnlyPdf}
-							{if $article->getAccessStatus() == $smarty.const.ARTICLE_ACCESS_OPEN}
-								<img class="accessLogo" src="{$baseUrl}/lib/pkp/templates/images/icons/fulltext_open_medium.gif" alt="{translate key="article.accessLogoOpen.altText"}" />
-							{else}
-								<img class="accessLogo" src="{$baseUrl}/lib/pkp/templates/images/icons/fulltext_restricted_medium.gif" alt="{translate key="article.accessLogoRestricted.altText"}" />
-							{/if}
-						{/if}
-					{else}
-						<a href="{url page="about" op="subscriptions"}" target="_parent">{translate key="reader.subscribersOnly"}</a>
-					{/if}
+
+
+		<div class="row">
+
+            {if $coverPagePath}
+				<div id="articleImage" class="col col-md-3" style="width:auto">
+					<img src="{$coverPagePath|escape}{$coverPageFileName|escape}"{if $coverPageAltText != ''} alt="{$coverPageAltText|escape}"{else} alt="{translate key="article.coverPage.altText"}"{/if}{if $width} width="{$width|escape}"{/if}{if $height} height="{$height|escape}"{/if}/>
 				</div>
-			{/if}
-			{if $citationFactory->getCount()}
-				
-				<h4>{translate key="submission.citations"}</h4>
-				<div id="articleCitations" class="article-page-section">
-					<div>
-						{iterate from=citationFactory item=citation}
-							<p>{$citation->getRawCitation()|strip_unsafe_html}</p>
-						{/iterate}
+            {/if}
+
+			<div class="col col-md-{if $coverPagePath}9{else}12{/if}">
+
+				<h2 id="authorString">{$article->getAuthorString()|escape}</h2>
+				<h2 id="articleTitle">{$article->getLocalizedTitle()|strip_unsafe_html}</h2>
+
+				{if $article->getLocalizedAbstract()}
+					{*<h4>{translate key="article.abstract"}</h4>*}
+					<div id="article-abstract" class="article-page-section">{$article->getLocalizedAbstract()|strip_unsafe_html|nl2br}</div>
+				{/if}
+
+				{if $article->getLocalizedSubject()}
+					<h4>{translate key="article.subject"}</h4>
+					<div id="article-subject" class="article-page-section">{$article->getLocalizedSubject()|escape}</div>
+				{/if}
+
+				{if $citationFactory->getCount()}
+
+					<h4>{translate key="submission.citations"}</h4>
+					<div id="articleCitations" class="article-page-section">
+						<div>
+							{iterate from=citationFactory item=citation}
+								<p>{$citation->getRawCitation()|strip_unsafe_html}</p>
+							{/iterate}
+						</div>
 					</div>
-				</div>
-			{/if}
+				{/if}
+
+
+                {if (!$subscriptionRequired || $article->getAccessStatus() == $smarty.const.ARTICLE_ACCESS_OPEN || $subscribedUser || $subscribedDomain)}
+                    {assign var=hasAccess value=1}
+                {else}
+                    {assign var=hasAccess value=0}
+                {/if}
+                {if $galleys}
+					<br>
+					<div class="">
+                        {if $hasAccess || ($subscriptionRequired && $showGalleyLinks)}
+                            {foreach from=$article->getGalleys() item=galley name=galleyList}
+								<a href="{url page="article" op="view" path=$article->getBestArticleId($currentJournal)|to_array:$galley->getBestGalleyId($currentJournal)}" class="btn btn-default" {if $galley->getRemoteURL()}target="_blank"{else}target="_parent"{/if}>{$galley->getGalleyLabel()|escape}</a>
+                                {if $subscriptionRequired && $showGalleyLinks && $restrictOnlyPdf}
+                                    {if $article->getAccessStatus() == $smarty.const.ARTICLE_ACCESS_OPEN || !$galley->isPdfGalley()}
+										<img class="accessLogo" src="{$baseUrl}/lib/pkp/templates/images/icons/fulltext_open_medium.gif" alt="{translate key="article.accessLogoOpen.altText"}" />
+                                    {else}
+										<img class="accessLogo" src="{$baseUrl}/lib/pkp/templates/images/icons/fulltext_restricted_medium.gif" alt="{translate key="article.accessLogoRestricted.altText"}" />
+                                    {/if}
+                                {/if}
+                            {/foreach}
+                            {if $subscriptionRequired && $showGalleyLinks && !$restrictOnlyPdf}
+                                {if $article->getAccessStatus() == $smarty.const.ARTICLE_ACCESS_OPEN}
+									<img class="accessLogo" src="{$baseUrl}/lib/pkp/templates/images/icons/fulltext_open_medium.gif" alt="{translate key="article.accessLogoOpen.altText"}" />
+                                {else}
+									<img class="accessLogo" src="{$baseUrl}/lib/pkp/templates/images/icons/fulltext_restricted_medium.gif" alt="{translate key="article.accessLogoRestricted.altText"}" />
+                                {/if}
+                            {/if}
+                        {else}
+							<a class="btn btn-default" href="{url page="about" op="subscriptions"}" target="_parent">{translate key="reader.subscribersOnly"}</a>
+                        {/if}
+					</div>
+                {/if}
+
+
+
+			</div>
+
+
 		</div>
 	</div>
 {/if}
