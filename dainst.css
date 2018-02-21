@@ -560,6 +560,10 @@ input.button {
 	border: none;
 	position: absolute;
 	z-index: -10;
+
+}
+
+.dainstColor {
 	background-color: #6580aa
 }
 
