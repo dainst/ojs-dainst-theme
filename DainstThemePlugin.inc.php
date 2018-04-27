@@ -284,7 +284,7 @@ class DainstThemePlugin extends ThemePlugin {
 		
 		unset($this->_idaic->settings["footer_links"]['licence']);
 		
-		return $this->_idaic->footer() . $this->getPiwik();
+		return $this->_idaic->footer() . $this->getPiwik() . $this->getCookieBullshit();
 	}
 
 	/**
@@ -299,6 +299,11 @@ class DainstThemePlugin extends ThemePlugin {
 		ob_start();
 		include($this->getFilePath() . '/piwik.inc.php');
 		return ob_get_clean();
+	}
+
+	function getCookieBullshit() {
+        $thePath = $this->theUrl . '/' . $this->pluginPath;
+        return "<script src='$thePath/idai-cookie-notice/idai-cookie-notice.js'></script>";
 	}
 
 
@@ -401,7 +406,7 @@ class DainstThemePlugin extends ThemePlugin {
 			$this->addHeadData($smarty, "<script src='$thePath/js/daian.js'></script>");
 		}
 		$this->addHeadData($smarty, "<script src='$thePath/js/jquery-fixDataFn.js'></script>");
-		
+
 		// the colorsheme color
 		$dainstcicolor = ($journal) ? $this->getSetting($journal->getId(), 'dainstcicolor') : 'components'; 
 		$templateMgr->assign('dainstcicolor', $dainstcicolor);
