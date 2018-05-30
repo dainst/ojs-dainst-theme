@@ -397,12 +397,12 @@ class DainstThemePlugin extends ThemePlugin {
 		// create the idai compontents php object
 		
 		require_once($this->getFilePath() . '/idai-components-php/idai-components.php');
-		$this->_idaic = new \idai\components(array('return'	=>	true));
+		$this->_idaic = new \idai\components(array('return'	=>	true, "webpath" => "$thePath/idai-components-php/"));
 		
 		// the idai-stylesheets and stuff
 		$this->_idaic->settings["scripts"]["jquery"]["include"] = false;
 		$this->_idaic->settings["scripts"]["bootstrap"]["include"] = false;
-		$this->addHeadData($smarty, $this->_idaic->header("$thePath/idai-components-php/"));
+		$this->addHeadData($smarty, $this->_idaic->header());
 		$this->addHeadData($smarty, "<link rel='stylesheet' href='$thePath/dainst.css' type='text/css' />");
 		$this->addHeadData($smarty, "<link rel='stylesheet' href='$thePath/dainstColors.css' type='text/css' />");
 		if (($tpl == 'article/article.tpl') or ($tpl == 'issue/issueGalley.tpl')) {
