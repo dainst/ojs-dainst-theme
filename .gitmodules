@@ -1,4 +1,6 @@
 [submodule "idai-cookie-notice"]
-        path = idai-cookie-notice
-        url = https://github.com/dainst/idai-cookie-notice.git
-
+	path = idai-cookie-notice
+	url = https://github.com/dainst/idai-cookie-notice.git
+[submodule "idai-components-php"]
+	path = idai-components-php
+	url = https://github.com/dainst/idai-components-php.git
