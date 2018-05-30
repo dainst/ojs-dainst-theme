@@ -1,0 +1,4 @@
+[submodule "idai-cookie-notice"]
+        path = idai-cookie-notice
+        url = https://github.com/dainst/idai-cookie-notice.git
+
