@@ -318,10 +318,11 @@ ul.filter li {
 
 .journalDescription {
     text-align: justify;
+	min-height: 12em;
 }
 
 .journalDescription + p {
-    margin-bottom: 50px;
+    margin-bottom: 1.5em;
 	text-align: right;
 	border-bottom: 1px solid silver;
 	padding-bottom: 2em;
@@ -530,6 +531,15 @@ input.button {
 /*
 * html #rightSidebar { margin-right: 5%; }
 */
+#rightSidebar .sidebarMore {
+    width: 280px;
+}
+#rightSidebar .sidebarMore ul {
+    padding-left: 0;
+}
+#rightSidebar .sidebarMore li {
+    padding-bottom: 10px;
+}
 #main {
 	padding: 11px 1.2em 1.2em 1.2em;
 /*	float: left;
