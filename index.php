@@ -16,8 +16,8 @@
  *
  */
 
-require_once('ompDainstThemePlugin.inc.php');
+require_once('ojsDainstThemePlugin.inc.php');
 
-return new ompDainstThemePlugin();
+return new ojsDainstThemePlugin();
 
 ?>

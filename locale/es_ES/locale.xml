@@ -2,8 +2,8 @@
 <!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
 
 <locale name="es_ES" full_name="Español (España)">
-  <message key="plugins.themes.omp-dainst-theme.name">Dainst Theme</message>
-	<message key="plugins.themes.omp-dainst-theme.description">This theme implements the dainst theme.</message>
+  <message key="plugins.themes.ojs-dainst-theme.name">Dainst Theme</message>
+	<message key="plugins.themes.ojs-dainst-theme.description">This theme implements the dainst theme.</message>
 
 	<message key="plugins.themes.dainst.imprint">Imprint</message>
 

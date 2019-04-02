@@ -1,121 +1,134 @@
 /**
  * @file plugins/themes/default/js/main.js
  *
+ * Copyright (c) 2014-2018 Simon Fraser University
+ * Copyright (c) 2000-2018 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @brief Handle JavaScript functionality unique to this theme.
  */
 (function($) {
 
+	// Initialize dropdown navigation menus
+	// See bootstrap dropdowns: https://getbootstrap.com/docs/4.0/components/dropdowns/
+	if (typeof $.fn.dropdown !== 'undefined') {
+		var $nav = $('#navigationPrimary, #navigationUser'),
+		$submenus = $('ul', $nav);
 
-	/* dainst */
+		$submenus.each(function(i) {
+			var id = 'pkpDropdown' + i;
+			$(this)
+				.addClass('dropdown-menu')
+				.attr('aria-labelledby', id);
+			$(this).siblings('a')
+				.attr('data-toggle', 'dropdown')
+				.attr('aria-haspopup', true)
+				.attr('aria-expanded', false)
+				.attr('id', id)
+				.attr('href', '#');
+		});
 
-	// spotlights (couldnt find the original implementation so fuck it */
-
-	function changeHighlight(e) {
-		var spotlightNumber = jQuery(e.currentTarget).data('spotlight');
-		console.log(spotlightNumber);
-		jQuery(".cmp_spotlights ul.spotlights li.current").toggleClass("current");
-		jQuery(".cmp_spotlights li.spotlight_" + spotlightNumber).toggleClass("current");
-		jQuery(".cmp_spotlights ul.list li.current").toggleClass("current");
-		jQuery(e.currentTarget).parent("li").toggleClass("current");
-
-	}
-	jQuery("a[data-spotlight]").mouseenter(changeHighlight).click(changeHighlight);
-
-	/* metabox */
-
-	var openMeta = function(event) {
-		jQuery('#article-meta').toggle(true);
-		event.stopImmediatePropagation();
-		closeMetaDelayStop();
+		$('[data-toggle="dropdown"]').dropdown();
 	}
 
-	var closeMeta = function(event) {
-		jQuery('#article-meta').toggle(false);
-		if (event) {
-			event.stopImmediatePropagation();
-		}
-		closeMetaDelayStop();
-	}
+	// Register click handlers for the search panel
+	var headerSearchPanelIsClosing = false,
+	    headerSearchForm = $('#headerNavigationContainer .pkp_search'),
+	    headerSearchPrompt = $('.headerSearchPrompt', headerSearchForm),
+		headerSearchCancel = $('.headerSearchCancel', headerSearchForm),
+		headerSearchInput = $('input[name="query"]', headerSearchForm);
 
-	var toggleMeta = function(event) {
-		jQuery('#article-meta').toggle();
-		event.stopImmediatePropagation();
-		closingMeta = false;
-		closeMetaDelayStop();
-	}
-
-	var closingMeta = false;
-	var closingMetaTimeout = false;
-
-	var closeMetaDelay = function() {
-		closingMeta = true;
-		closingMetaTimeout = setTimeout(closeMeta, 1500);
-	}
-
-	var closeMetaDelayStop = function() {
-		if (closingMeta) {
-			closingMeta = false;
-			clearTimeout(closingMetaTimeout);
-		}
-	}
-
-
-	jQuery('#article-meta-toggler').mouseenter(openMeta);
-	jQuery('#article-meta-toggler').click(toggleMeta);
-	jQuery('#article-meta').mouseover(openMeta);
-	jQuery('#article-meta-toggler').mouseleave(closeMetaDelay);
-	jQuery('#article-meta').mouseleave(closeMeta);
-
-
-
-
-	// registration form
-	function showTermsModal(e) {
-		e.preventDefault();
-		showModal();
-	}
-	jQuery('#register button[type="submit"]').click(showTermsModal);
-
-	function confirmTermsModal(e) {
-		jQuery('#register').submit()
-	}
-	jQuery('#modal.terms #modal-dialog-ok').click(confirmTermsModal);
-
-
-	// modal functioniality wich could be reused fpr some otehr modal
-	function showModal(e) {
-		jQuery('#modal').toggle(true);
-	}
-	function hideModal(e) {
-		jQuery('#modal').toggle(false);
-	}
-	function escapeModal(e) {
-		if (jQuery('#modal').hasClass("escapeable")) {
-			hideModal(e);
-		}
-	}
-	jQuery('#modal-dialog-esc').click(hideModal);
-	jQuery('body').keypress(function(e) {
-		if (e.key == "Escape") {
-			escapeModal();
+	// Register events
+	headerSearchPrompt.on('click', triggerSearchPanel);
+	headerSearchCancel.on('click', closeSearchPanel);
+	headerSearchInput.on('blur', function() {
+		if(!headerSearchInput.val() && headerSearchForm.hasClass('is_open')) {
+			closeSearchPanel();
 		}
 	});
-	jQuery('#modal').click(escapeModal);
-	jQuery('#modal .dialog').click(function(e) {
-		e.stopImmediatePropagation();
-		e.stopPropagation();
+	headerSearchForm.on('submit', function() {
+		if(headerSearchForm.hasClass('is_searching')) {
+			return;
+		}
+		headerSearchForm.addClass('is_searching');
+	});
+	headerSearchForm.on('keyup', function(e) {
+		if(headerSearchForm.hasClass('is_open') && e.keyCode == 27) {
+			closeSearchPanel();
+		}
 	});
 
+	/**
+	 * Open or submit search form
+	 *
+	 * @param Event e Optional event handler
+	 */
+	function triggerSearchPanel(e) {
 
+		if (headerSearchPanelIsClosing) {
+			return;
+		}
 
-	/* from the default theme */
+		if (typeof e !== 'undefined') {
+			e.preventDefault();
+			e.stopPropagation();
+		}
+
+		if (headerSearchForm.hasClass('is_open')) {
+			headerSearchForm.submit();
+			return;
+		}
+
+		headerSearchForm.addClass('is_open');
+		setTimeout(function() {
+			headerSearchForm.find('input[type="text"]').focus();
+		},200);
+	}
+
+	/**
+	 * Close the search panel
+	 *
+	 * @param Event e Optional event handler
+	 */
+	function closeSearchPanel(e) {
+
+		if (headerSearchPanelIsClosing) {
+			return;
+		}
+
+		if (typeof e !== 'undefined') {
+			e.preventDefault();
+			e.stopPropagation();
+		}
+
+		headerSearchPanelIsClosing = true;
+		headerSearchForm.removeClass('is_open');
+
+		setTimeout(function() {
+			headerSearchPanelIsClosing = false;
+			headerSearchInput.val('');
+		},300)
+	}
 
 	// Modify the Chart.js display options used by UsageStats plugin
 	document.addEventListener('usageStatsChartOptions.pkp', function(e) {
 		e.chartOptions.elements.line.backgroundColor = 'rgba(0, 122, 178, 0.6)';
 		e.chartOptions.elements.rectangle.backgroundColor = 'rgba(0, 122, 178, 0.6)';
 	});
+
+	// Toggle display of consent checkboxes in site-wide registration
+	var $contextOptinGroup = $('#contextOptinGroup');
+	if ($contextOptinGroup.length) {
+		var $roles = $contextOptinGroup.find('.roles :checkbox');
+		$roles.change(function() {
+			var $thisRoles = $(this).closest('.roles');
+			if ($thisRoles.find(':checked').length) {
+				$thisRoles.siblings('.context_privacy').addClass('context_privacy_visible');
+			} else {
+				$thisRoles.siblings('.context_privacy').removeClass('context_privacy_visible');
+			}
+		});
+	}
 
 	// Initialize tag-it components
 	//

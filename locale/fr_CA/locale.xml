@@ -2,15 +2,15 @@
 <!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
 
 <locale name="fr_CA" full_name="Français (Canada)">
-  <message key="plugins.themes.omp-dainst-theme.name">Dainst Theme</message>
-	<message key="plugins.themes.omp-dainst-theme.description">This theme implements the dainst theme.</message>
+  <message key="plugins.themes.ojs-dainst-theme.name">Dainst Theme</message>
+	<message key="plugins.themes.ojs-dainst-theme.description">This theme implements the dainst theme.</message>
 
 	<message key="plugins.themes.dainst.imprint">Mentions légales</message>
 
 	<message key="plugins.themes.dainst.termsOfUse">Conditions générales</message>
 
 	<message key="plugins.themes.dainst.reportBugsTo">Annonce les bugs à</message>
-	<message key="plugins.themes.dainst.additionalInfo">Information complémentaire</message>
+	<message key="plugins.themes.dainst.additionalInfo">Information cojslémentaire</message>
 
 	<message key="plugins.themes.dainst.series">Série</message>
 
