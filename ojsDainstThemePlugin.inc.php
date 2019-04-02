@@ -323,7 +323,7 @@ class ompDainstThemePlugin extends ThemePlugin {
 
 			// OMP 3.2
 			if (file_exists(BASE_SYS_DIR.'/classes/core/Services.inc.php')) {
-				require_once (BASE_SYS_DIR.'/classes/core/Services.inc.php');
+				require_once(BASE_SYS_DIR . '/classes/core/Services.inc.php');
 				import('classes.core.Services');
 				Services::get('navigationMenu')->getMenuTree($navigationMenu);
 
