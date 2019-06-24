@@ -409,7 +409,7 @@ class DainstThemePlugin extends ThemePlugin {
 			$this->addHeadData($smarty, "<script src='$thePath/js/daian.js'></script>");
 		}
 		$this->addHeadData($smarty, "<script src='$thePath/js/jquery-fixDataFn.js'></script>");
-
+		$this->addHeadData($smarty, "<script src='$thePath/js/idai-cookie-notice.js'></script>");
 		// the colorsheme color
 		$dainstcicolor = ($journal) ? $this->getSetting($journal->getId(), 'dainstcicolor') : 'components'; 
 		$templateMgr->assign('dainstcicolor', $dainstcicolor);
