@@ -31,7 +31,7 @@ var IDaiCookieNotice = (function () {
             buttonLabel = "Got it!"
         }
 
-        style = "background-color: #E6E2E2; position: fixed; bottom: 0; left: 0; width: 100%; padding: 15px;";
+        style = "background-color: #E6E2E2; position: fixed; bottom: 0; left: 0; width: 100%; padding: 15px; z-index: 9999;";
         html = "<div style='" + style + "' class='bg-info' id='idai-cookie-notice'>"
             + "<button class='btn' onclick='IDaiCookieNotice.dismiss()' style='float:right;'>" + buttonLabel + "</button>"
             + text
